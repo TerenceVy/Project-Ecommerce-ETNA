@@ -13,7 +13,7 @@
     <div align="center">
       <div class="etna"> ETNA MANGA </div>
     </div>
-    <form action="../index.html">
+    <form action="../index.php">
       <input class="image" type="image" src="../assets/images/accueilbutton.png" value="accueil">
     </form>
     <div class="panier">

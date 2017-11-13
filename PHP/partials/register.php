@@ -45,7 +45,7 @@
     }
          else
          {
-         $erreur = "Tous les champs ne sont pas complÃ©ter";
+         $erreur = "Tous les champs ne sont pas compléter";
          }
                      
       ?>
