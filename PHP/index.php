@@ -10,7 +10,7 @@
     <footer>COPYRIGHT</footer>
     <img src="assets/images/Bande.png" class="bande">
     <img src="assets/images/Bande.png" class="bande2">
-    <form action="index.html">
+    <form action="index.php">
       <input class="image" type="image" src="assets/images/accueilbutton.png">
     </form>
     <img src="assets/images/cb.png" class="cb">
@@ -28,12 +28,12 @@
     <div class="text2"> Figurine Pop All Might 12.99$</div>
     <div class="text3"> Bluray My hero Academia S1 28.99$</div>
 
-    <form action="partials/login.html">
+    <form action="partials/login.php">
       <div class="signin">
         <input type="submit" value="   Login   ">
       </div>
     </form>
-    <form action="partials/cart.html">
+    <form action="partials/cart.php">
       <div class="cart">
         <input type="submit" value= "   Cart   " src="assets/images/Cart.png">
       </div>
@@ -41,7 +41,7 @@
     <div class="buy1">
       <input type="submit" value=" Buy it ">
     </div>
-    <form action="partials/detailpop.html">
+    <form action="partials/detailpop.php">
       <div class="buy2">
         <input type="submit" value=" Buy it ">
       </div>
@@ -56,7 +56,7 @@
       <option value="valeur3">Food</option>
       <option value="valeur4">Game</option>
     </select>
-    <form action="partials/pop.html">
+    <form action="partials/pop.php">
       <div class="achat1">
         <input type="submit" value="  Figurine Pop   ">
       </div>
@@ -74,7 +74,7 @@
       <span>★ ★ ★ ★ ☆ </span>
     </div>
 
-    <a href="partials/contact.html" target="_blank">Contact us</a>
+    <a href="partials/contact.php" target="_blank">Contact us</a>
   </body>
 
 </html>
