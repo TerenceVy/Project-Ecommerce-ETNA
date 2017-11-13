@@ -4,7 +4,7 @@
   <head>
     <?php
        
-       $db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'root');
+       $db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
        if (isset($_POST['send']))
        $login = htmlspecialchars($_POST['login']);
        $mail =  htmlspecialchars($_POST['mail']);
