@@ -62,16 +62,16 @@
   <body>
 <img src="../assets/images/Bande.png">
     <img src="../assets/images/Bande.png" class="bande2">
-    <form action="../index.html">
+    <form action="../index.php">
       <input class="image" type="image" src="../assets/images/accueilbutton.png" value="accueil">
     </form>
    <img src="../assets/images/secured.png" class="secured">
     <img src="../assets/images/cb.png" class="cb">
-    <a href="contact.html" target="_blank">Contact us</a>
+    <a href="contact.php" target="_blank">Contact us</a>
     <div align="center">
       <div class="etna"> ETNA MANGA </div>
       <br><br><br><br><br><br><br><br><br>
-      <form action="login.html" method="POST">
+      <form action="login.php" method="POST">
       Prenom: <br>
       <input type="text" name="Prenom" required><br>
       Nom: <br>

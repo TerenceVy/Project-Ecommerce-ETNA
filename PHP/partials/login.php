@@ -12,10 +12,10 @@
     <img src="../assets/images/Bande.png" class="bande2">
     <img src="../assets/images/secured.png" class="secured">
     <img src="../assets/images/cb.png" class="cb">
-    <form action="../index.html"> 
+    <form action="../index.php"> 
       <input class="image" type="image" src="../assets/images/accueilbutton.png" value="accueil">
     </form>
-    <a href="contact.html" target="_blank">Contact us</a>
+    <a href="contact.php" target="_blank">Contact us</a>
     <div align="center">
       <div class="etna"> ETNA MANGA </div>
     </div>
@@ -23,14 +23,14 @@
     <table>
       <center>
 	<div align="center">
-	  <form action="../index.html" method="POST"> <br><br><br><br>
+	  <form action="../index.php" method="POST"> <br><br><br><br>
 	    <input type="email" name="email" placeholder="Your email" required><br>
 	    <br>
 	    <input type="Password" name="passwd" placeholder="Password" required><br>
 	    <br>
 	    <input type="Submit" value="Sign in">
 	  </form>
-	  <form action="register.html">
+	  <form action="register.php">
 	    <input type="Submit" value="Register">
 	  </form>
 	</div>

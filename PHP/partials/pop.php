@@ -10,7 +10,7 @@
     <img src="../assets/images/Bande.png" class="bande2">
         <img src="../assets/images/secured.png" class="secured">
     <img src="../assets/images/cb.png" class="cb">
-    <form action="../index.html">
+    <form action="../index.php">
       <input class="image" type="image" src="../assets/images/accueilbutton.png" value="accueil">
     </form>
     <div class="etna"> ETNA MANGA </div>
@@ -29,7 +29,7 @@
       Figurine All Might à SEULEMENT 12.99$
     </div>
 
-    <form action="detailpop.html">
+    <form action="detailpop.php">
       <div class="achatpop">
 	<input type="submit" value="  View Details   ">
       </div>
@@ -42,6 +42,6 @@
     </div>
     <div class="cb"></div>
     <div class="secured"></div>
-    <a href="contact.html" target="_blank">Contact us</a>
+    <a href="contact.php" target="_blank">Contact us</a>
   </body>
 </html>

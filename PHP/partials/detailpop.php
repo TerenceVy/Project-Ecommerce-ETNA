@@ -12,7 +12,7 @@
     <img src="../assets/images/secured.png" class="secured">
     <img src="../assets/images/cb.png" class="cb">
     <div class="etna"> ETNA MANGA </div>
-    <a href="contact.html" target="_blank">Contact us</a>
+    <a href="contact.php" target="_blank">Contact us</a>
     <form action="../index.html">
       <input class="image" type="image" src="../assets/images/accueilbutton.png" value="accueil">
     </form>
@@ -25,7 +25,7 @@
       <li>Couleur Unique</li>
       <li>Plastique Rigide</li>
     </ul>
-    <form action="cart2.html">
+    <form action="cart2.php">
       <div class="add">
 	<input type="submit" src="assets/images/Cart.png" value="Ajouter au panier">
       </div>2

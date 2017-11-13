@@ -20,6 +20,6 @@
       <b>Votre panier est actuellement vide.</b></div>
     <div class="cb"></div>
     <div class="secured"></div>
-    <a href="contact.html" target="_blank">Contact us</a>
+    <a href="contact.php" target="_blank">Contact us</a>
   </body>
 </html>

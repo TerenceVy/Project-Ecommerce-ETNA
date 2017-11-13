@@ -12,11 +12,11 @@
     <img src="../assets/images/Bande.png" class="bande2">
     <img src="../assets/images/secured.png" class="secured">
     <img src="../assets/images/cb.png" class="cb">
-    <form action="../index.html">
+    <form action="../index.php">
       <input class="image" type="image" src="../assets/images/accueilbutton.png" value="accueil">
     </form>
     <div class="etna"> ETNA MANGA </div>
-    <a href="contact.html" target="_blank">Contact us</a>
+    <a href="contact.php" target="_blank">Contact us</a>
     <div class="panier">
       <b>Votre panier :</b></div>
   <img src="../assets/images/PopMyhero.png" class="allmight2">
