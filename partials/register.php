@@ -1,6 +1,6 @@
 <?php
 
-  $db = new PDO ('mysql:host=localhost;dbname=myblog', 'root', 'salutlesbro');
+  $db = new PDO ('mysql:host=localhost;dbname=myblog', 'root', 'root');
   if (isset($_POST['send']))
   $login = htmlspecialchars($_POST['login']);
   $mail =  htmlspecialchars($_POST['mail']);
