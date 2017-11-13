@@ -1,3 +1,55 @@
+<?php
+
+  $db = new PDO ('mysql:host=localhost;dbname=myblog', 'root', 'salutlesbro');
+  if (isset($_POST['send']))
+  $login = htmlspecialchars($_POST['login']);
+  $mail =  htmlspecialchars($_POST['mail']);
+  $password = sha1($_POST['password']);
+  $password2 = sha1($_POST['password2']);
+       if(!empty($_POST['login']) && !empty($_POST['mail']) && !empty($_POST['password']) && !empty($_POST['password2']))
+           {
+         $passwordlenght = strlen($password);
+         $maillenght = strlen($mail);
+         $loginlenght = strlen($login);
+         if($loginlenght <=225)
+         {
+         }
+         else
+         {
+         $erreur = "Votre login contient plus de 255 caracteres";
+         }
+         if($loginlenght <=225)
+         {
+         }
+         else
+         {
+         $erreur = "Votre mail contient plus de 255 caracteres";
+         }
+               if($loginlenght <=225)
+         {
+         }
+         else
+         {
+         $erreur = "Votre mail contient plus de 255 caracteres";
+         }
+         if ($password == $password2)
+         {
+    $insertinusers = $db->prepare("INSERT INTO users(login, mail, password) VALUES (?, ?, ?)");
+    $insertinusers->execute(array($login, $mail, $password));           
+    $erreur = "Votre compte a bien Ã©tÃ© ajoutÃ©";
+         }
+         else
+         {
+         $erreur = "Vos mots de passes ne sont pas semblables";
+         }
+    }
+         else
+         {
+         $erreur = "Tous les champs ne sont pas complÃ©ter";
+         }
+                     
+      ?>
+
 <!DOCTYPE html>
 <html>
   <link rel="stylesheet" href="../assets/styles/style.css" type="text/css">
