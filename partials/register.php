@@ -6,12 +6,12 @@ if(isset($_POST['formregister']))
 {
 	if(!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['mail']) && !empty($_POST['mail2']) && !empty($_POST['password']) && !empty($_POST['password2']) && !empty($_POST['date']) && !empty($_POST['ville']) && !empty($_POST['adresse']) && !empty($_POST['postale']) && !empty($_POST['pays'])) 
 	{
-		echo 'ok';
+		
 	}
 
 	else
 	{
-		echo 'bite';
+		$msg = "Tous les champs doivent être complétés"
 	}
 }
 
@@ -80,6 +80,10 @@ if(isset($_POST['formregister']))
 			<input type="Submit" name="formregister" value="S'inscrire">
     	</table>
       </form>
+      <?php
+      	if(isset($msg))
+      		{echo "$msg";}
+      ?>
   	</div>	
   </body>
   
