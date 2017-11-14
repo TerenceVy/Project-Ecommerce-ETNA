@@ -11,7 +11,7 @@ if(isset($_POST['formregister']))
 
   else
   {
-    $msg = "Tous les champs doivent être complétés"
+    $msg = "Tous les champs doivent être complétés";
   }
 }
 
