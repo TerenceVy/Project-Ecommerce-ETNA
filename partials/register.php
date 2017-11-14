@@ -21,18 +21,19 @@
       <br><br><br><br><br><br><br><br><br>
     <div align="center">
       	<h3>Inscription</h3>
+      	<br><br><br>
       <form action="login.php" method="POST">
-      	<tr>
-      	<input type="text" placeholder="Nom">
-      	<input type="text" placeholder="Prénom">
-      	<input type="text" placeholder="Adresse mail">
-      	<input type="text" placeholder="Date de naissance">
-      	<input type="text" placeholder="Ville">
-      	<input type="text" placeholder="Adresse">
-      	<input type="text" placeholder="Code postale">
-      	<input type="text" placeholder="Pays">
-		<input type="Submit" value="S'inscrire">
-	</tr>
+      	<table>
+      		<td><input type="text" placeholder="Nom"></td>
+      		<td><input type="text" placeholder="Prénom"></td>
+      		<td><input type="text" placeholder="Adresse mail"></td>
+      		<td><input type="text" placeholder="Date de naissance"></td>
+      		<td><input type="text" placeholder="Ville"></td>
+      		<td><input type="text" placeholder="Adresse"></td>
+      		<td><input type="text" placeholder="Code postale"></td>
+      		<td><input type="text" placeholder="Pays"></td>
+			<input type="Submit" value="S'inscrire">
+    	</table>
       </form>
   	</div>	
   </body>
