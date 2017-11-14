@@ -1,11 +1,23 @@
 <!DOCTYPE html>
+<?php
+$db = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t',root,'salutlesbro');
+
+if(isset($_POST['formregister']))
+{
+	if(!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['mail']) && !empty($_POST['mail2']) && !empty($_POST['password']) && !empty($_POST['password2']) && !empty($_POST['date']) && !empty($_POST['ville']) && !empty($_POST['adresse']) && !empty($_POST['postale']) && !empty($_POST['pays'])) 
+	{
+		echo 'ok';
+	}
+
+	else
+	{
+		echo 'bite';
+	}
+}
 
 
 
-
-
-
-
+?>
 
 <html>
   <link rel="stylesheet" href="../assets/styles/style.css" type="text/css">
