@@ -52,7 +52,7 @@ body{
 
 .myhero{
     position:absolute;
-    margin:220px 515px;
+    margin:50% 50%;
     width:825px;
     height:475px;
     border-radius: 50px;
