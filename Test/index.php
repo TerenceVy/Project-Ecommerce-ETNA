@@ -25,6 +25,7 @@
   <div id='sidebar-droite'>
     <p>Ceci est le test 3</p>
   </div>
+  <br><br><br><br><br><br>
   <footer>
   <p>TEst2</p>
   </footer>
