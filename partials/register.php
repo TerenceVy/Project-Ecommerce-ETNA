@@ -28,6 +28,14 @@ if(isset($_POST['formregister']))
     {
       if ($mail == $mail2)
       {
+        if ($password == $password2)
+        {
+
+        }
+        else 
+        {
+          $msg = 'Les mots de passe de sont pas identiques';
+        }       
 
       }
       else
