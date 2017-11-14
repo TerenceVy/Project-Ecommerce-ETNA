@@ -8,12 +8,13 @@
 <body>
 <div id='global'>
     <header>
-    <form action="index.php">
-      <input class="image" type="image" src="assets/images/accueilbutton.png">
-    </form>
     <div align="center">
     <div class="etna"> ETNA MANGA </div>
     </div>
+    <form action="index.php">
+      <input class="image" type="image" src="assets/images/accueilbutton.png">
+    </form>
+
     </header>
   <div id='menu-gauche'>
     <p>Ceci est un autre test</p>
