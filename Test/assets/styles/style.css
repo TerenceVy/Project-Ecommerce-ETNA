@@ -1,0 +1,343 @@
+.image {
+    position:absolute;
+    margin:0px 5px;
+    width: 80px;
+    height:60px;
+}
+
+img{
+    position:absolute;
+    margin: -55px -30px;
+    width: 1925px;
+    height: 118px;
+}
+
+.cb {
+    position:absolute;
+    margin:919px 45px;
+    width:113px;
+    height:40px;
+}
+
+.secured{
+    position:absolute;
+    margin:920px 180px;
+    width:100px;
+    height:43px;
+}
+
+.bande1{
+    position:absolute;
+    margin: -55px -30px;
+    width: 50px;
+}
+
+.bande2{
+    position:absolute;
+    margin:885px -30px;
+    width: 1925px;
+    height:140px;
+}
+
+body{
+    background-repeat: no-repeat; 
+    background:url("../images/Fond.png");
+}
+
+.myhero{
+    position:absolute;
+    margin:220px 515px;
+    width:825px;
+    height:475px;
+    border-radius: 50px;
+    box-shadow: 0 -5px 10px -2px #333;
+}
+
+.shigatsu{
+    position:absolute;
+    margin:380px 1359px;
+    width:490px;
+    height:255px;
+    border-radius: 50px;
+    box-shadow: 0 -5px 10px -2px #333;
+}
+
+.kuroko{
+    position:absolute;
+    margin:380px 0px;
+    width:490px;
+    height:255px;
+    border-radius: 50px;
+    box-shadow: 0 -5px 10px -2px #333;
+}
+
+.signin{
+    position: absolute;
+    margin: 20px 1626px;
+    height: 40px;
+    float:right;
+
+}
+
+.cart{
+    position: absolute;
+    margin: 20px 1770px;
+    height: 40px;
+    float:right;
+}
+
+.mid{
+    position:absolute;
+    margin:220px 515px;
+    width:825px;
+    height:475px;
+    border-radius: 50px;
+    box-shadow: 0 -5px 10px -2px #333;
+}
+
+.etna{
+    position:absolute;    
+    vertical-align: text-top;
+    margin:5px 755px;
+    width: 355px;
+    height:60px;
+    color:white;
+    font-size:50px;
+}
+
+footer{
+    position: absolute;
+}
+
+.vol1{
+    position:absolute;
+    content:url("../images/Vol1Myhero.png");
+    margin:308px 602px;
+    width:75px;
+    height:110px;
+}
+
+.pop{
+    position:absolute;
+    content:url("../images/PopMyhero.png");
+    margin:443px 602px;
+    width:110px;
+    height:90px;
+}
+
+.bluray{
+    position:absolute;
+    content:url("../images/Blu-ray.png");
+    margin:548px 602px;
+    width:75px;
+    height:110px;
+}
+
+.collection{
+    position:absolute;    
+    vertical-align: text-top;
+    margin:225px 568px;
+    width: 580px;
+    height:65px;
+    color:white;
+    font-size:25px;
+}
+
+.buy1{
+    position: absolute;
+    margin: 368px 696px;
+    width: 55px;
+    height: 25px;
+}
+
+.buy2{
+    position: absolute;
+    margin: 488px 736px;
+    width: 55px;
+    height: 25px;
+}
+
+.buy3{
+    position: absolute; 
+    margin: 603px 696px;
+    width: 55px;
+    height: 25px;
+}
+
+.text1{
+    position:absolute;    
+    vertical-align: text-top;
+    margin:332px 696px;
+    width: 160px;
+    height:35px;
+    color:white;
+    font-size: 80%;
+}
+
+.text2{
+    position:absolute;    
+    vertical-align: text-top;
+    margin:450px 736px;
+    width: 150px;
+    height:45px;
+    color:white;
+    font-size:80%;
+}
+
+.text3{
+    position:absolute;    
+    vertical-align: text-top;
+    margin:565px 695px;
+    width: 185px;
+    height:35px;
+    color:white;
+    font-size:80%;
+}
+
+select{
+    position: absolute;
+    margin-left: 125px;
+    margin-top: 15px;
+}
+
+.achat1{
+    position: absolute;
+    margin: 15px 365px;
+    height: 30px;
+    width: 100px;
+    float :right;
+}
+
+.rating{
+position: absolute;
+    margin: 371px 775px;
+    height: 50px;
+    width: 133px;
+    color:white;
+    font-size:10px;
+}
+
+.rating2{
+position: absolute;
+    margin: 490px 810px;
+    height: 50px;
+    width: 133px;
+    color:white;
+    font-size:10px;
+}
+
+.rating3{
+position: absolute;
+    margin: 605px 772px;
+    height: 50px;
+    width: 133px;
+    color:white;
+    font-size:10px;
+}
+
+a{
+position:absolute;
+margin:930px 330px;
+width:113px;
+height:40px;
+color: grey;
+}
+
+.shinoa{
+position:absolute;
+margin:185px 850px;
+width:23%;
+height:380px;
+}
+
+.allmight{
+    position:absolute;
+    margin:230px 300px;
+    width:25%;
+    height:300px;
+}
+.L{
+    position:absolute;
+    margin:220px 1330px;
+    width:20%;
+    height:350px;
+}
+
+.fig1{
+    position: absolute;
+    margin:620px 400px;
+}
+
+.fig2{
+    position: absolute;
+    margin:630px 1040px;
+}
+
+.fig3{
+    position: absolute;
+    margin:610px 1500px;
+}
+
+.achatpop{
+ position: absolute;
+    margin: 650px 500px;
+    height: 30px;
+    width: 100px;
+}
+
+.achatpop2{
+ position: absolute;
+    margin: 710px 1020px;
+    height: 30px;
+    width: 100px;
+}
+
+.achatpop3{
+    position: absolute;
+    margin: 670px 1450px;
+    height: 30px;
+    width: 100px;
+}
+
+.panier{
+    font-size: 50px;
+    position: absolute;
+    color: grey;
+    margin-top: 10%;
+    margin-left: 10%
+}
+
+.detail{
+    position:absolute;
+    vertical-align: text-top;
+    margin: 225px 800px;
+    width: 580px;
+    height:65px;
+    font-size: 20px;
+}
+
+ul{
+    position: absolute;
+    margin: 300px 800px;
+}
+
+.add{
+    font-size: 50px;
+    position: absolute;
+    color: gray;
+    margin-top: 25%;
+    margin-left: 50%
+}
+
+.allmight2{
+    position:absolute;
+    margin:330px 300px;
+    width:15%;
+    height:200px;
+}
+
+.panierall{
+    position: absolute;
+    font-size: 10;
+    margin:380px 620px;
+}
