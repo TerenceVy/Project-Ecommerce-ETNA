@@ -20,8 +20,9 @@
       <div class="etna"> ETNA MANGA </div>
       <br><br><br><br><br><br><br><br><br>
       <div align="center">
+      	<h3>Inscription</h3>
       <form action="login.php" method="POST">
-		<input type="Submit" value="Register">
+		<input type="Submit" value="S'inscrire">
       </form>
   </div>	
     	</div>
