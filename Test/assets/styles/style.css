@@ -41,6 +41,14 @@ header
       float :left ;
 }
 
+.myhero{
+    margin-top: 50%;
+    width:825px;
+    height:475px;
+    border-radius: 50px;
+    box-shadow: 0 -5px 10px -2px #333;
+}
+
 #sidebar-droite
 {
       text-align: right;

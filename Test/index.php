@@ -23,6 +23,7 @@
     <p>Ceci est un autre test</p>
   </div>
   <div id='contenu' align="center">
+  <img src="assets/images/Myhero.png" class="myhero">
   <p>Je s'appelle GROOT</p>
   </div>
   <div id='sidebar-droite'>
