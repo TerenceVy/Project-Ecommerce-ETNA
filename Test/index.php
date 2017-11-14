@@ -8,6 +8,7 @@
 <body>
   <div id='global'>
     <header>
+    Test
     </header>
   <div id='menu-gauche'>
     <p>Ceci est un autre test</p>
@@ -19,6 +20,7 @@
     <p>Ceci est le test 3</p>
   </div>
   <footer>
+  TEst2
   </footer>
   </div>
 </body>
