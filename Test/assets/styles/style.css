@@ -31,19 +31,19 @@ header
 #menu-gauche
 {
       width: 20%;
-      float :right ;
+      float :left ;
 }
 
 #contenu
 {     
       width :50% ;
-      float :center ;
+      float :left ;
 }
 
 #sidebar-droite
 {
       width :20% ;
-      float: right; 
+      float: left; 
 } 
 
 footer
