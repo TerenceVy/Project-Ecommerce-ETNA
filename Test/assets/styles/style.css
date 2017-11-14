@@ -36,6 +36,7 @@ header
 
 #contenu
 {     
+      text-align: center;
       width :50% ;
       float :left ;
 }
