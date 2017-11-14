@@ -32,13 +32,13 @@ header
 #menu-gauche
 {
       width :20% ;
-      float :left ;
+      float :right ;
 }
 
 #contenu
 {
      width :60% ;
-      float :left ;
+      float :right ;
 }
 
 #sidebar-droite
