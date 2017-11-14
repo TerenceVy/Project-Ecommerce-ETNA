@@ -18,7 +18,7 @@
   <div id='menu-gauche'>
     <p>Ceci est un autre test</p>
   </div>
-  <div id='contenu'>
+  <div id='contenu' align="center">
   <p>Je s'appelle GROOT</p>
   </div>
   <div id='sidebar-droite'>
