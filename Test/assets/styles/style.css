@@ -23,7 +23,8 @@ header
     height: 6%;
 }
 
-.etna{    
+.etna{
+      margin: 0px;
       text-align: center;
       color:white;
       font-size:50px;
