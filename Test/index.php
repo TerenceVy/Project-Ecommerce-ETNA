@@ -10,13 +10,13 @@
     <header>
       <p>Test</p>
     </header>
-  <div id='contenu-gauche'>
+  <div id='menu-gauche'>
     <p>Ceci est un autre test</p>
   </div>
   <div id='contenu'>
     <p>Je s'appelle GROOT</p>
   </div>
-  <div id='contenu-droite'>
+  <div id='sidebar-droite'>
     <p>Ceci est le test 3</p>
   </div>
   <footer>
