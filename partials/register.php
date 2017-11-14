@@ -22,6 +22,14 @@
     <div align="center">
       	<h3>Inscription</h3>
       <form action="login.php" method="POST">
+      	<input type="text" placeholder="Nom">
+      	<input type="text" placeholder="Prénom">
+      	<input type="text" placeholder="Adresse mail">
+      	<input type="text" placeholder="Date de naissance">
+      	<input type="text" placeholder="Ville">
+      	<input type="text" placeholder="Adresse">
+      	<input type="text" placeholder="Code postale">
+      	<input type="text" placeholder="Pays">
 		<input type="Submit" value="S'inscrire">
       </form>
   	</div>	
