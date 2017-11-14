@@ -8,8 +8,8 @@ if(isset($_POST['formregister']))
   {
     $mail = htmlspecialchars($_POST['mail']);
     $mail2 = htmlspecialchars($_POST['mail2']);
-    $mdp = sha1($_POST['mdp']);
-    $mdp2 = sha1($_POST['mdp2']);
+    $password = sha1($_POST['password']);
+    $password2 = sha1($_POST['password2']);
 
     $prenomlenght = strlen($_POST['prenom']);
     $nomlenght = strlen($_POST ['nom']);
@@ -30,7 +30,7 @@ if(isset($_POST['formregister']))
       {
         if ($password == $password2)
         {
-
+          $msg = 'Votre compte a bien été ajouté'; 
         }
         else 
         {
