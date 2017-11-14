@@ -8,8 +8,8 @@ if(isset($_POST['formregister']))
   {
     $mail = htmlspecialchars($_POST['mail']);
     $mail2 = htmlspecialchars($_POST['mail2']);
-    $password = hash ('sha256',($_POST['password']);
-    $password2 = hash ('sha256',($_POST['password2']);
+    $password = sha1($_POST['password']);
+    $password2 = sha1($_POST['password2']);
 
     $prenomlenght = strlen($_POST['prenom']);
     $nomlenght = strlen($_POST ['nom']);
