@@ -8,7 +8,9 @@
 <body>
   <div id='global'>
     <header>
-    Test
+    <form action="index.php">
+      <input class="image" type="image" src="assets/images/accueilbutton.png">
+    </form>
     </header>
   <div id='menu-gauche'>
     <p>Ceci est un autre test</p>
