@@ -26,7 +26,7 @@
     <p>Ceci est le test 3</p>
   </div>
   <footer>
-  TEst2
+  <p>TEst2</p>
   </footer>
   </div>
 </body>
