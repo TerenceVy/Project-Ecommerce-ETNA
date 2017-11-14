@@ -8,7 +8,7 @@
 <body>
   <div id='global'>
     <header>
-      <p>Test</p>
+      <img src="assets/images/Bande.png" style="width: 7%">
     </header>
   <div id='menu-gauche'>
     <p>Ceci est un autre test</p>
