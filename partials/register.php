@@ -2,6 +2,10 @@
 <?php
 $db = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t',root,'salutlesbro');
 
+if(isset($_POST['formregister']))
+{
+	echo 'bite';
+}
 
 
 
@@ -71,7 +75,7 @@ $db = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t',root,'salutlesbro');
       		<tr>
       			<td><input type="text" placeholder="Pays"></td>
       		</tr>
-			<input type="Submit" value="S'inscrire">
+			<input type="Submit" name="formregister" value="S'inscrire">
     	</table>
       </form>
   	</div>	
