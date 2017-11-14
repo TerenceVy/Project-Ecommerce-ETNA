@@ -31,10 +31,10 @@ header
 
 #menu-gauche
 {
+      width: 20%;
+      float :right ;
       position: absolute;
       right: 0;
-      width :20% ;
-      float :right ;
 }
 
 #contenu
