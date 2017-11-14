@@ -15,6 +15,6 @@ body
     width: 80%;
     margin: auto;
     padding: 25px;
-    background-image: :url("../images/Fond.png");
+    background-image: url("../images/Fond.png");
     background-repeat: no-repeat; 
 }
