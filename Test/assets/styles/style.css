@@ -31,6 +31,8 @@ header
 
 #menu-gauche
 {
+      position: absolute;
+      right: 0;
       width :20% ;
       float :right ;
 }
@@ -43,8 +45,6 @@ header
 
 #sidebar-droite
 {
-      position: absolute;
-      right: 0;
       width :20% ;
       float: right; 
 } 
