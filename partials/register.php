@@ -30,7 +30,7 @@ if(isset($_POST['formregister']))
     }
     else 
     {
-      $msg = 'Un des champs suivant contient plus de 256 caractères: Prénom, Nom, Ville, Adresse';
+      echo 'feqfewfefewfwef';
     }
   }
 
