@@ -14,7 +14,7 @@ body
 header
 {
       width :100% ;
-      background: url("../images/Bande.png");
+      background-image: url("../images/Bande.png");
 }
 
 #menu-gauche
