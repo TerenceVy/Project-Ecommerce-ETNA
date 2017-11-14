@@ -26,12 +26,26 @@
       	<table>
       		<tr>
       			<td><input type="text" placeholder="Nom"></td>
+      		</tr>	
+      		<tr>
       			<td><input type="text" placeholder="Prénom"></td>
+      		</tr>
+      		<tr>
       			<td><input type="text" placeholder="Adresse mail"></td>
+      		</tr>
+      		<tr>
       			<td><input type="text" placeholder="Date de naissance"></td>
+      		</tr>
+      		<tr>
       			<td><input type="text" placeholder="Ville"></td>
+      		</tr>
+      		<tr>
       			<td><input type="text" placeholder="Adresse"></td>
+      		</tr>
+      		<tr>
       			<td><input type="text" placeholder="Code postale"></td>
+      		</tr>
+      		<tr>
       			<td><input type="text" placeholder="Pays"></td>
       		</tr>
 			<input type="Submit" value="S'inscrire">
