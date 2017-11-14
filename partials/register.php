@@ -4,7 +4,7 @@ $db = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t',root,'salutlesbro');
 
 if(isset($_POST['formregister']))
 {
-	echo 'bite';
+	if(!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['mail']) && !empty($_POST['mail2']) && !empty($_POST['password']) && !empty($_POST['password2']) && !empty($_POST['date']) && !empty($_POST['ville']) && !empty($_POST['adresse']) && !empty($_POST['postale']) && !empty($_POST['pays']) &&) 
 }
 
 
@@ -43,37 +43,37 @@ if(isset($_POST['formregister']))
       <form action="" method="POST">
       	<table>
       		<tr>
-      			<td><input type="text" placeholder="Nom"></td>
+      			<td><input type="text" placeholder="Nom" name="nom"></td>
       		</tr>	
       		<tr>
-      			<td><input type="text" placeholder="Prénom"></td>
+      			<td><input type="text" placeholder="Prénom" name="prenom"></td>
       		</tr>
       		<tr>
-      			<td><input type="email" placeholder="Adresse mail"></td>
+      			<td><input type="email" placeholder="Adresse mail" name="mail"></td>
       		</tr>
       		<tr>
-      			<td><input type="email" placeholder="Confirmation adresse mail"></td>
+      			<td><input type="email" placeholder="Confirmation adresse mail" name="mail2"></td>
       		</tr>
       		<tr>
-      			<td><input type="password" placeholder="Mot de passe"></td>
+      			<td><input type="password" placeholder="Mot de passe" name="password"></td>
       		</tr>
       		<tr>
-      			<td><input type="password" placeholder="Confirmation mot de passe"></td>
+      			<td><input type="password" placeholder="Confirmation mot de passe" name="password2"></td>
       		</tr>
       		<tr>
-      			<td><input type="text" placeholder="Date de naissance"></td>
+      			<td><input type="text" placeholder="Date de naissance" name="date"></td>
       		</tr>
       		<tr>
-      			<td><input type="text" placeholder="Ville"></td>
+      			<td><input type="text" placeholder="Ville" name="ville"></td>
       		</tr>
       		<tr>
-      			<td><input type="text" placeholder="Adresse"></td>
+      			<td><input type="text" placeholder="Adresse" name="adresse"></td>
       		</tr>
       		<tr>
-      			<td><input type="text" placeholder="Code postale"></td>
+      			<td><input type="text" placeholder="Code postale" name="postale"></td>
       		</tr>
       		<tr>
-      			<td><input type="text" placeholder="Pays"></td>
+      			<td><input type="text" placeholder="Pays" name="pays"></td>
       		</tr>
 			<input type="Submit" name="formregister" value="S'inscrire">
     	</table>
