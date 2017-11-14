@@ -46,7 +46,7 @@ header
 #sidebar-droite
 {
       width :20% ;
-      margin-right: 0%; 
+      float: right; 
 } 
 
 footer
