@@ -1,7 +1,6 @@
 body
 {
-      width :100% ;
-      height: 100px;
+      width :100%;
       background: url("../images/Fond.png") no-repeat;
 }
 
@@ -14,7 +13,7 @@ body
 header
 {
       margin: 0% 0%;
-      width :99% ;
+      width :100% ;
       background:url("../images/Bande.png");
 }
 
