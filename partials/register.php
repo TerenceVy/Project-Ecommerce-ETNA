@@ -24,10 +24,6 @@ if(isset($_POST['formregister']))
     {
       $msg = 'Un des champs suivant contient plus de 256 caractères: Prénom, Nom, Ville, Adresse';
     }
-    else if ($postalelenght > 8)
-    {
-      $msg = 'Votre code postale contient plus de 8 chiffres';
-    }
     else 
     {
       echo 'feqfewfefewfwef';
