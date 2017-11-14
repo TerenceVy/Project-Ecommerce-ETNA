@@ -24,10 +24,6 @@ if(isset($_POST['formregister']))
     {
       $msg = 'Un des champs suivant contient plus de 256 caractères: Prénom, Nom, Ville, Adresse';
     }
-    if ($postalelenght > 8)
-    {
-      $msg = 'Postale superieur a 8 caract';
-    }
     else 
     {
       $msg = 'feqfewfefewfwef';
