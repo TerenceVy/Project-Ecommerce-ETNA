@@ -17,7 +17,7 @@ header
       background:url("../images/Bande.png");
 }
 
-0{
+.image{
     margin: 0px 0px;
     width: 5%;
     height: auto;
