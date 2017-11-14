@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-$db = new PDO('mysql:host=172.16.227.3;dbname=etnamanga_vy_t',root,'salutlebro');
+$db = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t',root,'salutlebro');
 
 
 
