@@ -30,8 +30,6 @@ if(isset($_POST['formregister']))
       {
         if ($password == $password2)
         {
-          $insertuser = $db->prepare("INSERT INTO Utilisateurs(Nom, Prenom, Date_de_naissance, Ville, Addresse, Code_postale, Rôle, Pays)" VALUES (?,?,?));
-          $insertuser->execute(array($nom, $prenom, $mail, $password, $date, $ville, $addresse, $postale, $pays));
           $msg = 'Votre compte a bien été ajouté'; 
         }
         else 
