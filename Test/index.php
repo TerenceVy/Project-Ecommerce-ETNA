@@ -15,6 +15,7 @@
     <div class="etna"> ETNA MANGA </div>
     </div>
     </header>
+    <br><br><br><br><br><br>
   <div id='menu-gauche'>
     <p>Ceci est un autre test</p>
   </div>
