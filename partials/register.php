@@ -24,14 +24,16 @@
       	<br><br><br>
       <form action="login.php" method="POST">
       	<table>
-      		<td><input type="text" placeholder="Nom"></td>
-      		<td><input type="text" placeholder="Prénom"></td>
-      		<td><input type="text" placeholder="Adresse mail"></td>
-      		<td><input type="text" placeholder="Date de naissance"></td>
-      		<td><input type="text" placeholder="Ville"></td>
-      		<td><input type="text" placeholder="Adresse"></td>
-      		<td><input type="text" placeholder="Code postale"></td>
-      		<td><input type="text" placeholder="Pays"></td>
+      		<tr>
+      			<td><input type="text" placeholder="Nom"></td>
+      			<td><input type="text" placeholder="Prénom"></td>
+      			<td><input type="text" placeholder="Adresse mail"></td>
+      			<td><input type="text" placeholder="Date de naissance"></td>
+      			<td><input type="text" placeholder="Ville"></td>
+      			<td><input type="text" placeholder="Adresse"></td>
+      			<td><input type="text" placeholder="Code postale"></td>
+      			<td><input type="text" placeholder="Pays"></td>
+      		</tr>
 			<input type="Submit" value="S'inscrire">
     	</table>
       </form>
