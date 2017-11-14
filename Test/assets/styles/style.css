@@ -32,13 +32,6 @@ img{
     width: 50px;
 }
 
-@media screen and (max-widht : 1024px)
-{
-    body{
-        background-repeat: no-repeat; 
-        background:url("../images/accueilbutton.png");
-    }
-}
 .bande2{
     position:absolute;
     margin:885px -30px;
@@ -49,6 +42,14 @@ img{
 body{
     background-repeat: no-repeat; 
     background:url("../images/Fond.png");
+}
+
+@media screen and (max-widht : 1024px)
+{
+    body{
+        background-repeat: no-repeat; 
+        background:url("../images/accueilbutton.png");
+    }
 }
 
 .myhero{
