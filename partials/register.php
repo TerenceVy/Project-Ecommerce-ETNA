@@ -26,7 +26,7 @@ if(isset($_POST['formregister']))
     }
     else 
     {
-      echo 'feqfewfefewfwef';
+      $msg = 'feqfewfefewfwef';
     }
   }
 
