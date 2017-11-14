@@ -18,16 +18,15 @@ header
       background:url("../images/Bande.png");
 }
 
-.image{
-    width: 7.7%;
-    height: auto;
-    float: left;
-}
-
 .etna{
       text-align: center;
       color: white;
       font-size: 5vw;
+}
+.image{
+    width: 7.7%;
+    height: auto;
+    float: left;
 }
 
 #menu-gauche
