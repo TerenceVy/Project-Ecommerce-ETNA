@@ -34,6 +34,15 @@
       			<td><input type="email" placeholder="Adresse mail"></td>
       		</tr>
       		<tr>
+      			<td><input type="email" placeholder="Confirmation adresse mail"></td>
+      		</tr>
+      		<tr>
+      			<td><input type="password" placeholder="Mot de passe"></td>
+      		</tr>
+      		<tr>
+      			<td><input type="password" placeholder="Confirmation mot de passe"></td>
+      		</tr>
+      		<tr>
       			<td><input type="text" placeholder="Date de naissance"></td>
       		</tr>
       		<tr>
