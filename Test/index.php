@@ -15,17 +15,14 @@
     <div class="etna"> ETNA MANGA </div>
     </div>
     </header>
-    <br><br><br><br><br><br>
   <div id='menu-gauche'>
     <p>Ceci est un autre test</p>
   </div>
   <div id='contenu'>
-    <p>Je s'appelle GROOT</p><br><br><br>
   </div>
   <div id='sidebar-droite'>
     <p>Ceci est le test 3</p>
   </div>
-  <br><br><br><br><br><br>
   <footer>
   <p>TEst2</p>
   </footer>
