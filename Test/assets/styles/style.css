@@ -18,8 +18,9 @@ header
 }
 
 .image{
-    width: 8%;
+    width: 7%;
     height: auto;
+    float: left;
 }
 
 .etna{
