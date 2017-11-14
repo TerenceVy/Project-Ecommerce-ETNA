@@ -18,7 +18,8 @@ header
 }
 
 .image{
-    margin: 0px 0px;
+
+    float: left;
     width: 8%;
     height: auto;
 }
@@ -26,6 +27,7 @@ header
 .etna{
       text-align: center;
       color:white;
+      float: left;
       font-size: 5vw;
 }
 
