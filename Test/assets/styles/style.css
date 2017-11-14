@@ -5,11 +5,6 @@ body
       background: url("../images/Fond.png") no-repeat;
 }
 
-.center {
-    margin: auto;
-    width: 50%;
-}
-
 #global
 {
       width :100% ;
@@ -31,6 +26,7 @@ header
 }
 
 .etna{    
+      text-align: center;
     vertical-align: text-top;
     width: 355px;
     height:60px;
