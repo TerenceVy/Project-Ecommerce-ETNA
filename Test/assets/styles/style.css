@@ -43,6 +43,7 @@ header
 
 #sidebar-droite
 {
+      text-align: right;
       width :20% ;
       float: left; 
 } 
