@@ -1,4 +1,18 @@
 <!DOCTYPE html>
+<?php
+$db = new PDO('mysql:host=172.16.227.3;dbname=etnamanga_vy_t',root,'salutlebro');
+
+
+
+
+?>
+
+
+
+
+
+
+
 <html>
   <link rel="stylesheet" href="../assets/styles/style.css" type="text/css">
   <head>
