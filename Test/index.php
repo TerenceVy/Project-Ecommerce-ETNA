@@ -8,7 +8,7 @@
 <body>
   <div id='global'>
     <header>
-      <input class="image" type="image" src="assets/images/accueilbutton.png">
+      
     </header>
   </div>
 </body>
