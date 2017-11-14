@@ -31,7 +31,7 @@ header
 
 #menu-gauche
 {
-      width :20% ;
+      width :22% ;
       float :left ;
 }
 
@@ -43,7 +43,7 @@ header
 
 #sidebar-droite
 {
-      width :80% ;
+      width :22% ;
       float: right; 
 } 
 
