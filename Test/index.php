@@ -20,7 +20,7 @@
     <p>Ceci est le test 3</p>
   </div>
   <footer>
-    <p>Copyright</p>
+    <img src="assets/images/Bande.png">
   </footer>
   </div>
 </body>
