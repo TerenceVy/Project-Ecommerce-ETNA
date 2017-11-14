@@ -9,7 +9,7 @@ if(isset($_POST['formregister']))
     $mail = htmlspecialchars($_POST['mail']);
     $mail2 = htmlspecialchars($_POST['mail2']);
     $mdp = sha256($_POST['mdp']);
-    $mdp2 = sha256($_POST['mdp2']) ;
+    $mdp2 = sha256($_POST['mdp2']);
 
     $prenomlenght = strlen($_POST['prenom']);
     $nomlenght = strlen($_POST ['nom']);
@@ -24,7 +24,7 @@ if(isset($_POST['formregister']))
     {
       $msg = 'Un des champs suivant contient plus de 256 caractères: Prénom, Nom, Ville, Adresse';
     }
-    if ($postalelenght > 8)
+    else if ($postalelenght > 8)
     {
       $msg = 'Votre code postale contient plus de 8 chiffres';
     }
