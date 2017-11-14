@@ -31,7 +31,7 @@
       			<td><input type="text" placeholder="Prénom"></td>
       		</tr>
       		<tr>
-      			<td><input type="mail" placeholder="Adresse mail"></td>
+      			<td><input type="email" placeholder="Adresse mail"></td>
       		</tr>
       		<tr>
       			<td><input type="text" placeholder="Date de naissance"></td>
