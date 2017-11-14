@@ -6,7 +6,6 @@
        <title>Etna Manga</title>
   </head>
   
-  
   <body>
     <img src="../assets/images/Bande.png">
     <img src="../assets/images/Bande.png" class="bande2">
