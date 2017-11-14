@@ -18,14 +18,14 @@
     <a href="contact.php" target="_blank">Contact us</a>
     <div align="center">
       <div class="etna"> ETNA MANGA </div>
+  </div>
       <br><br><br><br><br><br><br><br><br>
-      <div align="center">
+    <div align="center">
       	<h3>Inscription</h3>
       <form action="login.php" method="POST">
 		<input type="Submit" value="S'inscrire">
       </form>
-  </div>	
-    	</div>
+  	</div>	
   </body>
   
 </html>
