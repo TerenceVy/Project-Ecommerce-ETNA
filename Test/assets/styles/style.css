@@ -24,6 +24,7 @@ header
       font-size: 5vw;
 }
 .image{
+      float:left;
     width: 7.5%;
     height: auto;
 }
