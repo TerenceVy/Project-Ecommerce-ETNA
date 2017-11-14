@@ -38,9 +38,5 @@ header
 footer
 {
       width :100%
-}
-
-img {
-      width: auto;
-      height: auto;
+      background-image:url(../assets/images/Bande.png);
 }
