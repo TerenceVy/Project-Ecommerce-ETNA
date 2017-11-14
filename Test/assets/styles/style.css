@@ -25,6 +25,14 @@ header
     height: 6%;
 }
 
+.etna{    
+    vertical-align: text-top;
+    width: 355px;
+    height:60px;
+    color:white;
+    font-size:50px;
+}
+
 #menu-gauche
 {
       width :20% ;
