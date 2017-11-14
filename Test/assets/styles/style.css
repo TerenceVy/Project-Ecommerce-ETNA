@@ -40,8 +40,14 @@ img{
 }
 
 body{
-    background-repeat: no-repeat; 
-    background:url("../images/Fond.png");
+    background-color :blue;
+}
+
+@media screen and (max-width: 1024px)
+{
+    body{
+        background-color: red;
+    }
 }
 
 .myhero{
