@@ -9,7 +9,7 @@
 <div id='global'>
     <header>
     <form action="index.php">
-    <div class="etna" align="center"> ETNA MANGA </div>
+    <div class="etna" class="center"> ETNA MANGA </div>
       <input class="image" type="image" src="assets/images/accueilbutton.png">
     </form>
     </header>

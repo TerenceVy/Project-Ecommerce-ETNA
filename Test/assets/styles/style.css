@@ -5,6 +5,11 @@ body
       background: url("../images/Fond.png") no-repeat;
 }
 
+.center {
+    margin: auto;
+    width: 50%;
+}
+
 #global
 {
       width :100% ;
