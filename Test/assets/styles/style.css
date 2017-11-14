@@ -38,5 +38,5 @@ header
 footer
 {
       width :100%
-      background-image:url(../assets/images/Bande.png);
+      background:url("../assets/images/Bande.png");
 }
