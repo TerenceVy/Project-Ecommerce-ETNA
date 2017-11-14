@@ -20,7 +20,7 @@ if(isset($_POST['formregister']))
     $adresselenght = strlen($POST['adresse']);
     $postalelenght = strlen($POST['postale']);
     $payslenght = strlen($_POST['pays']);
-    if (($prenomlenght <= 255) || ($nomlenght <= 255) || ($villelenght <= 255) || ($adresselenght <= 255) || ($payslenght <= 255))
+    if (($prenomlenght >= 255) || ($nomlenght >= 255) || ($villelenght >= 255) || ($adresselenght >= 255) || ($payslenght >= 255))
     {
       $msg = 'Un des champs suivant contient plus de 256 caractères: Prénom, Nom, Ville, Adresse';
     }
