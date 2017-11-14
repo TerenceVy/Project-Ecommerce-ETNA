@@ -34,7 +34,7 @@ header
       width: 20%;
       float :right ;
       position: absolute;
-      right: 0;
+      left: 0;
 }
 
 #contenu
