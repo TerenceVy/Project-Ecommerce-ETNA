@@ -42,7 +42,7 @@ if(isset($_POST['formregister']))
     <div align="center">
       	<h3>Inscription</h3>
       	<br><br><br>
-      <form action="login.php" method="POST">
+      <form action="lhiuhuphp" method="POST">
       	<table>
       		<tr>
       			<td><input type="text" placeholder="Nom" name="nom"></td>
