@@ -10,6 +10,11 @@ if(isset($_POST['formregister']))
     $mail2 = htmlspecialchars($_POST['mail2']);
     $password = hash('sha256', $_POST['password']);
     $password2 = hash('sha256', $_POST['password2']);
+    $nom = $_POST['nom'];
+    $prenom = $_POST['prenom'];
+    $date = $_POST['date'];
+    $ville = $_POST['ville'];
+    $adresse = $_POST['adresse'];
 
     $prenomlenght = strlen($_POST['prenom']);
     $nomlenght = strlen($_POST ['nom']);
@@ -30,8 +35,8 @@ if(isset($_POST['formregister']))
       {
         if ($password == $password2)
         {
-           $insertuser = $db->prepare("INSERT INTO Utilisateurs(Nom, Prenom, Date_de_naissance, Ville, Addresse, Code_postale, Pays)" VALUES (?,?,?));
-          $insertuser->execute(array($nom, $prenom, $mail, $password, $date, $ville, $addresse, $postale, $pays));
+           $insertuser = $db->prepare("INSERT INTO Utilisateurs(Nom, Prenom, Date_de_naissance, Ville, Addresse, Code_postale, Rôle, Pays)" VALUES (?,?,?,?,?,?,?,?));
+          $insertuser->execute(array($nom, $prenom, $mail, $password, $date, $ville, $adresse, $postale, '1', $pays));
           $msg = 'Votre compte a bien été ajouté'; 
         }
         else 
