@@ -1,7 +1,7 @@
 body
 {
       width :100%;
-      background: url("../images/Fond.png") no-repeat;
+      background: url("../images/Fond.png");
 }
 
 #global
