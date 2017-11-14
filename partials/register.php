@@ -26,7 +26,14 @@ if(isset($_POST['formregister']))
     }
     else 
     {
-      $msg = 'feqfewfefewfwef';
+      if ($mail == $mail2)
+      {
+
+      }
+      else
+      {
+        $msg = 'Les adresses mails ne sont pas semblables';
+      }
     }
   }
 
