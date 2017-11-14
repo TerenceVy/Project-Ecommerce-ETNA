@@ -36,13 +36,15 @@ header
 }
 
 #contenu
-{
-     width :60% ;
+{     
+      width :60% ;
       float :right ;
 }
 
 #sidebar-droite
 {
+      position: absolute;
+      right: 0;
       width :20% ;
       float: right; 
 } 
