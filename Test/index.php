@@ -6,7 +6,6 @@
   <meta charset="utf-8">
 </head>
 <body>
-  <div id='global'>
     <header>
     <form action="index.php">
       <input class="image" type="image" src="assets/images/accueilbutton.png">
@@ -24,6 +23,5 @@
   <footer>
   TEst2
   </footer>
-  </div>
 </body>
 </html>
