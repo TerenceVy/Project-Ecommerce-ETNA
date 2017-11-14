@@ -1,79 +1,38 @@
 body
-
 {
-
-            width :100% ;
-
+      width :100% ;
 }
-
- 
 
 #global
-
 {
-
-            width :80% ;
-
-            margin :auto ;
-
-            padding :25px ;
-
-            background :#3c3c3c ;
-
+      width :80% ;
+      margin :auto ;
 }
-
- 
 
 header
-
 {
-
-            width :100% ;
-
+      width :100% ;
 }
-
- 
 
 #menu-gauche
-
 {
-
-            width :20% ;
-
-            float :left ;
-
+      width :20% ;
+      float :left ;
 }
-
- 
 
 #contenu
-
 {
-
-            width :60% ;
-
-            float :left ;
-
+     width :60% ;
+      float :left ;
 }
-
- 
 
 #sidebar-droite
-
 {
-
-            width :20% ;
-
-            float :left ;
-
-}
-
- 
+      width :20% ;
+      float :left ;
+} 
 
 footer
-
 {
-
-            width :100%
-
+      width :100%
 }
