@@ -35,7 +35,8 @@ if(isset($_POST['formregister']))
       {
         if ($password == $password2)
         {
-           $insertuser = $db->prepare("INSERT INTO Utilisateurs (Nom, Prenom, Mail, Password, Date_de_naissance, Ville, Adresse, Code_postale, Rôle, Pays) VALUES ('bite','bite','bite','bite','bite','bite','bite','35', '1', 'bite')");
+           $insertuser = $db->prepare("INSERT INTO Utilisateurs (Nom, Prenom, Mail, Password, Date_de_naissance, Ville, Adresse, Code_postale, Rôle, Pays) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+           $insertuser->execute(array($nom, $prenom, $mail, $password, $date, $ville, $adresse, $postale, '1', $pays));
           $msg = 'Votre compte a bien été ajouté'; 
         }
         else 
