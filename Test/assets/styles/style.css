@@ -50,7 +50,7 @@ header
 .myhero{
     width:87.2%;
     height:47.5%;
-    border-radius: 100%;
+    border-radius: 50%;
     box-shadow: 0 -5px 10px -2px #333;
 }
 
