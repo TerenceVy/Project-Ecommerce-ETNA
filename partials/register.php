@@ -1,4 +1,63 @@
 <!DOCTYPE html>
+<?php
+$db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
+if(isset($_POST['formregister']))
+{
+  $mail = htmlspecialchars($_POST['mail']);
+  $mail2 = htmlspecialchars($_POST['mail2']);
+  $password = hash('sha256', $_POST['password']);
+  $password2 = hash('sha256', $_POST['password2']);
+  $nom = ($_POST['nom']);
+  $prenom = ($_POST['prenom']);
+  $date = ($_POST['date']);
+  $ville = ($_POST['ville']);
+  $adresse = ($_POST['adresse']);
+  $pays = ($_POST['pays']);
+  $postale = ($_POST['postale']);
+
+  if(!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['mail']) && !empty($_POST['mail2']) && !empty($_POST['password']) && !empty($_POST['password2']) && !empty($_POST['date']) && !empty($_POST['ville']) && !empty($_POST['adresse']) && !empty($_POST['postale']) && !empty($_POST['pays'])) 
+  {
+      $prenomlenght = strlen($_POST['prenom']);
+      $nomlenght = strlen($_POST ['nom']);    $maillenght = strlen($_POST['mail']);
+      $mail2lenght = strlen($_POST['mail2']);
+      $datelenght = strlen($POST['date']);
+      $villelenght = strlen($POST['ville']);
+      $adresselenght = strlen($POST['adresse']);
+      $postalelenght = strlen($POST['postale']);
+      $payslenght = strlen($_POST['pays']);
+
+    if (($prenomlenght <= 255) || ($nomlenght <= 255) || ($villelenght <= 255) || ($adresselenght <= 255) || ($payslenght <= 255))
+    {
+    }
+    else 
+    {
+      $msg = 'Un des champs suivant contient plus de 256 caractères: Prénom, Nom, Ville, Adresse';
+    }  
+    if ($mail == $mail2)
+      {
+      } 
+    else 
+    {
+      $msg = 'Les mails ne sont pas semblables';
+    } 
+    if ($password == $password2)
+      {
+        $insertuser = $db->prepare("INSERT INTO Utilisateurs (Nom, Prenom, Mail, Password, Date_de_naissance, Ville, Adresse, Code_postale, Rôle, Pays) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+        $insertuser->execute(array($nom, $prenom, $mail, $password, $date, $ville, $adresse, $postale, '1', $pays));
+        $msg = 'Votre compte a bien été ajouté'; 
+      }
+    else 
+      {
+        $msg = 'Les mots de passe de sont pas identiques';
+      }       
+  }
+  else
+  {
+    $msg = "Tous les champs doivent être complétés";
+  }
+}
+?>
+
 <html>
   <link rel="stylesheet" href="../assets/styles/style.css" type="text/css">
   <head>
@@ -65,65 +124,6 @@
           {echo "$msg";}
       ?>
     </div>  
-
-<?php
-$db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
-if(isset($_POST['formregister']))
-{
-  $mail = htmlspecialchars($_POST['mail']);
-  $mail2 = htmlspecialchars($_POST['mail2']);
-  $password = hash('sha256', $_POST['password']);
-  $password2 = hash('sha256', $_POST['password2']);
-  $nom = ($_POST['nom']);
-  $prenom = ($_POST['prenom']);
-  $date = ($_POST['date']);
-  $ville = ($_POST['ville']);
-  $adresse = ($_POST['adresse']);
-  $pays = ($_POST['pays']);
-  $postale = ($_POST['postale']);
-
-  if(!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['mail']) && !empty($_POST['mail2']) && !empty($_POST['password']) && !empty($_POST['password2']) && !empty($_POST['date']) && !empty($_POST['ville']) && !empty($_POST['adresse']) && !empty($_POST['postale']) && !empty($_POST['pays'])) 
-  {
-      $prenomlenght = strlen($_POST['prenom']);
-      $nomlenght = strlen($_POST ['nom']);    $maillenght = strlen($_POST['mail']);
-      $mail2lenght = strlen($_POST['mail2']);
-      $datelenght = strlen($POST['date']);
-      $villelenght = strlen($POST['ville']);
-      $adresselenght = strlen($POST['adresse']);
-      $postalelenght = strlen($POST['postale']);
-      $payslenght = strlen($_POST['pays']);
-
-    if (($prenomlenght <= 255) || ($nomlenght <= 255) || ($villelenght <= 255) || ($adresselenght <= 255) || ($payslenght <= 255))
-    {
-    }
-    else 
-    {
-      $msg = 'Un des champs suivant contient plus de 256 caractères: Prénom, Nom, Ville, Adresse';
-    }  
-    if ($mail == $mail2)
-      {
-      } 
-    else 
-    {
-      $msg = 'Les mails ne sont pas semblables';
-    } 
-    if ($password == $password2)
-      {
-        $insertuser = $db->prepare("INSERT INTO Utilisateurs (Nom, Prenom, Mail, Password, Date_de_naissance, Ville, Adresse, Code_postale, Rôle, Pays) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-        $insertuser->execute(array($nom, $prenom, $mail, $password, $date, $ville, $adresse, $postale, '1', $pays));
-        $msg = 'Votre compte a bien été ajouté'; 
-      }
-    else 
-      {
-        $msg = 'Les mots de passe de sont pas identiques';
-      }       
-  }
-  else
-  {
-    $msg = "Tous les champs doivent être complétés";
-  }
-}
-?>
 
   </body>
   
