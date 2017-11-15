@@ -125,26 +125,6 @@ if(isset($_POST['formregister']))
       <?php
         if(isset($msg))
           {echo "$msg";}
-              var_dump($mail2);
-      var_dump($password);
-
-var_dump($mail);
-
-var_dump($password2);
-
-var_dump($nom);
-
-var_dump($prenom);
-
-var_dump($date);
-
-var_dump($ville);
-
-var_dump($adresse);
-var_dump($pays);
-var_dump($postale);
-
-session_destroy();
       ?>
     </div>  
 
