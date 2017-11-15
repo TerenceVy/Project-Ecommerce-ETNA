@@ -30,14 +30,20 @@ header
 
 #menu-gauche
 {
-      width: 20%;
+      width: 22%;
       float :left ;
+}
+
+#blanc
+{
+      width: 55%;
+      float: left;
 }
 
 #contenu
 {     
       text-align: center;
-      width :60% ;
+      width :55% ;
       float :left ;
 }
 
@@ -53,7 +59,7 @@ header
 #sidebar-droite
 {
       text-align: right;
-      width :20% ;
+      width :22% ;
       float: left; 
 } 
 

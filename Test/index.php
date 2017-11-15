@@ -17,11 +17,13 @@
     <div align="center">
     <input type="search" name="">
     </div>
-  <div id='menu-gauche'>
+  <div id='menu-gauche'></div>
     <p>Ceci est un autre test</p>
   </div>
+  <div id="blanc">
   <div id='contenu' align="center">
   <br><br><br><br><br>
+  <div id="blanc"></div>
   <img src="assets/images/Myhero.png" class="myhero">
   <p>Je s'appelle GROOT</p>
   </div>
