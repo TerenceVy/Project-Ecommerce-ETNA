@@ -3,6 +3,7 @@ body
       width :100%;
       margin: 0;
       background: url("../images/Fond.png");
+      background-repeat: no-repeat;
 }
 
 #global
@@ -18,11 +19,30 @@ header
       background:url("../images/Bande.png");
 }
 
-.etna{
+.signin
+{
+    position: absolute;
+    margin: 20px 1626px;
+    height: 40px;
+    float:right;
+}
+
+.cart
+{
+    position: absolute;
+    margin: 20px 1770px;
+    height: 40px;
+    float:right;
+}
+
+.etna
+{
       color: white;
       font-size: 4.5vw;
 }
-.image{
+
+.image
+{
       float:left;
     width: 6.8%;
     height: auto;
@@ -32,6 +52,16 @@ header
 {
       width: 22%;
       float :left ;
+}
+
+.kuroko
+{
+    position:absolute;
+    margin:380px 0px;
+    width:490px;
+    height:255px;
+    border-radius: 50px;
+    box-shadow: 0 -5px 10px -2px #333;
 }
 
 #blanc
@@ -47,11 +77,19 @@ header
       float :left ;
 }
 
-.myhero{
+.myhero
+{
     width:87.2%;
     height:47.5%;
     border-radius: 50px;
     box-shadow: 0 -5px 10px -2px #333;
+}
+
+.pop{
+    content:url("../images/PopMyhero.png");
+    margin: 5%;
+    width:11%;
+    height:9%;
 }
 
 #sidebar-droite
@@ -59,7 +97,17 @@ header
       text-align: right;
       width :22% ;
       float: left; 
-} 
+}
+
+.shigatsu
+{
+    position:absolute;
+    margin:380px 1359px;
+    width:490px;
+    height:255px;
+    border-radius: 50px;
+    box-shadow: 0 -5px 10px -2px #333;
+}
 
 footer
 {
@@ -67,4 +115,20 @@ footer
       bottom: 0;
       width :100%;
       background:url("../images/Bande.png");
+}
+
+.cb 
+{
+    position:absolute;
+    margin:919px 45px;
+    width:113px;
+    height:40px;
+}
+
+.secured
+{
+    position:absolute;
+    margin:920px 180px;
+    width:100px;
+    height:43px;
 }
