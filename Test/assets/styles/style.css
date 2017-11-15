@@ -42,7 +42,8 @@ header
 }
 
 .myhero{
-      text-align: center;
+    margin-top: center;
+    margin-left: center;
     width:82.5%;
     height:47.5%;
     border-radius: 50px;
