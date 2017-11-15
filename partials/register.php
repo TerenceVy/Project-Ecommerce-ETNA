@@ -52,8 +52,6 @@ if(isset($_POST['formregister']))
       {
         $insertuser = $db->prepare("INSERT INTO Utilisateurs (Nom, Prenom, Mail, Password, Date_de_naissance, Ville, Adresse, Code_postale, Pays, Role ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?,?)");
         $insertuser->execute(array($nom, $prenom, $mail, $password, $date, $ville, $adresse, $postale, $pays, $role));
-        $insertuser->rowCount();
-        var_dump($insertuser->rowCount());
         $msg = 'Votre compte a bien été ajouté'; 
       }
     else 
