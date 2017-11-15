@@ -20,7 +20,7 @@
   <div id='menu-gauche'>
     <p>Ceci est un autre test</p>
   </div>
-  <div id="blanc"> <p>a</p></div>
+  <div id="blanc"></div>
   <div id='contenu' align="center">
   <br><br><br><br><br>
   <div id="blanc"></div>
