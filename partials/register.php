@@ -128,6 +128,5 @@ if(isset($_POST['formregister']))
       ?>
     </div>  
 
-  </body>
-  
+  </body>  
 </html>
