@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-$db = new PDO('mysql:host=172.16.225.33;dbname=etnamanga_vy_t',root,'salutlesbro');
+$db = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t',root,'salutlesbro');
 
 if(isset($_POST['formregister']))
 {
