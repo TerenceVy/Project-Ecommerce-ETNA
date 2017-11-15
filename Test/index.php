@@ -24,7 +24,7 @@
   <div id='contenu' align="center">
   <br><br><br><br><br>
   <div id="blanc"></div>
-  <img src="assets/images/Myhero.png" class="myhero" <img src="assets/images/PopMyhero.png" class="Pop"> ß>
+  <img src="assets/images/Myhero.png" class="myhero" img src="assets/images/PopMyhero.png" class="Pop">
 
   <p>Je s'appelle GROOT</p>
   </div>
