@@ -11,7 +11,7 @@
     <form action="index.php">
       <input class="image" type="image" src="assets/images/accueilbutton.png">
     </form>
-    <div class="etna" style="margin-right: 55%"> ETNA MANGA </div>
+    <div class="etna" style="margin-right: 0%"> ETNA MANGA </div>
     </header>
     <br><br>
     <div align="center">
