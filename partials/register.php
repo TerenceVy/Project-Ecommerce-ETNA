@@ -18,6 +18,7 @@ if(isset($_POST['formregister']))
   $adresse = ($_POST['adresse']);
   $pays = ($_POST['pays']);
   $postale = ($_POST['postale']);
+  $role = 1;
 
   if(!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['mail']) && !empty($_POST['mail2']) && !empty($_POST['password']) && !empty($_POST['password2']) && !empty($_POST['date']) && !empty($_POST['ville']) && !empty($_POST['adresse']) && !empty($_POST['postale']) && !empty($_POST['pays'])) 
   {
@@ -50,7 +51,7 @@ if(isset($_POST['formregister']))
     if ($password == $password2)
       {
         $insertuser = $db->prepare("INSERT INTO Utilisateurs (Nom, Prenom, Mail, Password, Date_de_naissance, Ville, Adresse, Code_postale, Pays, Rôle ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?,?)");
-        $insertuser->execute(array($nom, $prenom, $mail, $password, $date, $ville, $adresse, $postale, $pays, 1));
+        $insertuser->execute(array($nom, $prenom, $mail, $password, $date, $ville, $adresse, $postale, $pays, $role));
         $insertuser->rowCount();
         var_dump($insertuser->rowCount());
         $msg = 'Votre compte a bien été ajouté'; 
