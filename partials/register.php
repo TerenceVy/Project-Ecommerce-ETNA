@@ -18,13 +18,35 @@ if(isset($_POST['formregister']))
   if(!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['mail']) && !empty($_POST['mail2']) && !empty($_POST['password']) && !empty($_POST['password2']) && !empty($_POST['date']) && !empty($_POST['ville']) && !empty($_POST['adresse']) && !empty($_POST['postale']) && !empty($_POST['pays'])) 
   {
       $prenomlenght = strlen($_POST['prenom']);
-      $nomlenght = strlen($_POST ['nom']);    $maillenght = strlen($_POST['mail']);
+      $nomlenght = strlen($_POST ['nom']);   
+      $maillenght = strlen($_POST['mail']);
       $mail2lenght = strlen($_POST['mail2']);
       $datelenght = strlen($POST['date']);
       $villelenght = strlen($POST['ville']);
       $adresselenght = strlen($POST['adresse']);
       $postalelenght = strlen($POST['postale']);
       $payslenght = strlen($_POST['pays']);
+
+      var_dump($mail2);
+      var_dump($password);
+
+var_dump($mail);
+
+var_dump($password2);
+
+var_dump($nom);
+
+var_dump($prenom);
+
+var_dump($date);
+
+var_dump($ville);
+
+var_dump($adresse);
+var_dump($pays);
+var_dump($postale);
+
+
 
     if (($prenomlenght <= 255) || ($nomlenght <= 255) || ($villelenght <= 255) || ($adresselenght <= 255) || ($payslenght <= 255))
     {
