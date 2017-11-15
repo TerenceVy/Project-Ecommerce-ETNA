@@ -13,17 +13,17 @@ if(isset($_POST['formregister']))
   $date = $_POST['date'];
   $ville = $_POST['ville'];
   $adresse = $_POST['adresse'];
-      $prenomlenght = strlen($_POST['prenom']);
-    $nomlenght = strlen($_POST ['nom']);
-    $maillenght = strlen($_POST['mail']);
-    $mail2lenght = strlen($_POST['mail2']);
-    $datelenght = strlen($POST['date']);
-    $villelenght = strlen($POST['ville']);
-    $adresselenght = strlen($POST['adresse']);
-    $postalelenght = strlen($POST['postale']);
-    $payslenght = strlen($_POST['pays']);
+
   if(!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['mail']) && !empty($_POST['mail2']) && !empty($_POST['password']) && !empty($_POST['password2']) && !empty($_POST['date']) && !empty($_POST['ville']) && !empty($_POST['adresse']) && !empty($_POST['postale']) && !empty($_POST['pays'])) 
   {
+      $prenomlenght = strlen($_POST['prenom']);
+      $nomlenght = strlen($_POST ['nom']);    $maillenght = strlen($_POST['mail']);
+      $mail2lenght = strlen($_POST['mail2']);
+      $datelenght = strlen($POST['date']);
+      $villelenght = strlen($POST['ville']);
+      $adresselenght = strlen($POST['adresse']);
+      $postalelenght = strlen($POST['postale']);
+      $payslenght = strlen($_POST['pays']);
 
     if (($prenomlenght >= 255) || ($nomlenght >= 255) || ($villelenght >= 255) || ($adresselenght >= 255) || ($payslenght >= 255))
     {
@@ -31,7 +31,8 @@ if(isset($_POST['formregister']))
     }
     else 
     {
-      if ($mail == $mail2)
+    }  
+    if ($mail == $mail2)
       {
         if ($password == $password2)
         {
