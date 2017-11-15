@@ -50,19 +50,12 @@ if(isset($_POST['formregister']))
       {
         $msg = 'Les mots de passe de sont pas identiques';
       }       
-      else
-      {
-        $msg = 'Les adresses mails ne sont pas semblables';
-      }
   }
   else
   {
     $msg = "Tous les champs doivent être complétés";
   }
 }
-
-
-
 ?>
 
 <html>
