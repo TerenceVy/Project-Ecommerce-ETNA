@@ -46,6 +46,8 @@ var_dump($adresse);
 var_dump($pays);
 var_dump($postale);
 
+session_destroy();
+
 
 
     if (($prenomlenght <= 255) || ($nomlenght <= 255) || ($villelenght <= 255) || ($adresselenght <= 255) || ($payslenght <= 255))
