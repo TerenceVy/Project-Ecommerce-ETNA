@@ -27,27 +27,6 @@ if(isset($_POST['formregister']))
       $postalelenght = strlen($POST['postale']);
       $payslenght = strlen($_POST['pays']);
 
-      var_dump($mail2);
-      var_dump($password);
-
-var_dump($mail);
-
-var_dump($password2);
-
-var_dump($nom);
-
-var_dump($prenom);
-
-var_dump($date);
-
-var_dump($ville);
-
-var_dump($adresse);
-var_dump($pays);
-var_dump($postale);
-
-session_destroy();
-
 
 
     if (($prenomlenght <= 255) || ($nomlenght <= 255) || ($villelenght <= 255) || ($adresselenght <= 255) || ($payslenght <= 255))
@@ -146,6 +125,26 @@ session_destroy();
       <?php
         if(isset($msg))
           {echo "$msg";}
+              var_dump($mail2);
+      var_dump($password);
+
+var_dump($mail);
+
+var_dump($password2);
+
+var_dump($nom);
+
+var_dump($prenom);
+
+var_dump($date);
+
+var_dump($ville);
+
+var_dump($adresse);
+var_dump($pays);
+var_dump($postale);
+
+session_destroy();
       ?>
     </div>  
 
