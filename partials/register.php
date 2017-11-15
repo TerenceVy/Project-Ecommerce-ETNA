@@ -21,10 +21,10 @@ if(isset($_POST['formregister']))
       $nomlenght = strlen($_POST ['nom']);   
       $maillenght = strlen($_POST['mail']);
       $mail2lenght = strlen($_POST['mail2']);
-      $datelenght = strlen($POST['date']);
-      $villelenght = strlen($POST['ville']);
-      $adresselenght = strlen($POST['adresse']);
-      $postalelenght = strlen($POST['postale']);
+      $datelenght = strlen($_POST['date']);
+      $villelenght = strlen($_POST['ville']);
+      $adresselenght = strlen($_POST['adresse']);
+      $postalelenght = strlen($_POST['postale']);
       $payslenght = strlen($_POST['pays']);
 
 
