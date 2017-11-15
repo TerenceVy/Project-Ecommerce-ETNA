@@ -12,6 +12,7 @@ if(isset($_POST['formregister']))
   $date = ($_POST['date']);
   $ville = ($_POST['ville']);
   $adresse = ($_POST['adresse']);
+  $pays = ($_POST['pays']);
   $postale = ($_POST['postale']);
 
   if(!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['mail']) && !empty($_POST['mail2']) && !empty($_POST['password']) && !empty($_POST['password2']) && !empty($_POST['date']) && !empty($_POST['ville']) && !empty($_POST['adresse']) && !empty($_POST['postale']) && !empty($_POST['pays'])) 
