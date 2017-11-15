@@ -25,20 +25,25 @@ if(isset($_POST['formregister']))
       $postalelenght = strlen($POST['postale']);
       $payslenght = strlen($_POST['pays']);
 
-    if (($prenomlenght >= 255) || ($nomlenght >= 255) || ($villelenght >= 255) || ($adresselenght >= 255) || ($payslenght >= 255))
+    if (($prenomlenght <= 255) || ($nomlenght <= 255) || ($villelenght <= 255) || ($adresselenght <= 255) || ($payslenght <= 255))
     {
-      $msg = 'Un des champs suivant contient plus de 256 caractères: Prénom, Nom, Ville, Adresse';
     }
     else 
     {
+      $msg = 'Un des champs suivant contient plus de 256 caractères: Prénom, Nom, Ville, Adresse';
     }  
     if ($mail == $mail2)
       {
-        if ($password == $password2)
-        {
-           $insertuser = $db->prepare("INSERT INTO Utilisateurs (Nom, Prenom, Mail, Password, Date_de_naissance, Ville, Adresse, Code_postale, Rôle, Pays) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+      } 
+    else 
+    {
+      $msg = 'Les mails ne sont pas semblables';
+    } 
+    if ($password == $password2)
+      {
+        $insertuser = $db->prepare("INSERT INTO Utilisateurs (Nom, Prenom, Mail, Password, Date_de_naissance, Ville, Adresse, Code_postale, Rôle, Pays) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
            $insertuser->execute(array($nom, $prenom, $mail, $password, $date, $ville, $adresse, $postale, '1', $pays));
-          $msg = 'Votre compte a bien été ajouté'; 
+        $msg = 'Votre compte a bien été ajouté'; 
         }
         else 
         {
