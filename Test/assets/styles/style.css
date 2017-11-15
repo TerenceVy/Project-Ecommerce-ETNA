@@ -86,8 +86,9 @@ header
 }
 
 .pop{
+      position: absolute;
     content:url("../images/PopMyhero.png");
-    margin: 5%;
+    margin: 0%;
     width:11%;
     height:9%;
 }
