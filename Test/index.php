@@ -17,7 +17,7 @@
     <div align="center">
     <input type="search" name="">
     </div>
-  <div id='menu-gauche'></div>
+  <div id='menu-gauche'>
     <p>Ceci est un autre test</p>
   </div>
   <div id="blanc"> <p>a</p></div>
