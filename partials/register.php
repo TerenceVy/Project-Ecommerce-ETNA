@@ -50,7 +50,7 @@ if(isset($_POST['formregister']))
     } 
     if ($password == $password2)
       {
-        $insertuser = $db->prepare("INSERT INTO Utilisateurs (Nom, Prenom, Mail, Password, Date_de_naissance, Ville, Adresse, Code_postale, Pays, Rôle ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?,?)");
+        $insertuser = $db->prepare("INSERT INTO Utilisateurs (Nom, Prenom, Mail, Password, Date_de_naissance, Ville, Adresse, Code_postale, Pays, Role ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?,?)");
         $insertuser->execute(array($nom, $prenom, $mail, $password, $date, $ville, $adresse, $postale, $pays, $role));
         $insertuser->rowCount();
         var_dump($insertuser->rowCount());
