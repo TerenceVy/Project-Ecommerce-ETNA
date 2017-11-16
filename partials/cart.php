@@ -16,8 +16,6 @@
     <form action="../index.php">
       <input class="image" type="image" src="../assets/images/accueilbutton.png" value="accueil">
     </form>
-    <div class="panier">
-      <b>Votre panier est actuellement vide.</b></div>
     <div class="cb"></div>
     <div class="secured"></div>
     <a href="contact.php" target="_blank">Contact us</a>
