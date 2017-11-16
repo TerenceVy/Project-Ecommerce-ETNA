@@ -54,8 +54,6 @@ $selection = $panier->getSelection();
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     </head>
     <body>
-
-    <div class="pannn">
         <h2>Contenu du Panier :</h2>
         <?php if(count($selection) == 0){ ?>
             <strong>Panier vide</strong>
@@ -103,6 +101,5 @@ $selection = $panier->getSelection();
                 </tr>
             <?php } ?>
         </table>
-      </div>
     </body>
 </html>
