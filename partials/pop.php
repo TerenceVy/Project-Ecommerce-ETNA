@@ -42,7 +42,8 @@
     </div>
     <div class="cb"></div>
     <div class="secured"></div>
-    <a href="contact.php" target="_blank">Contact us</a>
+    <div class="contact">
+    <a href="contact.php" target="_blank">Contact us</a></div>
     <div class="articles">
     <?php require('Panier.class.php'); 
     session_start();
