@@ -72,7 +72,7 @@ print_r($selection);
                     <td><?php echo $product['id']?></td>
                     <td><?php echo $product['designation']?></td>
                     <td><?php echo $product['price']?>€</td>
-                    <td><a href="index.php?add=<?php echo $k ?>">Ajouter</a></td>
+                    <td><a href="panier.php.php?add=<?php echo $k ?>">Ajouter</a></td>
                 </tr>
             <?php } ?>
         </table>
