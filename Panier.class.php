@@ -38,7 +38,7 @@ class Panier{
     // fonction servant à supprimer un produit sélectionné
     public function delete($numEl)
         {
-        unset($this->selection[$numEl]);
+        $product['quantity']--;
         }
          
     // fonction servant à nettoyer intégralement le panier
