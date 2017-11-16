@@ -23,6 +23,7 @@
     <a href="contact.php" target="_blank">Contact us</a>
   </body>
 </html>
+
 <?php
 require('Panier.class.php');
 session_start();
@@ -89,7 +90,7 @@ $selection = $panier->getSelection();
                     </tr>
             </table>
         <?php } ?>
-        <h2>Liste products :</h2>
+        <h2>Liste produits :</h2>
         <table cellpadding="5" cellspacing="0" border="1">
             <?php foreach($GLOBALS['products'] as $k => &$product){ ?>
                 <tr>
