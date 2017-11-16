@@ -54,7 +54,7 @@ $selection = $panier->getSelection();
     <body>
         <h2>Contenu du Panier :</h2>
         <?php if(count($selection) == 0){ ?>
-            <strong>Panier vide</strong>
+            <strong>Votre panier est actuellement vide</strong>
         <?php }else{ ?>
             <table cellpadding="5" cellspacing="0" border="1">
                 <tr>
