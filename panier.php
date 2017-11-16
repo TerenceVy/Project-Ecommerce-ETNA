@@ -22,7 +22,6 @@ if(isset($_GET['cancel'])){
     $panier->clean();
 }
 $selection = $panier->getSelection();
-print_r($selection);
 ?>
 <html>
     <head>
