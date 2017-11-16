@@ -51,7 +51,5 @@
                     <td><?php echo $product['price']?>€</td>
                     <td><a href="panier.php?add=<?php echo $k ?>">Ajouter</a></td>
                 </tr>
-
   </body>
 </html>
-
