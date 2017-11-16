@@ -78,7 +78,6 @@
                     <td><a href="pop.php?add=<?php echo $k ?>">Ajouter</a></td>
                 </tr>
                 <?php } ?>
-                 <p>Votre article a bien été ajouté dans le panier</p>
     </div>
     </table>
   </body>
