@@ -39,10 +39,6 @@ img{
     height:140px;
 }
 
-body{
-    background-repeat: no-repeat; 
-    background:url("../images/Fond.png");
-}
 
 .myhero{
     position:absolute;
