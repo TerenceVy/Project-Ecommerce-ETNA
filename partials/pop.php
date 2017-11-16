@@ -77,5 +77,6 @@
                     <td><a href="pop.php?add=<?php echo $k ?>">Ajouter</a></td>
                 </tr>
                 <?php } ?>
+    </table>
   </body>
 </html>

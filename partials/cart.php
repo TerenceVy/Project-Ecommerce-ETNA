@@ -88,16 +88,5 @@ $selection = $panier->getSelection();
                     </tr>
             </table>
         <?php } ?>
-        <h2>Liste products :</h2>
-        <table cellpadding="5" cellspacing="0" border="1">
-            <?php foreach($GLOBALS['products'] as $k => &$product){ ?>
-                <tr>
-                    <td><?php echo $product['id']?></td>
-                    <td><?php echo $product['designation']?></td>
-                    <td><?php echo $product['price']?>€</td>
-                    <td><a href="cart.php?add=<?php echo $k ?>">Ajouter</a></td>
-                </tr>
-            <?php } ?>
-        </table>
     </body>
 </html>
