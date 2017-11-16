@@ -76,9 +76,8 @@
                     <td><?php echo $product['price']?>€</td>
                     <td><a href="pop.php?add=<?php echo $k ?>">Ajouter</a></td>
                 </tr>
-                 <p>Votre article a bien été ajouté dans le panier</p>
-                 <clear>
                 <?php } ?>
+                 <p>Votre article a bien été ajouté dans le panier</p>
     </div>
     </table>
   </body>
