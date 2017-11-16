@@ -80,13 +80,13 @@ $selection = $panier->getSelection();
                         <td><?php $totalLigne = $product['price']*$product['quantity'];
                                     $totalPanier += $totalLigne;
                                   echo $totalLigne?> €</td>
-                        <td><a href="panier.php?del=<?php echo $k ?>">Supprimer</a></td>
+                        <td><a href="cart.php?del=<?php echo $k ?>">Supprimer</a></td>
                     </tr>
                 <?php } ?>
                     <tr>
                         <td colspan="4" align="right">Total</td>
                         <td><?php echo $totalPanier ?> €</td>
-                        <td><a href="panier.php?cancel=1">Vider panier</a></td>
+                        <td><a href="cart.php?cancel=1">Vider panier</a></td>
                     </tr>
             </table>
         <?php } ?>
@@ -97,7 +97,7 @@ $selection = $panier->getSelection();
                     <td><?php echo $product['id']?></td>
                     <td><?php echo $product['designation']?></td>
                     <td><?php echo $product['price']?>€</td>
-                    <td><a href="panier.php?add=<?php echo $k ?>">Ajouter</a></td>
+                    <td><a href="cart.php?add=<?php echo $k ?>">Ajouter</a></td>
                 </tr>
             <?php } ?>
         </table>
