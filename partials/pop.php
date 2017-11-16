@@ -46,7 +46,7 @@
     <div class="articles">
     <?php require('Panier.class.php'); 
     session_start();
-   // définition des products
+
     $GLOBALS['products'] = array(
     array('id'=>'P01','designation' => 'Produit 1', 'price' => '35'),
     array('id'=>'P02','designation' => 'Produit 2', 'price' => '30'),
