@@ -45,3 +45,13 @@
     <a href="contact.php" target="_blank">Contact us</a>
   </body>
 </html>
+
+
+<table cellpadding="5" cellspacing="0" border="1">
+            <?php foreach($GLOBALS['products'] as $k => &$product){ ?>
+                <tr>
+                    <td><?php echo $product['id']?></td>
+                    <td><?php echo $product['designation']?></td>
+                    <td><?php echo $product['price']?>€</td>
+                    <td><a href="panier.php?add=<?php echo $k ?>">Ajouter</a></td>
+                </tr>
