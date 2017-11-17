@@ -11,7 +11,7 @@ $db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbr
 $test = $db->exec(SELECT * FROM `Produits` WHERE `ID` = 2)	;
 
    $results = $db->fetchALL(PDO::FETCH_ASSOC);
-while(isset($results[$i]['ID']))
+while(isset($results['ID']))
 {
 echo $results['ID'];
 echo $results['Libelle'];
