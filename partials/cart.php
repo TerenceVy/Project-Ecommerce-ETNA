@@ -56,12 +56,11 @@ $selection = $panier->getSelection();
         <div class="panierv">
             <strong>Votre panier est actuellement vide</strong>
           </div>
-          <div class="panierv"><strong>Votre panier :</strong></div>
         <?php }else{ ?>
             <table cellpadding="5" cellspacing="0" border="1">
                 <tr>
                     <td>Id</td>
-                    <td>Désignation</td>
+                    <td>Nom</td>
                     <td>Prix Unitaire</td>
                     <td>Quantité</td>
                     <td>Prix</td>
