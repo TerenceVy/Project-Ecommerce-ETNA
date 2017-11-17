@@ -35,13 +35,6 @@ $panier = Panier::getInstance();
     if(isset($_GET['add'])){
     $panier->add($_GET['add']);
     }
-    if(isset($_GET['del'])){
-    $panier->delete($_GET['del']);
-    }
-    if(isset($_GET['cancel'])){
-    $panier->clean();
-    }
-    $selection = $panier->getSelection();
 ?>
     <table cellpadding="5" cellspacing="0" border="1">
             <?php foreach($GLOBALS['products'] as $k => &$product){ ?>
