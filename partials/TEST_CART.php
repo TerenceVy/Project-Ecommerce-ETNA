@@ -11,7 +11,7 @@ $test = $db->exec(SELECT * FROM `Produits` WHERE `ID` = 2)	;
 
    $i = 0;
    $results = $db->fetchALL(PDO::FETCH_ASSOC);
-while($results[$i])
+while(isset($results[$i])
 {
 echo $results[$i]['ID'];
 echo $results[$i]['Libelle'];
