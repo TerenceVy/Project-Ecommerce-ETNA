@@ -29,6 +29,7 @@
       <div class="add">
 	<input type="submit" src="assets/images/Cart.png" value="Ajouter au panier">
       </div>
+      <div class="articles">
 <?php require('Panier.class.php'); 
     session_start();
 
@@ -58,5 +59,6 @@ $panier = Panier::getInstance();
                 <?php } ?>
     </div>
     </table>
+  </div>
   </body>
 </html>
