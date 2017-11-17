@@ -57,6 +57,7 @@ $selection = $panier->getSelection();
             <strong>Votre panier est actuellement vide</strong>
           </div>
         <?php }else{ ?>
+        <strong>Votre panier :</strong>
             <table cellpadding="5" cellspacing="0" border="1">
                 <tr>
                     <td>Id</td>
