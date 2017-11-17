@@ -39,34 +39,7 @@
     </form>
     <div class="buy1">
       <input type="submit" value=" Buy it ">
-        <?php require('Panier.class.php'); 
-    session_start();
 
-        $nb = 0;
-    $GLOBALS['products'] = array(
-    array('id'=>'05','designation' => 'Vol.1 MHA', 'price' => '6.99'));
-$panier = Panier::getInstance();
- 
-    if(isset($_GET['add'])){
-    $panier->add($_GET['add']);
-    }
-    if(isset($_GET['del'])){
-    $panier->delete($_GET['del']);
-    }
-    if(isset($_GET['cancel'])){
-    $panier->clean();
-    }
-    $selection = $panier->getSelection();
-?>
-    <table cellpadding="5" cellspacing="0" border="1">
-            <?php foreach($GLOBALS['products'] as $k => &$product){ ?>
-                <tr>
-                    <td><a href="index.php?add=<?php echo $k ?>">Ajouter</a></td>
-                    <td><?php echo $nb ;?></td>
-                </tr>
-                <?php $nb = $nb+1;} ?>
-    </table>
-  </div>
 
 
 
