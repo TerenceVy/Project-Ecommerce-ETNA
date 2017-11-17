@@ -12,7 +12,6 @@
     <img src="../assets/images/secured.png" class="secured">
     <img src="../assets/images/cb.png" class="cb">
     <div class="etna"> ETNA MANGA </div>
-    <a href="contact.php" target="_blank">Contact us</a>
     <form action="../index.php">
       <input class="image" type="image" src="../assets/images/accueilbutton.png" value="accueil">
     </form>
