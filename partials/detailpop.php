@@ -28,8 +28,8 @@
 <?php require('Panier.class.php'); 
     session_start();
 
-    $GLOBALS['products'] = array(
-    array('id'=>'P01','designation' => 'Produit 1', 'price' => '12.99'));
+    //$GLOBALS['products'] = array(
+    //array('id'=>'P01','designation' => 'Produit 1', 'price' => '12.99'));
 $panier = Panier::getInstance();
  
     if(isset($_GET['add'])){
