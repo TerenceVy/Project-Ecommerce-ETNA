@@ -46,7 +46,7 @@ $panier = Panier::getInstance();
     <table cellpadding="5" cellspacing="0" border="1">
             <?php foreach($GLOBALS['products'] as $k => &$product){ ?>
                 <tr>
-                    <td><a href="cart.php?add=<?php echo $k ?>">Ajouter</a></td>
+                    <td><a href="detailpop.php?add=<?php echo $k ?>">Ajouter</a></td>
                 </tr>
                 <?php } ?>
     </div>
