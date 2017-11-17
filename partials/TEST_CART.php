@@ -10,7 +10,7 @@ $db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbr
 $test = $db->exec(SELECT * FROM `Produits` WHERE `ID` = 2)	;
 
    $i = 0;
-   $results = $article->fetchALL(PDO::FETCH_ASSOC);
+   $results = $test->fetchALL(PDO::FETCH_ASSOC);
 while($results[$i])
 {
 echo $results[$i]['ID'];
