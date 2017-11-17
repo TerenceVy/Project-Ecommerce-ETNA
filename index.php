@@ -69,20 +69,12 @@ $panier = Panier::getInstance();
                     <td><?php echo $nb ;?></td>
                 </tr>
                 <?php $nb = $nb+1;} ?>
+       </table>
     </div>
-    </table>
-  </div>
 
 
 
 
-
-
-
-
-
-
-    </div>
     <form action="partials/detailpop.php">
       <div class="buy2">
         <input type="submit" value=" Buy it ">
