@@ -66,7 +66,7 @@ $selection = $panier->getSelection();
                     <td>Prix</td>
                     <td>Action</td>
                 </tr>
- 
+                <div class="panierv">
                 <?php
                 // initialisation total panier
                 $totalPanier=0;
@@ -89,5 +89,6 @@ $selection = $panier->getSelection();
                     </tr>
             </table>
         <?php } ?>
+      </div>
     </body>
 </html>
