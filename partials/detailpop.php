@@ -35,8 +35,6 @@
         $products->execute();
 
         $msg = 'Votre compte a bien été ajouté'; 
-
-        $nb = 0;
     $GLOBALS['products'] = array(
     array('id'=>'P01','designation' => 'Produit 1', 'price' => '12.99'));
 $panier = Panier::getInstance();
@@ -56,7 +54,7 @@ $panier = Panier::getInstance();
             <?php foreach($GLOBALS['products'] as $k => &$product){ ?>
                 <tr>
                     <td><a href="detailpop.php?add=<?php echo $k ?>">Ajouter</a></td>
-                    <td><?php echo $nb ;?></td>
+                  
                 </tr>
                 <?php } ?>
     </div>
