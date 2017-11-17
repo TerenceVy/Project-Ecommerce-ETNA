@@ -37,8 +37,11 @@
         <input type="submit" value= "   Cart   " src="assets/images/Cart.png">
       </div>
     </form>
+
+
+
+
     <div class="buy1">
-      <input type="submit" value=" Buy it ">
         <?php require('Panier.class.php'); 
     session_start();
 
