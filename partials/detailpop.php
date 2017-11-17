@@ -1,3 +1,4 @@
+<?php include('header.php') ;?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,11 +8,7 @@
   </head>
   
   <body>
-<img src="../assets/images/Bande.png">
-    <img src="../assets/images/Bande.png" class="bande2">
-    <img src="../assets/images/secured.png" class="secured">
-    <img src="../assets/images/cb.png" class="cb">
-    <div class="etna"> ETNA MANGA </div>
+
     <form action="../index.php">
       <input class="image" type="image" src="../assets/images/accueilbutton.png" value="accueil">
     </form>
