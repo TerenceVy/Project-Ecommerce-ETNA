@@ -6,7 +6,6 @@
 
 
 <body>
-</body>
 DESCRIPTION
 
 
