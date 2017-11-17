@@ -16,3 +16,4 @@
         <input type="submit" value= "   Cart   " src="assets/images/Cart.png">
       </div>
     </form>
+       <div class="etna"> ETNA MANGA </div>
