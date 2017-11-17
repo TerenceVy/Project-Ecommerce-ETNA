@@ -37,11 +37,8 @@
         <input type="submit" value= "   Cart   " src="assets/images/Cart.png">
       </div>
     </form>
-
-
-
-
     <div class="buy1">
+      <input type="submit" value=" Buy it ">
         <?php require('Panier.class.php'); 
     session_start();
 
@@ -64,20 +61,23 @@ $panier = Panier::getInstance();
     <table cellpadding="5" cellspacing="0" border="1">
             <?php foreach($GLOBALS['products'] as $k => &$product){ ?>
                 <tr>
-                    <td>
-                      <form action="index.php">
-                      <input type="submit" value=" Buy it ">
-                    </form>
-                    </td>
+                    <td><a href="index.php?add=<?php echo $k ?>">Ajouter</a></td>
                     <td><?php echo $nb ;?></td>
                 </tr>
                 <?php $nb = $nb+1;} ?>
-       </table>
+    </table>
+  </div>
+
+
+
+
+
+
+
+
+
+
     </div>
-
-
-
-
     <form action="partials/detailpop.php">
       <div class="buy2">
         <input type="submit" value=" Buy it ">
