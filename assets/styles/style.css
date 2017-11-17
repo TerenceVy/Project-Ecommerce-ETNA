@@ -6,6 +6,7 @@
 }
 
 img{
+    position:absolute;
     margin: -55px -30px;
     width: 1925px;
     height: 118px;
