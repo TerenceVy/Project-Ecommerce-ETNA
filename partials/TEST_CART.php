@@ -7,7 +7,7 @@
 <body>
 	DESCRIPTION
 <?php 
-$test = $db->prepare("SELECT categories.libelle FROM categories");
+$test = $db->prepare("SELECT * FROM Produits WHERE ID = 2");
     $test->execute();
    $results = ($db->fetchALL(PDO::FETCH_ASSOC));
 
