@@ -5,6 +5,7 @@
 </head>
 
 <body>
+	DESCRIPTION
 <?php 
 $db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
 $test = $db->exec(SELECT * FROM `Produits` WHERE `ID` = 2)	;
@@ -21,9 +22,6 @@ echo $results[$i]['Nombres_produit'];
 $i++;
 }
 ?>
-DESCRIPTION
-
-
 
 
 
