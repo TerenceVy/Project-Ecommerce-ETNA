@@ -7,7 +7,6 @@
   </head>
 
   <body>
-    <footer>COPYRIGHT</footer>
     <img src="assets/images/Bande.png" class="bande">
     <img src="assets/images/Bande.png" class="bande2">
     <form action="index.php">
