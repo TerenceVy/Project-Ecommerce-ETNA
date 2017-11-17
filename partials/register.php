@@ -81,7 +81,6 @@ if(isset($_POST['formregister']))
     </form>
     <img src="../assets/images/secured.png" class="secured">
     <img src="../assets/images/cb.png" class="cb">
-    <a href="contact.php" target="_blank">Contact us</a>
     <div align="center">
       <div class="etna"> ETNA MANGA </div>
   </div>
