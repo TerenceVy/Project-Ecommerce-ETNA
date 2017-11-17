@@ -28,6 +28,35 @@
     <form action="index.php">
       <div class="add">
 	<input type="submit" src="assets/images/Cart.png" value="Ajouter au panier">
-      </div>2
+      </div>
+<?php require('Panier.class.php'); 
+    session_start();
+
+    $GLOBALS['products'] = array(
+    array('id'=>'P01','designation' => 'Produit 1', 'price' => '12.99');
+$panier = Panier::getInstance();
+ 
+    if(isset($_GET['add'])){
+    $panier->add($_GET['add']);
+    }
+    if(isset($_GET['del'])){
+    $panier->delete($_GET['del']);
+    }
+    if(isset($_GET['cancel'])){
+    $panier->clean();
+    }
+    $selection = $panier->getSelection();
+    ?>
+    <table cellpadding="5" cellspacing="0" border="1">
+            <?php foreach($GLOBALS['products'] as $k => &$product){ ?>
+                <tr>
+                    <td><?php echo $product['id']?></td>
+                    <td><?php echo $product['designation']?></td>
+                    <td><?php echo $product['price']?>€</td>
+                    <td><a href="pop.php?add=<?php echo $k ?>">Ajouter</a></td>
+                </tr>
+                <?php } ?>
+    </div>
+    </table>
   </body>
 </html>
