@@ -58,7 +58,7 @@ $panier = Panier::getInstance();
                     <td><a href="detailpop.php?add=<?php echo $k ?>">Ajouter</a></td>
                     <td><?php echo $nb ;?></td>
                 </tr>
-                <?php $nb++;} ?>
+                <?php } ?>
     </div>
     </table>
   </div>
