@@ -7,9 +7,11 @@
 	        </head>
 
   <body>
-  <img src="../assets/images/Bande.png">
-      <img src="../assets/images/Bande.png" class="bande2">
-          <img src="../assets/images/secured.png" class="secured">
-	      <img src="../assets/images/cb.png" class="cb">
-	          <div class="etna"> ETNA MANGA </div>
-		      <a href="contact.php" target="_blank">Contact us</a>
+    <footer>COPYRIGHT</footer>
+    <img src="assets/images/Bande.png" class="bande">
+    <img src="assets/images/Bande.png" class="bande2">
+    <form action="index.php">
+      <input class="image" type="image" src="assets/images/accueilbutton.png">
+    </form>
+    <img src="assets/images/cb.png" class="cb">
+        <img src="assets/images/secured.png" class="secured">
