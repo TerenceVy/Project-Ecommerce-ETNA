@@ -2,7 +2,7 @@
     <img src="../assets/images/Bande.png" class="bande">
     <img src="../assets/images/Bande.png" class="bande2">
     <form action="index.php">
-      <input class="image" type="image" src="assets/images/accueilbutton.png">
+      <input class="image" type="image" src="../assets/images/accueilbutton.png">
     </form>
     <img src="../assets/images/cb.png" class="cb">
         <img src="../assets/images/secured.png" class="secured">
