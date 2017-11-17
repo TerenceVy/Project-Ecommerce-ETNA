@@ -7,7 +7,6 @@
     <title>Detail POP</title>
   </head>
   
-  <body>
 
     <form action="../index.php">
       <input class="image" type="image" src="../assets/images/accueilbutton.png" value="accueil">
