@@ -74,7 +74,7 @@ $selection = $panier->getSelection();
                     <tr>
                         <td><?php echo $product['id'] ?></td>
                         <td><?php echo $product['designation'] ?></td>
-                        <td><?php echo $product['price'] ?>€</td>
+                        <td><?php echo $product['price'] ?>$</td>
                         <td><?php echo $product['quantity'] ?></td>
                         <td><?php $totalLigne = $product['price']*$product['quantity'];
                                     $totalPanier += $totalLigne;
