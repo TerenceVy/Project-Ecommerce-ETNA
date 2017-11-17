@@ -1,5 +1,5 @@
   <body>
-    <img src="../images/Bande.png" class="bande">
+    <img src="images/Bande.png" class="bande">
     <img src="assets/images/Bande.png" class="bande2">
     <form action="index.php">
       <input class="image" type="image" src="assets/images/accueilbutton.png">
