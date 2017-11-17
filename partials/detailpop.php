@@ -54,7 +54,7 @@ $panier = Panier::getInstance();
                     <td><?php echo $product['id']?></td>
                     <td><?php echo $product['designation']?></td>
                     <td><?php echo $product['price']?>€</td>
-                    <td><a href="pop.php?add=<?php echo $k ?>">Ajouter</a></td>
+                    <td><a href="detailpop.php?add=<?php echo $k ?>">Ajouter</a></td>
                 </tr>
                 <?php } ?>
     </div>
