@@ -73,7 +73,6 @@
       <span>★ ★ ★ ★ ☆ </span>
     </div>
 
-    <a href="partials/contact.php" target="_blank">Contact us</a>
   </body>
 
 </html>

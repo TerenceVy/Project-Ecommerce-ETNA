@@ -18,7 +18,7 @@
     </form>
     <div class="cb"></div>
     <div class="secured"></div>
-    <a href="contact.php" target="_blank">Contact us</a>
+
   </body>
 </html>
 

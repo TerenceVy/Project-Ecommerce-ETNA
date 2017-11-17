@@ -15,7 +15,6 @@
     <form action="../index.php"> 
       <input class="image" type="image" src="../assets/images/accueilbutton.png" value="accueil">
     </form>
-    <a href="contact.php" target="_blank">Contact us</a>
     <div align="center">
       <div class="etna"> ETNA MANGA </div>
     </div>
