@@ -42,7 +42,6 @@ $panier = Panier::getInstance();
     $panier->clean();
     }
     $selection = $panier->getSelection();
-    echo  $_SESSION['panier'];
 ?>
     <table cellpadding="5" cellspacing="0" border="1">
             <?php foreach($GLOBALS['products'] as $k => &$product){ ?>
