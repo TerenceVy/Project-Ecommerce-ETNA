@@ -47,11 +47,9 @@
     session_start();
 
     $GLOBALS['products'] = array(
-    array('id'=>'P01','designation' => 'Produit 1', 'price' => '12.99'),
-    array('id'=>'P02','designation' => 'Produit 2', 'price' => '14.99'),
-    array('id'=>'P03','designation' => 'Produit 3', 'price' => '14.99'),
-    array('id'=>'P04','designation' => 'Produit 4', 'price' => '15'),
-    array('id'=>'P05','designation' => 'Produit 5', 'price' => '37')
+    array('id'=>'01','designation' => 'Figurine All Might', 'price' => '12.99'),
+    array('id'=>'02','designation' => 'Figurine Shinoa', 'price' => '14.99'),
+    array('id'=>'03','designation' => 'Figurine L', 'price' => '14.99')
     );
  
     $panier = Panier::getInstance();
