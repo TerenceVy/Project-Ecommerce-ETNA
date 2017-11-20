@@ -9,7 +9,7 @@
 
 <?php 
 $db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
-$req = $db->prepare('SELECT * FROM Produits WHERE ID = 2');
+$req = $db->prepare('SELECT * FROM Produits');
     $req->execute();
 $results = $req->fetchALL();
 foreach ($results as $key) {
