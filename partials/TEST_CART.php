@@ -13,11 +13,19 @@ $test = $db->prepare('SELECT * FROM Produits WHERE ID = 2 ');
     $test->execute();
 $results = $test->fetchALL();
 foreach ($results as $key) {
-echo $key['ID'];
-echo $key['Libelle'];
-echo $key['Description'];
-echo $key['Prix_vente'];
-echo $key['Nombres_produit'];
+	?>
+	<table>
+		<tr><?php
+	echo $key['ID'];?></tr>
+	<tr><?php
+	echo $key['Libelle'];?></tr>
+	<tr><?php
+	echo $key['Description'];?></tr>
+	<tr><?php
+	echo $key['Prix_vente'];?></tr>
+	<tr><?php
+	echo $key['Nombres_produit'];?></tr>
+	</table>
 }
 ?>
 
