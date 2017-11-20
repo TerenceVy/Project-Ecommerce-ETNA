@@ -39,17 +39,6 @@
     </form>
     <div class="buy1">
       <input type="submit" value=" Buy it ">
-
-
-
-
-
-
-
-
-
-
-
     </div>
     <form action="partials/detailpop.php">
       <div class="buy2">
