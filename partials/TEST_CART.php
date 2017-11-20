@@ -12,9 +12,18 @@ $db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbr
 $test = $db->prepare('SELECT * FROM Produits WHERE ID = 2 ');
     $test->execute();
 $results = $test->fetchALL();
-foreach ($results as $key) {
 	?>
 	<table border="20" bgcolor="yellow">
+	<tr>
+		<td>ID du produit</td>
+		<td>Libelle</td>
+		<td>Description</td>
+		<td>Prix de vente</td>
+		<td>Nombre de produit</td>
+	</tr>
+	<?php
+	foreach ($results as $key) {
+		?>
 		<tr>
 		<td>
 		<?php
