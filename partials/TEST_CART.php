@@ -17,7 +17,7 @@ foreach ($results as $key) {
 	<table>
 		<tr><?php
 	echo $key['ID'];?></tr>
-	<tr><?php
+	<tr><br><?php
 	echo $key['Libelle'];?></tr>
 	<tr><?php
 	echo $key['Description'];?></tr>
