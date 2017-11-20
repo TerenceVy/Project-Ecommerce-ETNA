@@ -27,6 +27,9 @@ $req = $db->prepare('SELECT ID, Libelle, Description, Prix_vente, Nombres_produi
 		<tr>
 		<td>
 		<?php
+	echo $key['ID'];?></td>
+	<td>
+		<?php
 	echo $key['Libelle'];?></td>
 	<td><?php
 	echo $key['Description'];?></td>
