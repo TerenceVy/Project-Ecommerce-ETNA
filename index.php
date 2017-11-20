@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Etna Manga</title>
-  <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+  <link rel="stylesheet" href="assets/styles/style.css">
   <meta charset="utf-8">
 </head>
 <body>
