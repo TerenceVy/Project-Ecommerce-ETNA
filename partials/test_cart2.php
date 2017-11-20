@@ -14,7 +14,7 @@ $req = $db->prepare('SELECT * FROM Produits');
 $results = $req->fetchALL();
 foreach ($results as $key) {
 	?>
-	<table border="20" bgcolor="yellow">
+	<table border="20" bgcolor="lightblue">
 		<tr>
 		<td>
 		<?php
