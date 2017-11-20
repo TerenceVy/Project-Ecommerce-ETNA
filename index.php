@@ -7,11 +7,13 @@
   </head>
 
   <body>
-    <img src="assets/images/Bande.png" class="bande">
-    <img src="assets/images/Bande.png" class="bande2">
-    <form action="index.php">
-      <input class="image" type="image" src="assets/images/accueilbutton.png">
+  <div id='global'>
+  <header>
+    <input class="image" type="image" src="assets/images/accueilbutton.png" style="width: 7%; height: auto">
     </form>
+    <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
+    <input type="search" name="search" style="position: fixed; top: 25px; right: 50px">
+  </header>
     <img src="assets/images/cb.png" class="cb">
     <img src="assets/images/secured.png" class="secured">
     <img src="assets/images/Myhero.png" class="myhero">
@@ -72,7 +74,7 @@
     <div class="rating3">
       <span>★ ★ ★ ★ ☆ </span>
     </div>
-
+  </div>
   </body>
 
 </html>
