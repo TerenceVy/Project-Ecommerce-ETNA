@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" href="assets/styles/style.css" type="text/css">
@@ -39,17 +39,6 @@
     </form>
     <div class="buy1">
       <input type="submit" value=" Buy it ">
-
-
-
-
-
-
-
-
-
-
-
     </div>
     <form action="partials/detailpop.php">
       <div class="buy2">
