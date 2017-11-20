@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Description produit</title>
-</head>
-
-<body>
-	DESCRIPTION
 <?php 
 $db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
 $test = $db->prepare('SELECT * FROM Produits WHERE ID = 2 ');
@@ -21,6 +13,14 @@ echo $key['Prix_vente'];
 echo $key['Nombres_produit'];
 }
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Description produit</title>
+</head>
+
+<body>
+	DESCRIPTION
 
 
 
