@@ -9,11 +9,11 @@
 
 <?php 
 $db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
-$req = $db->prepare('SELECT Libelle, Description, Prix_vente, Nombres_produit FROM Produits');
+$req = $db->prepare('SELECT ID, Libelle, Description, Prix_vente, Nombres_produit FROM Produits');
     $req->execute();
 $results = $req->fetchALL();
 	?>
-	<table border="20" bgcolor="lightblue">
+	<table border="1" bgcolor="lightblue">
 	<tr>
 		<td>ID du produit</td>
 		<td>Libelle</td>
@@ -31,7 +31,7 @@ $results = $req->fetchALL();
 	<td><?php
 	echo $key['Description'];?></td>
 	<td><?php
-	echo $key['Prix_vente'];?></td>
+	echo $key['Prix_vente'] . "";?></td>
 	<td><?php
 	echo $key['Nombres_produit'];?></td>
 	</tr>
