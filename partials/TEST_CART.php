@@ -12,6 +12,7 @@ $test = $db->prepare('SELECT * FROM Produits WHERE ID = 2 ');
     $test->execute();
   // $results = ($db->fetchALL(PDO::FETCH_ASSOC));
 $results = $test->fetchALL();
+var_dump($results);
 foreach ($results as $key) {
 echo $key['ID'];
 echo $key['Libelle'];
