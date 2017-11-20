@@ -12,7 +12,7 @@
       <input class="image" type="image" src="assets/images/accueilbutton.png" style="width: 7%; height: auto">
     </form>
     <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
-    <input type="search" name="search" style="position: fixed; top: 5px; left: 10px">
+    <input type="search" name="search" style="position: fixed; top: 5px; right: 10px">
     </header>
   <div id='menu-gauche'>
     <p>Ceci est un autre test</p>
