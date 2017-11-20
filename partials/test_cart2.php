@@ -11,7 +11,7 @@
 $db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
 $req = $db->prepare('SELECT * FROM Produits WHERE ID = 2');
     $req->execute();
-$results = $test->fetchALL();
+$results = $req->fetchALL();
 foreach ($results as $key) {
 	?>
 	<table border="20" bgcolor="yellow">
