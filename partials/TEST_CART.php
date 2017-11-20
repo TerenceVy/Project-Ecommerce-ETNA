@@ -14,7 +14,7 @@ $test = $db->prepare('SELECT * FROM Produits WHERE ID = 2 ');
 $results = $test->fetchALL();
 foreach ($results as $key) {
 	?>
-	<table border="9">
+	<table border="100">
 		<tr>
 		<td>
 		<?php
