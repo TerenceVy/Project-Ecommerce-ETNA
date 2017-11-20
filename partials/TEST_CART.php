@@ -19,7 +19,7 @@ foreach ($results as $key) {
 		<td>
 		<?php
 	echo $key['ID'];?></td>
-	<td><br><?php
+	<td><?php
 	echo $key['Libelle'];?></td>
 	<td><?php
 	echo $key['Description'];?></td>
