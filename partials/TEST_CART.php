@@ -26,6 +26,7 @@ foreach ($results as $key) {
 	<tr><?php
 	echo $key['Nombres_produit'];?></tr>
 	</table>
+<?php	
 }
 ?>
 
