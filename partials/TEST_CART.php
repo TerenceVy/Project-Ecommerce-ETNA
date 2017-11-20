@@ -24,7 +24,7 @@ foreach ($results as $key) {
 	<td><?php
 	echo $key['Description'];?></td>
 	<td><?php
-	echo $key['Prix_vente'] . "$";?></td>
+	echo $key['Prix_vente'] . " $";?></td>
 	<td><?php
 	echo $key['Nombres_produit'];?></td>
 	</tr>
