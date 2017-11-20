@@ -13,7 +13,7 @@ $test = $db->prepare('SELECT * FROM Produits WHERE ID = 2 ');
     $test->execute();
 $results = $test->fetchALL();
 	?>
-	<table border="20" bgcolor="lightgray">
+	<table border="1" bgcolor="lightgray">
 	<tr>
 		<td>ID du produit</td>
 		<td>Libelle</td>
