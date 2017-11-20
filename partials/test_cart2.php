@@ -9,8 +9,8 @@
 
 <?php 
 $db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
-$test = $db->prepare('SELECT * FROM Produits WHERE ID = 2');
-    $test->execute();
+$req; = $db->prepare('SELECT * FROM Produits WHERE ID = 2');
+    $req->execute();
 $results = $test->fetchALL();
 foreach ($results as $key) {
 	?>
