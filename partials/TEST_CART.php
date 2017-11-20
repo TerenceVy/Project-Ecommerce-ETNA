@@ -15,16 +15,19 @@ $results = $test->fetchALL();
 foreach ($results as $key) {
 	?>
 	<table border="5">
-		<tr><?php
-	echo $key['ID'];?></tr>
+		<tr>
+		<td>
+		<?php
+	echo $key['ID'];?></td>
 	<td><br><?php
 	echo $key['Libelle'];?></td>
-	<tr><?php
-	echo $key['Description'];?></tr>
-	<tr><?php
-	echo $key['Prix_vente'];?></tr>
-	<tr><?php
-	echo $key['Nombres_produit'];?></tr>
+	<td><?php
+	echo $key['Description'];?></td>
+	<td><?php
+	echo $key['Prix_vente'];?></td>
+	<td><?php
+	echo $key['Nombres_produit'];?></td>
+	</tr>
 	</table>
 <?php	
 }
