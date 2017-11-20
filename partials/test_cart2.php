@@ -7,11 +7,6 @@
 <body>
 	DESCRIPTION
 
-<?php 
-$db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
-$req = $db->prepare('SELECT ID, Libelle, Description, Prix_vente, Nombres_produit FROM Produits');
-    $req->execute();
-	?>
 	<table border="1" bgcolor="lightblue">
 	<tr>
 		<td>ID du produit</td>
@@ -20,7 +15,10 @@ $req = $db->prepare('SELECT ID, Libelle, Description, Prix_vente, Nombres_produi
 		<td>Prix de vente</td>
 		<td>Nombre de produit</td>
 	</tr>
-	<?php
+	<?php 
+$db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
+$req = $db->prepare('SELECT ID, Libelle, Description, Prix_vente, Nombres_produit FROM Produits');
+    $req->execute();
 	$results = $req->fetchALL();
 	foreach ($results as $key) {
 		?>
