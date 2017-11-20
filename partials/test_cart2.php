@@ -22,8 +22,8 @@ $req = $db->prepare('SELECT ID, Libelle, Description, Prix_vente, Nombres_produi
 	$results = $req->fetchALL();
 	foreach ($results as $key) {
 		?>
-		<tr>
-		<td>
+	<tr>
+	<td>
 		<?php
 	echo $key['ID'];?></td>
 	<td>
@@ -36,10 +36,9 @@ $req = $db->prepare('SELECT ID, Libelle, Description, Prix_vente, Nombres_produi
 	<td><?php
 	echo $key['Nombres_produit'];?></td>
 	</tr>
-	</table>
 <?php	
 }
 ?>
-
+</table>
 </body>
 </html>
