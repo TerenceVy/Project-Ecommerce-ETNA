@@ -20,7 +20,7 @@ if(isset($_POST['formregister']))
   $postale = ($_POST['postale']);
   $role = 1;
 
-  if(isset($_POST['formregister'])
+  if(isset($_POST['formregister']))
   {
       $prenomlenght = strlen($_POST['prenom']);
       $nomlenght = strlen($_POST ['nom']);   
