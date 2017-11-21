@@ -24,22 +24,39 @@ if(isset($_POST['formregister']))
   
     if ($mail == $mail2)
       {
+        if (filter_var($mail, FILTER_VALIDATE_EMAIL))
+        {
+          $requser = $db->prepare("SELECT * FROM Utilisateurs WHERE MAIL = ?");
+          $requser->execute(array($mail));
+          $nb = $requser->rowCount();
+            if ($nb == 0)
+            {
+              if ($password == $password2)
+                {
+                  $insertuser = $db->prepare("INSERT INTO Utilisateurs (Nom, Prenom, Mail, Password, Date_de_naissance, Ville, Adresse, Code_postale, Pays, Role ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?,?)");
+                  $insertuser->execute(array($nom, $prenom, $mail, $password, $date, $ville, $adresse, $postale, $pays, $role));
+                  $msg = 'Votre compte a bien été ajouté';
+                  header("Location: login.php");
+                }
+              else 
+                {
+                  $msg = 'Les mots de passe de sont pas similaires';
+                }
+            }
+          else
+          {
+            $msg = 'Cette adresse email est deja utilise';
+          }
+        }
+        else
+        {
+          $msg = 'Veuillez rentrer une adresse mail valide';
+        }
       } 
     else 
     {
-      $msg = 'Les mails ne sont pas semblables';
-    } 
-    if ($password == $password2)
-      {
-        $insertuser = $db->prepare("INSERT INTO Utilisateurs (Nom, Prenom, Mail, Password, Date_de_naissance, Ville, Adresse, Code_postale, Pays, Role ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?,?)");
-        $insertuser->execute(array($nom, $prenom, $mail, $password, $date, $ville, $adresse, $postale, $pays, $role));
-        $msg = 'Votre compte a bien été ajouté'; 
-      }
-    else 
-      {
-        $msg = 'Les mots de passe de sont pas identiques';
-      }       
-    }
+      $msg = 'Les adresses mails ne sont pas semblables';
+    }        
   else
   {
     $msg = "Tous les champs doivent être complétés";
