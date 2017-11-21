@@ -1,3 +1,28 @@
+<?php
+session_start();
+
+$bd = new PDO('mysql:host=localhost;dbname=projet', 'root', 'salutlesbro');
+
+if (isset($_POST['Connection']))
+{
+  $log_mail = htmlspecialchars($_POST['email']);
+  $log_passwd = hash('sha256', $_POST['passwd']);
+  $requser = $bd->prepare("SELECT * FROM Utilisateurs WHERE Mail = ? AND Password = ?");
+  $requser->execute(array($log_mail, $log_passwd));
+  $count = $requser->rowCount();
+  if($count ==1)
+  {
+    $userinfo = $requser->fetch();
+    $_SESSION['ID'] = $userinfo['ID'];
+    header("Location: index.php?ID=".$_SESSION['ID']);
+  }
+  else
+  {
+    echo "Verifiez vos informations"
+  }
+}
+?>
+
 <!DOCTYPE html>
 <html>
   <link rel="stylesheet" href="../assets/styles/style.css" type="text/css">
@@ -27,7 +52,7 @@
 	    <br>
 	    <input type="Password" name="passwd" placeholder="Password" required><br>
 	    <br>
-	    <input type="Submit" value="Sign in">
+	    <input type="Submit" value="Sign in" name="Connection">
 	  </form>
 	  <form action="register.php">
 	    <input type="Submit" value="Register">
