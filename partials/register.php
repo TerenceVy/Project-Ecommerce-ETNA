@@ -26,7 +26,7 @@ if(isset($_POST['formregister']))
       {
         if (filter_var($mail, FILTER_VALIDATE_EMAIL))
         {
-          $requser = $db->prepare("SELECT * FROM Utilisateurs WHERE MAIL = ?");
+          $requser = $db->prepare("SELECT * FROM Utilisateurs WHERE Mail = ?");
           $requser->execute(array($mail));
           $nb = $requser->rowCount();
             if ($nb == 0)
