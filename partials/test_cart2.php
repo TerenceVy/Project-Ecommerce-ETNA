@@ -6,7 +6,7 @@
 <body>
 	DESCRIPTION
 <img src="" style="width: 5%; height: auto">
-	<table border="1" bgcolor="lightblue">
+	<table border="1" align="center">
 	<tr>
 		<td>Produit</td>
 		<td>Libelle</td>
