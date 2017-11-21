@@ -14,67 +14,41 @@
       <input class="image" type="image" src="../assets/images/accueilbutton.png" value="accueil">
     </form>
     <div class="etna"> ETNA MANGA </div>
-<img src="../assets/images/shinoa.png" class="shinoa">
-    <div class="fig2">
-      Figurine Shinoa à 14.99$  
-    </div>
-
-<img src="../assets/images/L.png" class="L">
-      <div class="fig3">
-      Figurine L 14.99$
-    </div>
-<img src="../assets/images/PopMyhero.png" class="allmight">
-
-    <div class="fig1">
-      Figurine All Might à SEULEMENT 12.99$
-    </div>
-
-    <form action="detailpop.php">
-      <div class="achatpop">
-	<input type="submit" value="  View Details   ">
-      </div>
-    </form>
-    <div class="achatpop2">
-      <input type="submit" value="  View Details  ">
-    </div>
-    <div class="achatpop3">
-      <input type="submit" value="  View Details   ">
-    </div>
-    <div class="cb"></div>
-    <div class="secured"></div>
-    <div class="articles">
-    <?php require('Panier.class.php'); 
-    session_start();
-
-    $GLOBALS['products'] = array(
-    array('id'=>'01','designation' => 'Figurine All Might', 'price' => '12.99'),
-    array('id'=>'02','designation' => 'Figurine Shinoa', 'price' => '14.99'),
-    array('id'=>'03','designation' => 'Figurine L', 'price' => '14.99')
-    );
- 
-    $panier = Panier::getInstance();
- 
-    if(isset($_GET['add'])){
-    $panier->add($_GET['add']);
-    }
-    if(isset($_GET['del'])){
-    $panier->delete($_GET['del']);
-    }
-    if(isset($_GET['cancel'])){
-    $panier->clean();
-    }
-    $selection = $panier->getSelection();
+<table align="center" border="1" style="text-align: center">
+    <tr>
+        <td><p style="font-size: 20px"> Produit </p></td>
+        <td><p style="font-size: 20px"> Libelle </p></td>
+        <td><p style="font-size: 20px"> Description </p></td>
+        <td><p style="font-size: 20px"> Prix de vente </p></td>
+        <td><p style="font-size: 20px"> Nombre de produit </p></td>
+    </tr>
+    <?php 
+$db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
+$req = $db->prepare('SELECT ID, Libelle, Description, Prix_vente, Nombres_produit FROM Produits');
+    $req->execute();
+    $results = $req->fetchALL();
+    foreach ($results as $key) {
+        ?>
+    <tr>
+    <td>
+    <?php
+    $img = "../assets/images/" . $key['ID'] . ".png";
+    echo "<img src='$img' style='width: 86px; height : auto'>";
     ?>
-    <table cellpadding="5" cellspacing="0" border="1">
-            <?php foreach($GLOBALS['products'] as $k => &$product){ ?>
-                <tr>
-                    <td><?php echo $product['id']?></td>
-                    <td><?php echo $product['designation']?></td>
-                    <td><?php echo $product['price']?>€</td>
-                    <td><a href="pop.php?add=<?php echo $k ?>">Ajouter</a></td>
-                </tr>
-                <?php } ?>
-    </div>
-    </table>
+    </td>
+    <td>
+        <?php
+    echo $key['Libelle'];?></td>
+    <td><?php
+    echo $key['Description'];?></td>
+    <td><?php
+    echo $key['Prix_vente'] . " $";?></td>
+    <td><?php
+    echo $key['Nombres_produit'];?></td>
+    </tr>
+<?php   
+}
+?>
+</table>
   </body>
 </html>
