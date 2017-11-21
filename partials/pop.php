@@ -24,7 +24,7 @@
     </tr>
     <?php 
 $db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
-$req = $db->prepare('SELECT ID, Libelle, Description, Prix_vente, Nombres_produit FROM Produits');
+$req = $db->prepare('SELECT ID, Libelle, Description, Prix_vente, Nombres_produit FROM Produits WHERE Categorie = 2');
     $req->execute();
     $results = $req->fetchALL();
     foreach ($results as $key) {
