@@ -52,7 +52,7 @@ if(isset($_POST['formregister']))
             {
               $msg = 'Veuillez rentrer une adresse mail valide';
             }
-          }/*
+          }
         else 
         {
           $msg = 'Les adresses mails ne sont pas semblables';
@@ -61,9 +61,8 @@ if(isset($_POST['formregister']))
       else
       {
         $msg = "Tous les champs doivent être complétés";
-      }*/
+      }
   }
-}
 ?>
 
 <html>
