@@ -19,28 +19,7 @@ if(isset($_POST['formregister']))
   $pays = ($_POST['pays']);
   $postale = ($_POST['postale']);
   $role = 1;
-
-   if(!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['mail']) && !empty($_POST['mail2']) && !empty($_POST['password']) && !empty($_POST['password2']) && !empty($_POST['date']) && !empty($_POST['ville']) && !empty($_POST['adresse']) && !empty($_POST['postale']) && !empty($_POST['pays'])) 
-  {
-      $prenomlenght = strlen($_POST['prenom']);
-      $nomlenght = strlen($_POST ['nom']);   
-      $maillenght = strlen($_POST['mail']);
-      $mail2lenght = strlen($_POST['mail2']);
-      $datelenght = strlen($_POST['date']);
-      $villelenght = strlen($_POST['ville']);
-      $adresselenght = strlen($_POST['adresse']);
-      $postalelenght = strlen($_POST['postale']);
-      $payslenght = strlen($_POST['pays']);
-
-
-
-    if (($prenomlenght <= 255) || ($nomlenght <= 255) || ($villelenght <= 255) || ($adresselenght <= 255) || ($payslenght <= 255))
-    {
-    }
-    else 
-    {
-      $msg = 'Un des champs suivant contient plus de 256 caractères: Prénom, Nom, Ville, Adresse';
-    }  
+  
     if ($mail == $mail2)
       {
       } 
