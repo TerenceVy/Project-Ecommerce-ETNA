@@ -42,10 +42,11 @@ if(isset($_POST['formregister']))
                       {
                         $msg = 'Les mots de passe de sont pas similaires';
                       }
-                else
-                {
-                  $msg = 'Cette adresse email est deja utilise';
-                }
+                    }
+                  else
+                  {
+                    $msg = 'Cette adresse email est deja utilise';
+                  }
               }
             else
             {
@@ -62,7 +63,6 @@ if(isset($_POST['formregister']))
         $msg = "Tous les champs doivent être complétés";
       }*/
   }
-}
 }
 ?>
 
