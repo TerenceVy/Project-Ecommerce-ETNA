@@ -46,11 +46,11 @@ if(isset($_POST['formregister']))
                 else
                 {
                   $msg = 'Cette adresse email est deja utilise';
-                }/*
+                }
             else
             {
               $msg = 'Veuillez rentrer une adresse mail valide';
-            }
+            }/*
           }
         else 
         {
