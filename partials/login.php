@@ -14,6 +14,7 @@ if (isset($_POST['Connection']))
   {
     $userinfo = $requser->fetch();
     $_SESSION['ID'] = $userinfo['ID'];
+    header("Location: accueil.php?ID=".$_SESSION['ID']);
   }
   else
   {
