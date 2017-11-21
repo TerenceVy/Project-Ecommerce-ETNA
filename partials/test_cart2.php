@@ -8,7 +8,7 @@
 <img src="" style="width: 5%; height: auto">
 	<table border="1" bgcolor="lightblue">
 	<tr>
-		<td>ID du produit</td>
+		<td>Produit</td>
 		<td>Libelle</td>
 		<td>Description</td>
 		<td>Prix de vente</td>
