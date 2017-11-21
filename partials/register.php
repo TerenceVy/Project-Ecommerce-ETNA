@@ -109,7 +109,7 @@ if(isset($_POST['formregister']))
             <td><input type="password" placeholder="Confirmation mot de passe" name="password2"></td>
           </tr>
           <tr>
-            <td><input type="text" placeholder="Date de naissance" name="date"></td>
+            <td><input type="text" placeholder="YYYY/MM/DD" name="date"></td>
           </tr>
           <tr>
             <td><input type="text" placeholder="Ville" name="ville"></td>
