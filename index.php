@@ -1,3 +1,9 @@
+<?php
+session_start();
+
+$bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
