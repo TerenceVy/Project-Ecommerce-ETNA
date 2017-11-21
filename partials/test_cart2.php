@@ -25,7 +25,6 @@ $req = $db->prepare('SELECT ID, Libelle, Description, Prix_vente, Nombres_produi
 	<td>
 	<?php
 	$img = "../assets/images/" . $key['ID'] . ".png";
-	echo $img;
 	echo '<img src=$img>';
 	?>
 	</td>
