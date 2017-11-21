@@ -6,14 +6,6 @@
     <title>Figurines Pop</title>
   </head>
   <body>
-<img src="../assets/images/Bande.png">
-    <img src="../assets/images/Bande.png" class="bande2">
-        <img src="../assets/images/secured.png" class="secured">
-    <img src="../assets/images/cb.png" class="cb">
-    <form action="../index.php">
-      <input class="image" type="image" src="../assets/images/accueilbutton.png" value="accueil">
-    </form>
-    <div class="etna"> ETNA MANGA </div>
 <table align="center" border="1" style="text-align: center">
     <tr>
         <td><p style="font-size: 20px"> Produit </p></td>
