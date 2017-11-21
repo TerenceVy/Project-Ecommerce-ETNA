@@ -4,7 +4,6 @@
 	<title>Description produit</title>
 </head>
 <body>
-	DESCRIPTION
 <img src="" style="width: 5%; height: auto">
 	<table align="center" border="1" style="text-align: center">
 	<tr>
