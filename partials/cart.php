@@ -28,7 +28,7 @@ $req = $db->prepare('SELECT Produits.ID, Libelle, Description, Prix_vente, Nombr
     <tr>
     <td>
     <?php
-    $img = "../assets/images/" . $key['Produits.ID'] . ".png";
+    $img = "../assets/images/" . $key['ID'] . ".png";
     echo "<img src='$img' style='width: 86px; height : auto'>";
     ?>
     </td>
