@@ -22,7 +22,7 @@ $i = $_SESSION['ID'];
     <?php
     $db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
 $req = $db->prepare('SELECT Produits.ID, Libelle, Description, Prix_vente, Nombres_produit FROM Produits INNER JOIN Produit_Utilisateur ON Produits.ID = Produit_Utilisateur.ID_produit INNER JOIN Utilisateurs ON Produit_Utilisateur.ID_utilisateur = Utilisateurs.ID WHERE Utilisateurs.ID = ?');
-    $req->execute(array($i);
+    $req->execute(array($i));
     $results = $req->fetchALL();
     foreach ($results as $key) {
         ?>
