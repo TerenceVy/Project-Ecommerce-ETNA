@@ -19,8 +19,7 @@ $bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro
         <td><p style="font-size: 20px"> Prix de vente </p></td>
         <td><p style="font-size: 20px"> Nombre de produit </p></td>
     </tr>
-    <?php 
-$db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
+    <?php
 $req = $db->prepare('SELECT ID, Libelle, Description, Prix_vente, Nombres_produit FROM Produits WHERE ID = $_SESSION['ID']');
     $req->execute();
     $results = $req->fetchALL();
