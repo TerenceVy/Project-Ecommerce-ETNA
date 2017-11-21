@@ -56,12 +56,12 @@ if(isset($_POST['formregister']))
     else 
     {
       $msg = 'Les adresses mails ne sont pas semblables';
-    }        
+    }
+    }     
   else
   {
     $msg = "Tous les champs doivent être complétés";
   }
-}
 
 ?>
 
