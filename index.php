@@ -36,6 +36,9 @@ $bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro
     if (isset($_SESSION['ID']))
     {
       ?>
+      <div class="cart">
+        <input type="submit" value= "   Cart   ">
+      </div>
       <div class="signin"><?php echo $_SESSION['Mail']; ?></div>
       <form action="partials/logout.php">
       <div class="signin">
@@ -55,9 +58,6 @@ $bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro
     <?php
     }
     ?>
-      <div class="cart">
-        <input type="submit" value= "   Cart   ">
-      </div>
     <div class="buy1">
       <input type="submit" value=" Buy it ">
     </div>
