@@ -53,11 +53,9 @@ $bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro
     <?php
     }
     ?>
-    <form action="partials/cart.php">
       <div class="cart">
-        <input type="submit" value= "   Cart   " src="assets/images/Cart.png">
+        <input type="submit" value= "   Cart   " onclick="<?php header("Location: partials/cart.php")?>">
       </div>
-    </form>
     <div class="buy1">
       <input type="submit" value=" Buy it ">
     </div>
