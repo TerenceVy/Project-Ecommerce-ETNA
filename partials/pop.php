@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../assets/styles/style.css" type="text/css">
     <title>Figurines Pop</title>
   </head>
   <body>
