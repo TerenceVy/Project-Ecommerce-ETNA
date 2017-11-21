@@ -8,11 +8,11 @@
 <img src="" style="width: 5%; height: auto">
 	<table border="1" align="center">
 	<tr>
-		<td>Produit</td>
-		<td>Libelle</td>
-		<td>Description</td>
-		<td>Prix de vente</td>
-		<td>Nombre de produit</td>
+		<td><p style="font: 16"> Produit </p></td>
+		<td><p style="font: 16"> Libelle </p></td>
+		<td><p style="font: 16"> Description </p></td>
+		<td><p style="font: 16"> Prix de vente </p></td>
+		<td><p style="font: 16"> Nombre de produit </p></td>
 	</tr>
 	<?php 
 $db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
