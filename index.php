@@ -37,7 +37,7 @@ $bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro
     {
       ?>
       <div class="signin"><?php echo $_SESSION['Mail']; ?></div>
-      <form action="logout.php">
+      <form action="partials/logout.php">
       <div class="signin">
         <input type="submit" value="   Log out   ">
       </div>
