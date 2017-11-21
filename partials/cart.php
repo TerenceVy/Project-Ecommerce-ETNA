@@ -32,7 +32,7 @@ $req = $db->prepare('SELECT Produits.ID, Libelle, Description, Prix_vente, Nombr
     </td>
     <td>
         <?php
-    echo $key['Libelle'];?></td>
+    echo $key['Libelle'] . "Test";?></td>
     <td><?php
     echo $key['Description'];?></td>
     <td><?php
