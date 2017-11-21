@@ -21,7 +21,7 @@
     <img src="assets/images/PopMyhero.png" class="pop">
     <img src="assets/images/Blu-ray.png" class="bluray">
     <div align="center">
-    <div class="etna"> ETNA MANGA </div>
+    <div class="etna"> ETNA MANGA <?php echo $_SESSION['ID']?></div>
     <div class="collection"> Collection My Hero Academia </div>
     <div class="text1"> My Hero Academia Vol.1 6.99$</div>
     <div class="text2"> Figurine Pop All Might 12.99$</div>
@@ -49,12 +49,6 @@
       <input type="submit" value=" Buy it ">
     </div>
     </div>
-    <select id="select">
-      <option value="valeur1">Choose a Categorie</option>
-      <option value="https://www.youtube.com">Manga</option>
-      <option value="valeur3">Food</option>
-      <option value="valeur4">Game</option>
-    </select>
     <form action="partials/pop.php">
       <div class="achat1">
         <input type="submit" value="  Figurine Pop   ">
