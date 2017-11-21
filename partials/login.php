@@ -10,11 +10,10 @@ if (isset($_POST['Connection']))
   $requser = $bd->prepare("SELECT * FROM Utilisateurs WHERE Mail = ? AND Password = ?");
   $requser->execute(array($log_mail, $log_passwd));
   $count = $requser->rowCount();
-  if($count ==1)
+  if($count == 1)
   {
     $userinfo = $requser->fetch();
     $_SESSION['ID'] = $userinfo['ID'];
-    header("Location: index.php?ID=".$_SESSION['ID']);
   }
   else
   {
