@@ -33,7 +33,7 @@ $bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro
     <div class="text2"> Figurine Pop All Might 12.99$</div>
     <div class="text3"> Bluray My hero Academia S1 28.99$</div>
     <?php
-    if isset($_SESSION['ID'])
+    if (isset($_SESSION['ID']))
     {
       echo $_SESSION['Mail'];
     }
