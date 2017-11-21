@@ -8,8 +8,8 @@
 <img src="" style="width: 5%; height: auto">
 	<table border="1" align="center">
 	<tr>
-		<td><p style="font-size: 20"> Produit </p></td>
-		<td><p style="font-size: 16"> Libelle </p></td>
+		<td><p style="font-size: 20px"> Produit </p></td>
+		<td><p style="font-size: 16px"> Libelle </p></td>
 		<td><p style="font-size: 16"> Description </p></td>
 		<td><p style="font-size: 16"> Prix de vente </p></td>
 		<td><p style="font-size: 16"> Nombre de produit </p></td>
