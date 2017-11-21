@@ -3,7 +3,7 @@ session_start();
 
 $bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
 
-/*if (isset($_POST['Connection']))
+if (isset($_POST['Connection']))
 {
   $log_mail = htmlspecialchars($_POST['email']);
   $log_passwd = hash('sha256', $_POST['passwd']);
@@ -17,9 +17,9 @@ $bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro
   }
   else
   {
-    echo "Verifiez vos informations"
+    echo "Verifiez vos informations";
   }
-}*/
+}
 ?>
 
 <!DOCTYPE html>
