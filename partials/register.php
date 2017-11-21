@@ -20,9 +20,8 @@ if(isset($_POST['formregister']))
     $pays = ($_POST['pays']);
     $postale = ($_POST['postale']);
     $role = 1;
-
-    if(!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['mail']) && !empty($_POST['mail2']) && !empty($_POST['password']) && !empty($_POST['password2']) && !empty($_POST['date']) && !empty($_POST['ville']) && !empty($_POST['adresse']) && !empty($_POST['postale']) && !empty($_POST['pays'])) 
-      {
+      if(!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['mail']) && !empty($_POST['mail2']) && !empty($_POST['password']) && !empty($_POST['password2']) && !empty($_POST['date']) && !empty($_POST['ville']) && !empty($_POST['adresse']) && !empty($_POST['postale']) && !empty($_POST['pays'])) 
+        {
     
         if ($mail == $mail2)
           {
@@ -39,7 +38,7 @@ if(isset($_POST['formregister']))
                         $insertuser->execute(array($nom, $prenom, $mail, $password, $date, $ville, $adresse, $postale, $pays, $role));
                         $msg = 'Votre compte a bien été ajouté';
                       }
-                    else 
+                    /*else 
                       {
                         $msg = 'Les mots de passe de sont pas similaires';
                       }
@@ -61,8 +60,11 @@ if(isset($_POST['formregister']))
       else
       {
         $msg = "Tous les champs doivent être complétés";
-      }
+      }*/
   }
+}
+}
+}
 }
 ?>
 
