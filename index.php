@@ -59,7 +59,7 @@ $bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro
       <div class="achat1">
         <input type="submit" value="  Figurine Pop   ">
         <?php
-        header("Location: pop.php");
+        header("Location: partials/pop.php");
         ?>
       </div>
     </form>
