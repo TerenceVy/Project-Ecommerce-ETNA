@@ -5,7 +5,7 @@
 </head>
 <body>
 	DESCRIPTION
-
+<img src="" style="width: 5%; height: auto">
 	<table border="1" bgcolor="lightblue">
 	<tr>
 		<td>ID du produit</td>
@@ -25,7 +25,7 @@ $req = $db->prepare('SELECT ID, Libelle, Description, Prix_vente, Nombres_produi
 	<td>
 	<?php
 	$img = "../assets/images/" . $key['ID'] . ".png";
-	echo "<img src=$img style="width: 5%, height : auto">";
+	echo "<img src='$img' style='width: 5%; height : auto'>";
 	?>
 	</td>
 	<td>
