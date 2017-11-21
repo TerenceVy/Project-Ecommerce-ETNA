@@ -3,7 +3,6 @@
 <head>
 	<title>Description produit</title>
 </head>
-
 <body>
 	DESCRIPTION
 
@@ -24,8 +23,12 @@ $req = $db->prepare('SELECT ID, Libelle, Description, Prix_vente, Nombres_produi
 		?>
 	<tr>
 	<td>
-		<?php
-	echo $key['ID'];?></td>
+	<?php
+	$img = "../assets/images/" . $key['ID'] . ".png"
+	echo $img
+	echo '<img src=$img>';
+	?>
+	</td>
 	<td>
 		<?php
 	echo $key['Libelle'];?></td>
