@@ -38,10 +38,10 @@ if(isset($_POST['formregister']))
                         $insertuser->execute(array($nom, $prenom, $mail, $password, $date, $ville, $adresse, $postale, $pays, $role));
                         $msg = 'Votre compte a bien été ajouté';
                       }
-                    /*else 
+                    else 
                       {
                         $msg = 'Les mots de passe de sont pas similaires';
-                      }
+                      }/*
                   }
                 else
                 {
