@@ -5,7 +5,7 @@
     <title>Figurines Pop</title>
   </head>
   <body>
-<table align="center" border="1" style="text-align: center">
+<table align="center" border="1" style="text-align: center; margin-top: 45%">
     <tr>
         <td><p style="font-size: 20px"> Produit </p></td>
         <td><p style="font-size: 20px"> Libelle </p></td>
