@@ -6,7 +6,7 @@
 <body>
 	DESCRIPTION
 <img src="" style="width: 5%; height: auto">
-	<table border="1" align="center" style="align-content: center">
+	<table align="center" style="align-content: center">
 	<tr>
 		<td><p style="font-size: 20px"> Produit </p></td>
 		<td><p style="font-size: 20px"> Libelle </p></td>
