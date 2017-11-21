@@ -8,7 +8,7 @@
   <body>
 
 <?php
-
+?>
 
       </div>
     </body>
