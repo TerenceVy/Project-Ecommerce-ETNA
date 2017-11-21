@@ -9,10 +9,10 @@
 	<table border="1" align="center">
 	<tr>
 		<td><p style="font-size: 20px"> Produit </p></td>
-		<td><p style="font-size: 16px"> Libelle </p></td>
-		<td><p style="font-size: 16"> Description </p></td>
-		<td><p style="font-size: 16"> Prix de vente </p></td>
-		<td><p style="font-size: 16"> Nombre de produit </p></td>
+		<td><p style="font-size: 20px"> Libelle </p></td>
+		<td><p style="font-size: 20px"> Description </p></td>
+		<td><p style="font-size: 20px"> Prix de vente </p></td>
+		<td><p style="font-size: 20px"> Nombre de produit </p></td>
 	</tr>
 	<?php 
 $db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
