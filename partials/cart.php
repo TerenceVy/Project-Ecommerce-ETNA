@@ -27,10 +27,10 @@ $req = $db->prepare('SELECT ID, Libelle, Description, Prix_vente, Nombres_produi
         ?>
     <tr>
     <td>
-    <?php
+    <?ph/*
     $img = "../assets/images/" . $key['ID'] . ".png";
     echo "<img src='$img' style='width: 86px; height : auto'>";
-    ?>
+    */?>
     </td>
     <td>
         <?php
