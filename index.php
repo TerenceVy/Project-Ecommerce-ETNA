@@ -27,7 +27,7 @@ $bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro
     <img src="assets/images/PopMyhero.png" class="pop">
     <img src="assets/images/Blu-ray.png" class="bluray">
     <div align="center">
-    <div class="etna"> ETNA MANGA <?php echo $_SESSION['ID']?></div>
+    <div class="etna"> ETNA MANGA <?php echo $mail?></div>
     <div class="collection"> Collection My Hero Academia </div>
     <div class="text1"> My Hero Academia Vol.1 6.99$</div>
     <div class="text2"> Figurine Pop All Might 12.99$</div>
