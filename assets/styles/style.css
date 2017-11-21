@@ -204,6 +204,20 @@ select{
     width: 100px;
     float :right;
 }
+.achat2{
+    position: absolute;
+    margin: 30px 365px;
+    height: 30px;
+    width: 100px;
+    float :right;
+}
+.achat3{
+    position: absolute;
+    margin: 45px 365px;
+    height: 30px;
+    width: 100px;
+    float :right;
+}
 
 .rating{
 position: absolute;
