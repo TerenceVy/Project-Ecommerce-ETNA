@@ -37,11 +37,11 @@ if(isset($_POST['formregister']))
       {
         $msg = 'Les mots de passe de sont pas identiques';
       }       
+    }
   else
   {
     $msg = "Tous les champs doivent être complétés";
   }
-}
 
 ?>
 
