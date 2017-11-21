@@ -65,7 +65,6 @@ if(isset($_POST['formregister']))
 }
 }
 }
-}
 ?>
 
 <html>
