@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$bd = new PDO('mysql:host=localhost;dbname=projet', 'root', 'salutlesbro');
+$bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
 
 if (isset($_POST['Connection']))
 {
