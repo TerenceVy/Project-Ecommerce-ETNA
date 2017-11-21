@@ -50,8 +50,8 @@ if(isset($_POST['formregister']))
             else
             {
               $msg = 'Veuillez rentrer une adresse mail valide';
-            }/*
-          }
+            }
+          }/*
         else 
         {
           $msg = 'Les adresses mails ne sont pas semblables';
