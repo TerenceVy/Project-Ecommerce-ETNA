@@ -37,7 +37,6 @@ if(isset($_POST['formregister']))
                         $insertuser = $db->prepare("INSERT INTO Utilisateurs (Nom, Prenom, Mail, Password, Date_de_naissance, Ville, Adresse, Code_postale, Pays, Role ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?,?)");
                         $insertuser->execute(array($nom, $prenom, $mail, $password, $date, $ville, $adresse, $postale, $pays, $role));
                         $msg = 'Votre compte a bien été ajouté';
-                        header("Location : login.php");
                       }
                     else 
                       {
@@ -56,7 +55,7 @@ if(isset($_POST['formregister']))
           }
         else 
         {
-          $msg = 'Les adresses mails ne sont pas semblables';
+          $msg = 'Les adresses mail ne sont pas semblables';
         }
       }
       else
