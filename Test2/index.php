@@ -22,7 +22,7 @@ if(isset($_POST['search']))
     {
       $fproducts = $row['Libelle'];
       $id = $row['ID'];
-      $output .= '<div>'.'fproducts'.'</div>';
+      $output .= '<div>'.$fproducts.'</div>';
     }
   }
 }
