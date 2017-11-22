@@ -8,7 +8,7 @@
 <div class="wrapper">
     <header>
     	<form action="test.php">
-	    <input class="image" type="image" src="../assets/images/accueilbutton.png" style="width: 7%; height: auto">
+	    <input class="image" type="image" src="../assets/images/accueilbutton.png">
 	    </form>
 	    <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
     </header>
