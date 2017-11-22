@@ -50,7 +50,7 @@ $bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro
         <input type="submit" value="  Figurine Pop   ">
       </div>
     </form>
-    <form action="manga.php" method="POST">
+    <form action="manga.php">
       <div class="manga">
         <input type="submit" value="  Manga   " name="1">
       </div>
