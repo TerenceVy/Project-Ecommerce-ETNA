@@ -29,7 +29,7 @@
   <div id='sidebar-droite'>
     <p>Ceci est le test 3</p>
   </div>
-  <footer>
+  <footer style="width: 15%">
   <p>Test2</p>
   </footer>
   </div>
