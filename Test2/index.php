@@ -21,7 +21,7 @@ if(isset($_POST['search']))
     while($row = mysql_fetch_array($query))
     {
       $fproducts = $row['Libelle'];
-      $id = row['ID'];
+      $id = $row['ID'];
       $output .= '<div>'.'fproducts'.'</div>';
     }
   }
