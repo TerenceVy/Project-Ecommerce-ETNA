@@ -7,7 +7,8 @@
 <body>
 <div class="wrapper">
     <header>
-	    <input class="image" type="image" src="assets/images/accueilbutton.png" style="width: 7%; height: auto">
+    	<form action="test.php">
+	    <input class="image" type="image" src="../assets/images/accueilbutton.png" style="width: 7%; height: auto">
 	    </form>
 	    <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
     </header>
