@@ -57,3 +57,17 @@ main {
     top: 25px;
     right: 10px;
 }
+
+.manga
+{
+    position: absolute;
+    top: 25px;
+    left: 10px;
+}
+
+.blu-ray
+{
+    position: absolute;
+    top: 45px;
+    right: 10px;
+}
