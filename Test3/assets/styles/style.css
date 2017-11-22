@@ -40,9 +40,8 @@ main {
 .cart
 {
     position: absolute;
-    margin-right: 5%;
-    height: 40px;
-    float: left;
+    top: 5px;
+    right: 10px;
 }
 
 .pop
