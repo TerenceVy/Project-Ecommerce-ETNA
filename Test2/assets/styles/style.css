@@ -128,6 +128,7 @@ header
 }
 
 .selected{
+  position: absolute;
   margin-top: 50%;
   margin-left: 50%;
 
