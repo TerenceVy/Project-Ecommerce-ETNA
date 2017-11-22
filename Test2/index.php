@@ -20,7 +20,7 @@ $bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro
     <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
     <form action="index.php" method="POST">
     <input type="text" name="search" placeholder="Search" style="position: fixed; top: 25px; right: 50px">
-    <input type="submit" value="Search" style="position: fixed; top: 25px; right:20px; "> 
+    <input type="submit" value="Search" style="position: fixed; top: 25px; right:5px; "> 
 
 
 
