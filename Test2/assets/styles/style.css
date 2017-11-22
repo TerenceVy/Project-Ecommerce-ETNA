@@ -126,3 +126,9 @@ header
     width:100px;
     height:43px;
 }
+
+.selected{
+  margin-top: 50%;
+  margin-left: 50%;
+
+}

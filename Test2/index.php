@@ -46,7 +46,9 @@ if(isset($_POST['search']))
     <input type="search" name="search" placeholder="Search" style="position: fixed; top: 25px; right: 60px">
     <input type="submit" value="Search" style="position: fixed; top: 25px; right:5px; ">
   </form>
-<?php print("$output");
+  <div class="selected">
+<?php print("$output");?></div>
+<?php
     if (isset($_SESSION['ID']))
     {
       ?>
