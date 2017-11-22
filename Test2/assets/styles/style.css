@@ -1,6 +1,6 @@
 body
 {
-      width :100%;
+      width :80%;
       margin: 0;
       background: url("../images/Fond.png");
       background-repeat: no-repeat;
@@ -16,7 +16,7 @@ header
 {
   position: fixed;
       margin: 0% 0%;
-      width :100% ;
+      width :10% ;
       background:url("../images/Bande.png");
 }
 
@@ -112,10 +112,9 @@ header
 
 footer
 {
-      position: fixed;
       left: 0;
       bottom: 0;
-      width :100%;
+      width :10%;
       background:url("../images/Bande.png");
       text-align: center;
 }
