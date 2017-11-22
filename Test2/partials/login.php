@@ -33,7 +33,7 @@ if (isset($_POST['Connection']))
   </head>
   
   <body>
-  <div id='global'> 
+  <div id='global'>
     <header>
     <form action="../index.php">
       <input class="image" type="image" src="../assets/images/accueilbutton.png" style="width: 7%; height: auto">
