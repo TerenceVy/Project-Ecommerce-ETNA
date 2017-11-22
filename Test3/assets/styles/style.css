@@ -41,33 +41,33 @@ main {
 {
     position: absolute;
     top: 5px;
-    right: 10px;
+    margin-right: 10px;
 }
 
 .pop
 {
     position: absolute;
     top: 5px;
-    left: 10px;
+    margin-left: 10px;
 }
 
 .signin
 {
   position: absolute;
     top: 25px;
-    right: 10px;
+    margin-right: 10px;
 }
 
 .manga
 {
     position: absolute;
     top: 25px;
-    left: 50px;
+    margin-left: 50px;
 }
 
 .blu-ray
 {
     position: absolute;
     top: 45px;
-    right: 10px;
+    margin-right: 10px;
 }
