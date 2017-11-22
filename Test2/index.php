@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-//$bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
 mysql_connect("localhost","root","salutlesbro") or die(mysql_error());
 mysql_select_db("etnamanga_vy_t") or die("could not find db");
 $output = '';
@@ -10,7 +9,7 @@ if(isset($_POST['search']))
   $searcher = $_POST['search'];
   $searcher = preg_replace("#[^0-9a-zA-Z]#","",$searcher);
 
-  $query = mysql_query("SELECT * FROM Produits WHERE Libelle LIKE '%$searcher%'") or die("Could not search");
+  $query = mysql_query("SELECT * FROM Produits WHERE Libelle = '%$searcher%'") or die("Could not search");
   $count = mysql_num_rows($query);
   if ($count == 0)
   {
