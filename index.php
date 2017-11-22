@@ -79,6 +79,7 @@ $bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro
     </form>
     <form action="partials/manga.php" method="POST">
       <div class="achat2">
+      <input type="text" name="1">
         <input type="submit" value="  Manga   " name="1">
       </div>
     </form>
