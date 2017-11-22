@@ -74,20 +74,7 @@ if(isset($_POST['formregister']))
   </head>
   
   <body>
-    <img src="../assets/images/Bande.png">
-    <img src="../assets/images/Bande.png" class="bande2">
-    <form action="../index.php">
-      <input class="image" type="image" src="../assets/images/accueilbutton.png" value="accueil">
-    </form>
-    <img src="../assets/images/secured.png" class="secured">
-    <img src="../assets/images/cb.png" class="cb">
-    <div align="center">
-      <div class="etna"> ETNA MANGA </div>
-  </div>
-      <br><br><br><br><br><br><br><br><br>
-    <div align="center">
-        <h3>Inscription</h3>
-        <br><br><br>
+    
       <form action="" method="POST">
         <table>
           <tr>
@@ -128,7 +115,9 @@ if(isset($_POST['formregister']))
       </form>
       <?php
         if(isset($msg))
-          {echo "$msg";}
+          {
+            echo "$msg";
+          }
       ?>
     </div>  
 
