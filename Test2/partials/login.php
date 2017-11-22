@@ -25,26 +25,27 @@ if (isset($_POST['Connection']))
 ?>
 
 <!DOCTYPE html>
-<html>
-  <link rel="stylesheet" href="../assets/styles/style.css" type="text/css">
+<html> 
   <head>
+  <link rel="stylesheet" href="../assets/styles/style.css" type="text/css">
     <meta charset="utf-8"/>
     <title>Connection to ETNA</title>
   </head>
   
-  
   <body>
-<img src="../assets/images/Bande.png">
-    <img src="../assets/images/Bande.png" class="bande2">
-    <img src="../assets/images/secured.png" class="secured">
-    <img src="../assets/images/cb.png" class="cb">
-    <form action="../index.php"> 
-      <input class="image" type="image" src="../assets/images/accueilbutton.png" value="accueil">
+  <div id='global'>
+    <header>
+    <form action="index.php">
+      <input class="image" type="image" src="assets/images/accueilbutton.png" style="width: 7%; height: auto">
     </form>
-    <div align="center">
-      <div class="etna"> ETNA MANGA </div>
-    </div>
-    <img src="../assets/images/vs.png" class="mid">
+    <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
+    <input type="search" name="search" style="position: fixed; top: 25px; right: 50px">
+    </header>
+    <div id='menu-gauche'>
+    <p>Ceci est un autre test</p>
+  </div>
+  <div id="blanc"><p> </p></div>
+  <div id='contenu' align="center">
     <table>
       <center>
 	<div align="center">
@@ -61,6 +62,10 @@ if (isset($_POST['Connection']))
 	</div>
       </center>
     </table>
+    </div>
+    <footer>
+  <p>Test2</p>
+  </footer>
   </body>
   
 </html>
