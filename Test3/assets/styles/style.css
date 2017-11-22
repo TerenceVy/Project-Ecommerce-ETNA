@@ -34,7 +34,7 @@ main {
 
 .image
 {
-      float:left;
+  position: initial;
     width: 125px;
     height: auto;
 }
