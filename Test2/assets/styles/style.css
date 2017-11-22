@@ -30,8 +30,7 @@ header
 
 .cart
 {
-    position: absolute;
-    margin: 20px 1770px;
+    margin-right: 5%;
     height: 40px;
     float:right;
 }
