@@ -46,7 +46,6 @@ main {
 
 .pop
 {
-    margin-left: 5%;
-    margin-top: 10px;
-    height: 40px;
+    position: absolute;
+    top: 10px;
 }
