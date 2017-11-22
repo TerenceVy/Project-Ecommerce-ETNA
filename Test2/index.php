@@ -71,7 +71,6 @@ $bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro
   <br><br><br><br><br><br><br><br><br>
   <div id="blanc"><p> </p></div>
   <img src="assets/images/Myhero.png" class="myhero">
-  <img src="assets/images/PopMyhero.png" class="Pop">
 
   <p>Je s'appelle GROOT</p>
   </div>
