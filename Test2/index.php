@@ -18,7 +18,13 @@ $bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro
       <input class="image" type="image" src="assets/images/accueilbutton.png" style="width: 7%; height: auto">
     </form>
     <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
-    <input type="search" name="search" style="position: fixed; top: 25px; right: 50px">
+    <form action="index.php" method="POST">
+    <input type="text" name="search" placeholder="Search" style="position: fixed; top: 25px; right: 50px"> 
+
+
+
+
+
     <?php
     if (isset($_SESSION['ID']))
     {
