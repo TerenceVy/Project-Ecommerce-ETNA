@@ -48,7 +48,7 @@ $bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro
     }
     ?>
     <form action="partials/pop.php">
-      <div class="achat1">
+      <div class="pop">
         <input type="submit" value="  Figurine Pop   ">
       </div>
     </form>
