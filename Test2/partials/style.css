@@ -23,3 +23,16 @@ footer {
 main {
     flex: 1;
 }
+
+.etna
+{
+      color: white;
+      font-size: 4vw;
+}
+
+.image
+{
+      float:left;
+    width: 6.8%;
+    height: auto;
+}
