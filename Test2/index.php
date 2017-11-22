@@ -2,6 +2,29 @@
 session_start();
 
 $bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
+$output = '';
+if(isset($_POST['search']))
+{
+  $searcher = $_POST['search'];
+  $searcher = preg_replace("#[^0-9a-z]#i","",$searcher);
+
+  $query = mysql_query("SELECT * FROM Produits WHERE Libelle LIKE '%$searcher%'") or die("Could not search");
+  $count = mysql_num_rows($query);
+  if ($count == 0)
+  {
+    $output = 'Aucun résultats trouvés';
+  }
+  else
+  {
+    while($row = mysql_fetch_array($query))
+    {
+      $fproducts = $row['Libelle'];
+      $id = row['ID'];
+      $output .= '<div>'.'fproducts'.'</div>';
+    }
+  }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +43,9 @@ $bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro
     <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
     <form action="index.php" method="POST">
     <input type="text" name="search" placeholder="Search" style="position: fixed; top: 25px; right: 50px">
-    <input type="submit" value="Search" style="position: fixed; top: 25px; right:5px; "> 
+    <input type="submit" value="Search" style="position: fixed; top: 25px; right:5px; ">
+  </form>
+<?php print("$output");?>
 
 
 
