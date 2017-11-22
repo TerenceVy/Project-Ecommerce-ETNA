@@ -34,9 +34,9 @@
 	<p>GROOT</p>
 	<p>GROOT</p>
 	<p>GROOT</p><p>GROOT</p>
-	
+
 </section>
-<footer>
+<footer style="background: url(../assets/images/Bande.png);">
 	<p>Copyright</p>
 </footer>
 </body>
