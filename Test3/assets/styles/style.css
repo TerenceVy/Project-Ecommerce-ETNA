@@ -46,7 +46,7 @@ main {
 
 .pop
 {
-  position: absolute;
+  float: left;
     top: 5px;
     left: 5%;
 }
