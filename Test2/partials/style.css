@@ -1,5 +1,10 @@
-.wrapper {
+body {
 	margin: 0;
+	background: url(../assets/images/Fond.png);
+	background-repeat: no-repeat;
+}
+
+.wrapper {
     height: 100vh;
     display: flex;
     flex-direction: column;
