@@ -16,7 +16,7 @@ $bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro
     	<form action="test.php">
 	    <input class="image" type="image" src="../assets/images/accueilbutton.png">
 	    </form>
-	    <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
+	    <div class="etna"> ETNA MANGA </div>
 	    <?php
     if (isset($_SESSION['ID']))
     {
@@ -46,7 +46,7 @@ $bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro
     }
     ?>
     <form action="pop.php">
-      <div class="pop" style="margin-left: 5%">
+      <div class="pop">
         <input type="submit" value="  Figurine Pop   ">
       </div>
     </form>
