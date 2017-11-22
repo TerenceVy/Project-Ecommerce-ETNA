@@ -8,7 +8,7 @@ $output = '';
 if(isset($_POST['search']))
 {
   $searcher = $_POST['search'];
-  $searcher = preg_replace("#[^0-9a-z]#i","",$searcher);
+  $searcher = preg_replace("#[^0-9a-zA-Z]#","",$searcher);
 
   $query = mysql_query("SELECT * FROM Produits WHERE Libelle ='%$searcher%'") or die("Could not search");
   $count = mysql_num_rows($query);
