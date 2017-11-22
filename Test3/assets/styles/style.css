@@ -41,29 +41,34 @@ main {
 
 .cart
 {
+  position: initial;
     top: 5px;
     right: 10px;
 }
 
 .pop
 {
+  position: initial;
     left: 7%;
 }
 
 .signin
 {
+  position: initial;
     top: 25px;
     right: 0;
 }
 
 .manga
 {
+  position: initial;
     top: 25px;
     left: 50px;
 }
 
 .blu-ray
 {
+  position: initial;
     top: 45px;
     right: 10px;
 }
