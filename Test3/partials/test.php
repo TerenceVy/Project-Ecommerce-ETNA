@@ -51,12 +51,12 @@ $bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro
       </div>
     </form>
     <form action="manga.php" method="POST">
-      <div class="achat2">
+      <div class="manga">
         <input type="submit" value="  Manga   " name="1">
       </div>
     </form>
     <form action="blu-ray.php">
-      <div class="achat3">
+      <div class="blu-ray">
         <input type="submit" value="  Blu-ray   ">
       </div>
     </header>
