@@ -36,7 +36,7 @@ if (isset($_POST['Connection']))
   <div id='global'>
     <header>
     <form action="../index.php">
-      <input class="image" type="image" src="assets/images/accueilbutton.png" style="width: 7%; height: auto">
+      <input class="image" type="image" src="../assets/images/accueilbutton.png" style="width: 7%; height: auto">
     </form>
     <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
     <input type="search" name="search" style="position: fixed; top: 25px; right: 50px">
