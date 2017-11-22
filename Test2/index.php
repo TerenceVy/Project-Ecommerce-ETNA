@@ -1,7 +1,9 @@
 <?php
 session_start();
 
-$bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
+//$bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
+mysql_connect("localhost","root","salutlesbro") or die(mysql_error());
+mysql_select_db("etnamanga_vy_t") or die("could not find db");
 $output = '';
 if(isset($_POST['search']))
 {
