@@ -110,7 +110,11 @@ if(isset($_POST['formregister']))
           <tr>
             <td><input type="text" placeholder="Pays" name="pays"></td>
           </tr>
+          <tr>
+          <td>
       <input type="Submit" name="formregister" value="S'inscrire">
+      </td>
+      </tr>
       </table>
       </form>
       <?php
