@@ -48,6 +48,13 @@ header
     height: auto;
 }
 
+.pop
+{
+    margin-left: 5%;
+    height: 40px;
+    float: left;
+}
+
 #menu-gauche
 {
       width: 22%;
