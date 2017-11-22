@@ -5,6 +5,7 @@
     <title>Figurines Pop</title>
   </head>
   <body>
+  <?php echo $_POST?>
 <table align="center" border="1" style="text-align: center; margin-top: 10%; margin-bottom: 25px">
     <tr>
         <td><p style="font-size: 20px"> Produit </p></td>
