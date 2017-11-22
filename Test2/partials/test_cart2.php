@@ -17,8 +17,8 @@
 $db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
 $req = $db->prepare('SELECT ID, Libelle, Description, Prix_vente, Nombres_produit FROM Produits');
     $req->execute();
-	$key = $req->fetchALL();
-	foreach ($key) {
+	$result = $req->fetchALL();
+	foreach ($result as $key) {
 		?>
 	<tr>
 	<td>
