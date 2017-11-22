@@ -92,14 +92,6 @@ header
     box-shadow: 0 -5px 10px -2px #333;
 }
 
-.pop{
-      position: absolute;
-    content:url("../images/PopMyhero.png");
-    margin: 0%;
-    width:11%;
-    height:9%;
-}
-
 #sidebar-droite
 {
       text-align: right;
