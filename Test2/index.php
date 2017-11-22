@@ -47,6 +47,33 @@ $bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro
     <?php
     }
     ?>
+    <div class="buy1">
+      <input type="submit" value=" Buy it ">
+    </div>
+    <form action="partials/detailpop.php">
+      <div class="buy2">
+        <input type="submit" value=" Buy it ">
+      </div>
+    </form>
+    <div class="buy3">
+      <input type="submit" value=" Buy it ">
+    </div>
+    </div>
+    <form action="partials/pop.php">
+      <div class="achat1">
+        <input type="submit" value="  Figurine Pop   ">
+      </div>
+    </form>
+    <form action="partials/manga.php" method="POST">
+      <div class="achat2">
+        <input type="submit" value="  Manga   " name="1">
+      </div>
+    </form>
+    <form action="partials/blu-ray.php">
+      <div class="achat3">
+        <input type="submit" value="  Blu-ray   ">
+      </div>
+    </form>
     </header>
   <div id='menu-gauche'>
     <p>Ceci est un autre test</p>
