@@ -22,7 +22,8 @@ header
 
 .signin
 {
-    margin-right: 7%;
+    margin-right: 5%;
+    margin-top: 10px;
     height: 40px;
     float:right;
 }
