@@ -1,3 +1,9 @@
+<?php
+session_start();
+
+$bd = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,6 +19,34 @@
     </form>
     <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
     <input type="search" name="search" style="position: fixed; top: 25px; right: 50px">
+    <?php
+    if (isset($_SESSION['ID']))
+    {
+      ?>
+      <form action="partials/cart.php">
+      <div class="cart">
+        <input type="submit" value= "   Cart   ">
+      </div>
+      </form>
+      <div class="signin"><?php echo $_SESSION['Mail']; ?></div>
+      <form action="partials/logout.php">
+      <div class="signin">
+        <input type="submit" value="   Log out   ">
+      </div>
+      </form>
+      <?php
+    }
+    else
+    {
+      ?>
+      <form action="partials/login.php">
+      <div class="signin">
+        <input type="submit" value="   Login   ">
+      </div>
+    </form>
+    <?php
+    }
+    ?>
     </header>
   <div id='menu-gauche'>
     <p>Ceci est un autre test</p>
