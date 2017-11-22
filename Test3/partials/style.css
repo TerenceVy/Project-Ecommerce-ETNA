@@ -1,0 +1,38 @@
+body {
+	margin: 0;
+	background: url(../assets/images/Fond.png);
+	background-repeat: no-repeat;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+width: 100%;
+background: url(../assets/images/Bande.png);
+}
+
+footer {
+    width: 100%;
+    background: url(../assets/images/Bande.png);
+}
+
+main {
+    flex: 1;
+}
+
+.etna
+{
+      color: white;
+      font-size: 4vw;
+}
+
+.image
+{
+      float:left;
+    width: 6.8%;
+    height: auto;
+}
