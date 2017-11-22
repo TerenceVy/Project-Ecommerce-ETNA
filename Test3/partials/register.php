@@ -74,7 +74,15 @@ if(isset($_POST['formregister']))
   </head>
   
   <body>
-    
+    <div class="wrapper">
+    <header>
+      <form action="test.php">
+      <input class="image" type="image" src="../assets/images/accueilbutton.png">
+      </form>
+      <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
+      </header>
+      
+      <main>
       <form action="" method="POST">
         <table style="align-content: center;">
           <tr>
@@ -123,7 +131,8 @@ if(isset($_POST['formregister']))
             echo "$msg";
           }
       ?>
-    </div>  
-
+    </div>
+    </main>
+    <footer>I'm a 30px tall footer</footer>
   </body>  
 </html>
