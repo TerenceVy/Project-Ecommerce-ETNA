@@ -113,6 +113,7 @@ header
 footer
 {
     position: fixed;
+    bottom: 0;
       width: 10%;
       background:url("../images/Bande.png");
 }
