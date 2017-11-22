@@ -40,14 +40,12 @@ main {
 
 .cart
 {
-    position: absolute;
     top: 5px;
     right: 10px;
 }
 
 .pop
 {
-  float: left;
     top: 5px;
     left: 5%;
 }
