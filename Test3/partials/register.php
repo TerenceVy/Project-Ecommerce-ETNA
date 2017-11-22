@@ -76,7 +76,7 @@ if(isset($_POST['formregister']))
   <body>
     
       <form action="" method="POST">
-        <table>
+        <table align="center">
           <tr>
             <td><input type="text" placeholder="Nom" name="nom"></td>
           </tr> 
