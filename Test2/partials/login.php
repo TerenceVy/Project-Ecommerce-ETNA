@@ -46,7 +46,7 @@ if (isset($_POST['Connection']))
   </div>
   <div id="blanc"><p> </p></div>
   <div id='contenu' align="center">
-    <table>
+    <table style="margin-top: 35%">
       <center>
 	<div align="center">
 	  <form method="POST"> <br><br><br><br>
