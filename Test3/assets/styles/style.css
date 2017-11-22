@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	background: url(../assets/images/Fond.png);
+	background: url(../images/Fond.png);
 	background-repeat: no-repeat;
 }
 
@@ -12,12 +12,12 @@ body {
 
 header {
 width: 100%;
-background: url(../assets/images/Bande.png);
+background: url(../images/Bande.png);
 }
 
 footer {
     width: 100%;
-    background: url(../assets/images/Bande.png);
+    background: url(../images/Bande.png);
 }
 
 main {
