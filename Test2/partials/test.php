@@ -2,42 +2,13 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<header>
-	<p>Ceci est un test</p>
-</header>
-<nav>
-	<p>Ceci est un ROOT</p>
-</nav>
-<section>
-	<p>GROOT</p>
-	<p>GROOT</p>
-	<p>GROOT</p>
-	<p>GROOT</p>
-	<p>GROOT</p>
-	<p>GROOT</p>
-	<p>GROOT</p>
-	<p>GROOT</p>
-	<p>GROOT</p>
-
-	<p>GROOT</p>
-	<p>GROOT</p>
-	<p>GROOT</p>
-	<p>GROOT</p>
-	<p>GROOT</p>
-
-	<p>GROOT</p>
-	<p>GROOT</p>
-	<p>GROOT</p>
-	<p>GROOT</p>
-	<p>GROOT</p>
-	<p>GROOT</p>
-	<p>GROOT</p><p>GROOT</p>
-
-</section>
-<footer style="background: url(../assets/images/Bande.png);">
-	<p>Copyright</p>
-</footer>
+<div class="wrapper">
+    <header>I'm a 30px tall header</header>
+    <main>I'm the main-content filling the void!</main>
+    <footer>I'm a 30px tall footer</footer>
+</div>
 </body>
 </html>
