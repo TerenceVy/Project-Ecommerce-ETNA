@@ -77,7 +77,7 @@ $results = $req->fetchALL();
     </form>
     <form action="partials/blu-ray.php">
       <div class="achat3">
-        <input type="submit" value="  Blu-ray   " style="position: fixed; top: 25px; left: 450px;">
+        <input type="submit" value="  Blu-ray   " style="position: fixed; top: 25px; left: 400px;">
       </div>
     </form>
     </header>
