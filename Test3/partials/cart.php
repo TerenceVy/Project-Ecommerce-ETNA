@@ -1,5 +1,8 @@
 <?php
 session_start();
+
+$db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
+
 echo $_SESSION['ID'];
 $add = $_POST['submit'];
 
@@ -21,7 +24,6 @@ if (isset($_SESSION['ID']))
   </head>
   <body>
   <?php
-    $db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
 $req = $db->prepare('SELECT Produits.ID, Libelle, Description, Prix_vente, Nombres_produit FROM Produits INNER JOIN Produit_Utilisateur ON Produits.ID = Produit_Utilisateur.ID_produit INNER JOIN Utilisateurs ON Produit_Utilisateur.ID_utilisateur = Utilisateurs.ID WHERE Utilisateurs.ID = ?');
     $req->execute(array($_SESSION['ID']));
     $count = $req->rowCount();
