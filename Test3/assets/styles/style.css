@@ -41,8 +41,8 @@ main {
 
 .myhero
 {
-    width:87.2%;
-    height:47.5%;
+    width:40%;
+    height:auto;
     border-radius: 50px;
     box-shadow: 0 -5px 10px -2px #333;
 }
