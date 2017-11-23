@@ -16,7 +16,7 @@
     </tr>
     <?php 
 $db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
-$req = $db->prepare('SELECT ID, Libelle, Description, Prix_vente, Nombres_produit FROM Produits INNER JOIN Categories ON Categories.ID = Produits.Categorie WHERE Categories.ID = 1');
+$req = $db->prepare('SELECT Produits.ID, Produits.Libelle, Produits.Description, Prix_vente, Nombres_produit FROM Produits INNER JOIN Categories ON Categories.ID = Produits.Categorie WHERE Categories.Libelle = POP');
     $req->execute();
     $results = $req->fetchALL();
     foreach ($results as $key) {
