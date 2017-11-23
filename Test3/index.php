@@ -60,7 +60,7 @@ $results = $req->fetchALL();
     }
     ?>
     <form action="partials/pop.php">
-      <div class="pop">
+      <div class="pop1">
         <input type="submit" value="  Figurine Pop   " style="position: initial; top: 50px; left: 150px;">
       </div>
     </form>

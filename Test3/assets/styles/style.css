@@ -54,6 +54,12 @@ main {
     right: 10px;
 }
 
+.pop1
+{
+  position: absolute;
+  top: 25px;
+  left: 150px;
+}
 .pop
 {
   position: absolute;
