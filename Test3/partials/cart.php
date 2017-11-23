@@ -6,7 +6,7 @@ $add = $_POST['submit'];
 if isset($_SESSION && $add)
 {
     $buy = $db->prepare('INSERT INTO Produit_Utilisateur VALUES (?,?)');
-    $buy->execute(array($add, $_SESSION['ID']))
+    $buy->execute(array($add, $_SESSION['ID']));
 }
 ?>
 
