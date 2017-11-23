@@ -53,7 +53,7 @@ $results = $req->fetchALL();
       ?>
       <form action="partials/login.php">
       <div class="signin">
-        <input type="submit" value="   Login   " style="position: initial; top:70px; right:100px; ">
+        <input type="submit" value="   Login   " style="position: fixed; top:70px; right:100px; ">
       </div>
     </form>
     <?php
