@@ -25,7 +25,7 @@ $results = $req->fetchALL();
   <meta charset="utf-8">
 </head>
 <body>
-<div id='global'>
+<div class="wrapper" '>
     <header>
     <form action="index.php">
       <input class="image" type="image" src="assets/images/accueilbutton.png">
@@ -61,7 +61,7 @@ $results = $req->fetchALL();
     }
     ?>
     <form action="partials/pop.php">
-      <div class="signin">
+      <div class="pop">
         <input type="submit" value="  Figurine Pop   " style="position: fixed; top: 50px; left: 150px;">
       </div>
     </form>
@@ -76,13 +76,9 @@ $results = $req->fetchALL();
       </div>
     </form>
     </header>
-  <div id='menu-gauche'>
+  <main>
     <p>Ceci est un autre test</p>
-  </div>
-  <div id="blanc"><p> </p></div>
-  <div id='contenu' align="center">
   <br><br><br><br><br><br><br><br><br>
-  <div id="blanc"><p> </p></div>
   <img src="assets/images/Myhero.png" class="myhero">
   <form name="frmSearch" method="post" action="index.php">
   <table width="599" border="1">
@@ -126,6 +122,7 @@ if ($count != 0)
     <td><?php
     echo $key['Nombres_produit'];?></td>
     </tr>
+    </table>
 	<?php
 }
 }
@@ -135,9 +132,9 @@ echo 'There is nothing to show';
     ?>
   <p>Je s'appelle GROOT</p>
   </div>
-  <div id='sidebar-droite'>
     <p>Ceci est le test 3</p>
   </div>
+</main><
   <footer>
   <p>Test2</p>
   </footer>
