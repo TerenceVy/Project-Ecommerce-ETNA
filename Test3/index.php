@@ -67,7 +67,7 @@ $results = $req->fetchALL();
     ?>
     <form action="partials/pop.php">
       <div class="pop">
-        <input type="submit" value="  Figurine Pop   ">
+        <input type="submit" value="  Figurine Pop   " style="position: fixed; top: 25px; left: 100px;">
       </div>
     </form>
     <form action="partials/manga.php" method="POST">
