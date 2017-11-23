@@ -15,6 +15,6 @@ make sure all html elements that have an ID are unique and name the buttons subm
 
 <?php
 if (isset($_POST['action'])) {
-    echo '<br />The ' . $_POST['submit'] . ' submit button was pressed<br />';
+    echo $_POST['action'] . '<br />The ' . $_POST['submit'] . ' submit button was pressed<br />';
 }
 ?>
