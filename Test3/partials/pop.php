@@ -39,7 +39,7 @@ $req = $db->prepare('SELECT ID, Libelle, Description, Prix_vente, Nombres_produi
     echo $key['Nombres_produit'];?></td>
     <td><form method="post" action="cart.php">
         <button type="submit" value="Buy it" name="Buy">
-        <input type="submit" name="submit" value=<?php echo $key['ID'] ?>>
+        <input type="number" name="submit" value=<?php echo $key['ID'] ?>>
         </button>
         </form>
         </td>
