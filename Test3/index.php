@@ -117,7 +117,7 @@ if ($count != 0)
     <tr>
     <td>
     <?php
-    $img = "../assets/images/" . $key['ID'] . ".png";
+    $img = "assets/images/" . $key['ID'] . ".png";
     echo "<img src='$img' style='width: 86px; height : auto'>";
     ?>
     </td>
