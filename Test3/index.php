@@ -78,7 +78,7 @@ $results = $req->fetchALL();
   <main>
     <p>Ceci est un autre test</p>
   <br><br><br><br><br><br><br><br><br>
-  <img src="assets/images/Myhero.png" class="myhero" style="width: 100%;"">
+  <img src="assets/images/Myhero.png" class="myhero" style="width: 50%;"">
   <form name="frmSearch" method="post" action="index.php">
   <table width="599" border="1">
     <tr>
