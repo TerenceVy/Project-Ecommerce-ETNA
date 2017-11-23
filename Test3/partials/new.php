@@ -8,7 +8,7 @@
 <!-- 
 make sure all html elements that have an ID are unique and name the buttons submit 
 -->
-    <input id="tea-submit" type="submit" name="submit" value="Tea">
+    <input id="tea-submit" type="submit" name="submit" value="Teaa">
     <input id="coffee-submit" type="submit" name="submit" value="Coffee">
 </form>
 </html>
