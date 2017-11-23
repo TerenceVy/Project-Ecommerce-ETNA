@@ -44,10 +44,7 @@ if (isset($_POST['Connection']))
     <main>
     <p>Ceci est un autre test</p>
   </div>
-  <div id="blanc"><p> </p></div>
-  <div id='contenu' align="center">
     <table>
-      <center>
 	<div align="center">
 	  <form method="POST">
 	    <input type="email" name="email" placeholder="Your email" required><br>
@@ -60,9 +57,7 @@ if (isset($_POST['Connection']))
 	    <input type="Submit" value="Register">
 	  </form>
 	</div>
-      </center>
     </table>
-    </div>
     </main>
     <footer>
   <p>Test2</p>
