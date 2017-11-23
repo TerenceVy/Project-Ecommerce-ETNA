@@ -122,9 +122,10 @@ if ($count != 0)
     <td><?php
     echo $key['Nombres_produit'];?></td>
     </tr>
-    </table>
 	<?php
-}
+} ?> 
+</table>
+<?php
 }
 else {
 echo 'There is nothing to show';
