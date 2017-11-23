@@ -57,6 +57,11 @@ $results = $req->fetchALL();
         <input type="submit" value="   Login   " style="position: fixed; top:100px; right:100px; ">
       </div>
     </form>
+    <form action="partials/TEST_CART.php">
+      <div class="signin">
+        <input type="submit" value="   Login   " style="position: fixed; top:100px; right:50px; ">
+      </div>
+    </form>
     <?php
     }
     ?>
