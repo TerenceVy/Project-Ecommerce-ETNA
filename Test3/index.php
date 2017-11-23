@@ -119,7 +119,7 @@ if ($count != 0)
 	<?php
 } ?> 
 </table>
-<img src="assets/images/1.png">
+<img src="assets/images/1.png" class="myhero">
 <?php
 }
 else {
