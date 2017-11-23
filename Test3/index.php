@@ -30,7 +30,7 @@ $results = $req->fetchALL();
     <form action="index.php">
       <input class="image" type="image" src="assets/images/accueilbutton.png" style="width: 7%; height: auto">
     </form>
-    <div class="etna" style="margin-left: 35%; margin-top:-3%;"> ETNA MANGA </div>
+    <div class="etna" style="margin-left: 35%; margin-top:-2%;"> ETNA MANGA </div>
     <input type="search" name="search" style="position: fixed; top: 25px; right: 50px">
     <?php
     if (isset($_SESSION['ID']))
