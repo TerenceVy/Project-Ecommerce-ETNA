@@ -120,6 +120,7 @@ if ($count != 0)
 } ?> 
 </table>
 <img src="assets/images/1.png" class="manga">
+<img src="assets/images/2.png" class="pop">
 <?php
 }
 else {
