@@ -33,15 +33,15 @@ if (isset($_POST['Connection']))
   </head>
   
   <body>
-  <div id='global'>
+    <div class="wrapper">
     <header>
     <form action="../index.php">
       <input class="image" type="image" src="../assets/images/accueilbutton.png">
     </form>
     <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
-    <input type="search" name="search" style="position: fixed; top: 25px; right: 50px">
     </header>
-    <div id='menu-gauche'>
+
+    <main>
     <p>Ceci est un autre test</p>
   </div>
   <div id="blanc"><p> </p></div>
@@ -63,9 +63,11 @@ if (isset($_POST['Connection']))
       </center>
     </table>
     </div>
+    </main>
     <footer>
   <p>Test2</p>
   </footer>
+  </div>
   </body>
   
 </html>
