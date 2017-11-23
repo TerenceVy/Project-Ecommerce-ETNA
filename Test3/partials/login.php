@@ -49,7 +49,7 @@ if (isset($_POST['Connection']))
     <table>
       <center>
 	<div align="center">
-	  <form method="POST"> <br><br><br><br>
+	  <form method="POST"
 	    <input type="email" name="email" placeholder="Your email" required><br>
 	    <br>
 	    <input type="Password" name="passwd" placeholder="Password" required><br>
