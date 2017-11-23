@@ -131,9 +131,6 @@ else {
 echo 'There is nothing to show';
 }
     ?>
-  <p>Je s'appelle GROOT</p>
-  </div>
-    <p>Ceci est le test 3</p>
   </div>
 </main><
   <footer>
