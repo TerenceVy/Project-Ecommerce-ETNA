@@ -56,8 +56,8 @@ INSERT INTO `Categories` (`ID`, `Libelle`, `Description`, `Date_creation`, `Date
 --
 
 CREATE TABLE IF NOT EXISTS `Produit_Utilisateur` (
-  `ID_produit` int(10) unsigned DEFAULT NULL,
-  `ID_utilisateur` int(10) unsigned DEFAULT NULL
+  `ID_produit` int(10) unsigned NOT NULL,
+  `ID_utilisateur` int(10) unsigned NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
