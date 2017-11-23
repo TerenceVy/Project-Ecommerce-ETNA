@@ -82,7 +82,7 @@ $results = $req->fetchALL();
   <form name="frmSearch" method="post" action="index.php">
   <table width="599" border="1">
     <tr>
-      <th>Keyword :
+      <th>Keyword 
       <input name="var1" type="text" id="var1">
       <input type="submit" value="Search"></th>
     </tr>
@@ -95,11 +95,11 @@ if ($count != 0)
 	?>
 <table align="center" border="1" style="text-align: center; margin-top: 10%">
     <tr>
-        <td><p style="font-size: 20px"> Produit </p></td>
-        <td><p style="font-size: 20px"> Libelle </p></td>
-        <td><p style="font-size: 20px"> Description </p></td>
-        <td><p style="font-size: 20px"> Prix de vente </p></td>
-        <td><p style="font-size: 20px"> Nombre de produit </p></td>
+        <td><p> style="font-size: 20px"> Produit </p></td>
+        <td><p> style="font-size: 20px"> Libelle </p></td>
+        <td><p> style="font-size: 20px"> Description </p></td>
+        <td><p> style="font-size: 20px"> Prix de vente </p></td>
+        <td><p> style="font-size: 20px"> Nombre de produit</p></td>
     </tr>
     <?php
     foreach ($results as $key) {
