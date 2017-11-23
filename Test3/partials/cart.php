@@ -13,6 +13,10 @@ if (isset($_SESSION['ID']))
 
 }
 
+if (isset($_POST['delete'])) {
+    $del = $db->prepare('DELETE FROM Produit_Utilisateur WHERE ID_utilisateur = ?');
+    $del->execute(array($_SESSION['ID']));
+}
 ?>
 
 
@@ -58,6 +62,11 @@ $req = $db->prepare('SELECT Produits.ID, Libelle, Description, Prix_vente, Nombr
     echo $key['Prix_vente'] . " $";?></td>
     <td><?php
     echo $key['Nombres_produit'];?></td>
+    </tr>
+    <tr>
+        <td><form name="Delete" method="post" action="cart.php">
+            <button>Delete Cart<input type="hidden" name="delete" value="del"></button>
+        </form></td>
     </tr>
 	<?php
 }
