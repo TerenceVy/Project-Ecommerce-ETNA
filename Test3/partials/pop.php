@@ -38,7 +38,7 @@ $req = $db->prepare('SELECT ID, Libelle, Description, Prix_vente, Nombres_produi
     <td><?php
     echo $key['Nombres_produit'];?></td>
     <td><form method="post" action="pop.php">
-        <input type="submit" name="submit" value="<?php $key['ID'] ?> $key['ID']">
+        <input type="submit" name="submit" value=<?php $key['ID'] ?>>
         <?php echo $_POST['submit'];?>
     </form></td>
     </tr>
