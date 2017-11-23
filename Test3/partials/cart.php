@@ -25,6 +25,9 @@ if (isset($_POST['validate'])) {
     $del->execute(array($_SESSION['ID']));
     echo "Achat effecue";
 }
+$sum = $db->prepare('SELECT SUM(Prix_vente) FROM Produits INNER JOIN Produit_Utilisateur ON Produit_Utilisateur.ID_produit = Produits.ID WHERE Produit_Utilisateur.ID_utilisateur = ?');
+$sum->execute(array($_SESSION['ID']));
+$results = $sum->fetch();
 ?>
 
 
@@ -78,10 +81,10 @@ $req = $db->prepare('SELECT Produits.ID, Libelle, Description, Prix_vente, Nombr
         <td><form name="Delete" method="post" action="cart.php">
             <button>Delete Cart<input type="hidden" name="delete" value="del"></button>
         </form></td>
-    </tr>
     <td><form name="Confirm" method="post" action="cart.php">
             <button>Validate<input type="hidden" name="validate" value="validate"></button>
         </form></td>
+        <td><?php echo "Prix total" . $results . "$"?></td>
     </tr>
 	<?php
 }
