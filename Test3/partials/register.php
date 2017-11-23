@@ -67,7 +67,7 @@ if(isset($_POST['formregister']))
 ?>
 
 <html>
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="../assets/styles/style.css" type="text/css">
   <head>
        <meta charset="utf-8"/>
        <title>Etna Manga</title>
