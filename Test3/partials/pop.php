@@ -39,7 +39,7 @@ $req = $db->prepare('SELECT ID, Libelle, Description, Prix_vente, Nombres_produi
     echo $key['Nombres_produit'];?></td>
         <td><?php
     echo $key['ID'];?></td>
-    <td><form method="get">
+    <td><form method="post">
         <input type="hidden" name="add" id=<?php $_POST['add'] ?>>
         <input type="submit">
         <?php echo $_POST['add'];?>
