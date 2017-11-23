@@ -1,5 +1,5 @@
 <?php
-try{https://stackoverflow.com/
+try{
 $db = new PDO('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
@@ -65,12 +65,9 @@ if ($count != 0)
 	<?php
 }
 }
-else
-echo "Votre panier est vide";
-?>
-<?php /* else {
+else {
 echo 'There is nothing to show';
 }
-*/?>
+    ?>
 </body>
 </html>
