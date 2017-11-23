@@ -3,12 +3,13 @@
   <head>
     <link rel="stylesheet" href="../assets/styles/style.css" type="text/css">
     <meta charset="utf-8">
-    <title>Categorie</title>
+    <title>Figurines Pop</title>
   </head>
+
   <body>
-  <div class="wrapper">
+<div class="wrapper">
     <header>
-        <main>
+      <main>
     <form action="test.php">
       <input class="image" type="image" src="../assets/images/accueilbutton.png">
     </form>
@@ -31,18 +32,21 @@
   </header>
 
 
-<table align="center" border="1" style="text-align: center; margin-top: 10%">
+
+
+
+  <?php echo $_POST?>
+<table align="center" border="1" style="text-align: center; margin-top: 10%; margin-bottom: 25px">
     <tr>
         <td><p style="font-size: 20px"> Produit </p></td>
         <td><p style="font-size: 20px"> Libelle </p></td>
         <td><p style="font-size: 20px"> Description </p></td>
         <td><p style="font-size: 20px"> Prix de vente </p></td>
         <td><p style="font-size: 20px"> Nombre de produit </p></td>
-        <td><p style="font-size: 20px"> ID </p></td>
     </tr>
     <?php 
 $db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
-$req = $db->prepare('SELECT Produits.ID, Produits.Libelle, Produits.Description, Prix_vente, Nombres_produit FROM Produits INNER JOIN Categories ON Categories.ID = Produits.Categorie WHERE Categories.ID = 1');
+$req = $db->prepare('SELECT ID, Libelle, Description, Prix_vente, Nombres_produit FROM Produits WHERE Categorie = 1');
     $req->execute();
     $results = $req->fetchALL();
     foreach ($results as $key) {
@@ -63,20 +67,13 @@ $req = $db->prepare('SELECT Produits.ID, Produits.Libelle, Produits.Description,
     echo $key['Prix_vente'] . " $";?></td>
     <td><?php
     echo $key['Nombres_produit'];?></td>
-    <td><form method="post" action="cart.php">
-        <button type="submit" value="BUY IT" name="Buy">Add to cart
-        <input type="hidden" name="submit" value=<?php echo $key['ID'] ?>>
-        </button>
-        </form>
-        </td>
-        <?php echo $_POST['submit'];?>
     </tr>
 <?php   
 }
 ?>
 </table>
-  </div>
-  </main>
-<footer>a</footer>
+</div>
+</main>
+<footer><br></footer>
   </body>
 </html>

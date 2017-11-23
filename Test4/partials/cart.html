@@ -24,7 +24,9 @@ if (isset($_SESSION['ID']))
     <title>Cart</title>
   </head>
   <body>
+    <div class="wrapper">
     <header>
+      <main>
     <form action="test.php">
       <input class="image" type="image" src="../assets/images/accueilbutton.png">
     </form>
@@ -45,8 +47,6 @@ if (isset($_SESSION['ID']))
       </div>
     </form>
   </header>
-  <main>
-  </main>
 
 
 
@@ -95,6 +95,8 @@ echo "Votre panier est vide";
 echo $_POST['submit'];
 ?>
 </table>
+  </div>
+  </main>
 <footer>aa</footer>
   </body>
 </html>
