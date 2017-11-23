@@ -59,19 +59,19 @@ $results = $req->fetchALL();
     <?php
     }
     ?>
-    <form action="partials/pop.php">
+    <form action="partials/categorie.php" method="POST">
       <div class="pop1">
-        <input type="submit" value="  Figurine Pop   " style="position: initial; top: 50px; left: 150px;">
+        <button>Figurine POP<input type="hidden" value="2" name="cat"></button>
       </div>
     </form>
-    <form action="partials/manga.php" method="POST">
+    <form action="partials/categorie.php" method="POST">
       <div class="achat2">
-        <input type="submit" value="  Manga   " name="1" style="position: fixed; top: 50px; left: 280px;">
+        <button>Manga<input type="hidden" value="1" name="cat"></button>
       </div>
     </form>
-    <form action="partials/blu-ray.php">
+    <form action="partials/categorie.php" method="POST">
       <div class="achat3">
-        <input type="submit" value="  Blu-ray   " style="position: fixed; top: 50px; left: 380px;">
+        <button>Blu-ray<input type="hidden" value="3" name="cat"></button>
       </div>
     </form>
     </header>
