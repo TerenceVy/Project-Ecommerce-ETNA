@@ -1,7 +1,16 @@
 <?php
 session_start();
 echo $_SESSION['ID'];
+$add = $_POST['submit'];
+
+if isset($_SESSION && $add)
+{
+    $buy = $db->prepare('INSERT INTO Produit_Utilisateur VALUES (?,?)');
+    $buy->execute(array($add, $_SESSION['ID']))
+}
 ?>
+
+
 
 <!DOCTYPE html>
 <html>
