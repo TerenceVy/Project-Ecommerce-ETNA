@@ -121,6 +121,7 @@ if ($count != 0)
 </table>
 <img src="assets/images/1.png" class="manga">
 <img src="assets/images/2.png" class="pop">
+<img src="assets/images/3.png" class="blu-ray">
 <?php
 }
 else {
