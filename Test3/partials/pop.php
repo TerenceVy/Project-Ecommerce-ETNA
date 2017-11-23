@@ -12,6 +12,7 @@
         <td><p style="font-size: 20px"> Description </p></td>
         <td><p style="font-size: 20px"> Prix de vente </p></td>
         <td><p style="font-size: 20px"> Nombre de produit </p></td>
+        <td><p style="font-size: 20px"> ID </p></td>
     </tr>
     <?php 
 $db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
