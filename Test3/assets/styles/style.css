@@ -57,8 +57,8 @@ main {
 .pop
 {
   position: absolute;
-  top: 470px;
-  left: 650px;
+  top: 52%;
+  left: 35%;
   width:6%
 }
 
@@ -81,7 +81,7 @@ main {
 .blu-ray
 {
   position: absolute;
-    top: 590px;
-    left: 650px;
+    top: 65%;
+    left: 35%;
     width: 4%;
 }
