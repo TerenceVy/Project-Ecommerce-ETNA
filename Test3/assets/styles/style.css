@@ -57,8 +57,11 @@ main {
 .pop
 {
   position: absolute;
-    left: 7%;
+  top: 470px;
+  left: 650px;
+  width:6%
 }
+
 
 .signin
 {
@@ -70,7 +73,7 @@ main {
 .manga
 {
   position: absolute;
-    top: 350px;
+    top: 320px;
     left: 650px;
     width:4%;
 }
