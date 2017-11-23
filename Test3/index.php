@@ -80,12 +80,8 @@ $results = $req->fetchALL();
         <img src="assets/images/Myhero.png" class="myhero" style="margin-top: 10%;">
     </center>
   <form name="frmSearch" method="post" action="index.php">
-  <table width="599" border="1">
-    <tr>
       <input name="var1" type="text" id="var1">
       <input type="submit" value="Search">
-    </tr>
-  </table>
 </form>
 <?php echo $search; ?>
 	<?php
