@@ -31,6 +31,7 @@ $results = $req->fetchALL();
       <input class="image" type="image" src="assets/images/accueilbutton.png">
     </form>
     <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
+    <img src="assets/images/Myhero.png" class="myhero">
     <?php
     if (isset($_SESSION['ID']))
     {
@@ -78,7 +79,6 @@ $results = $req->fetchALL();
   <main>
     <p>Ceci est un autre test</p>
   <br><br><br><br><br><br><br><br><br>
-  <img src="assets/images/Myhero.png" class="myhero">
   <form name="frmSearch" method="post" action="index.php">
   <table width="599" border="1">
     <tr>
