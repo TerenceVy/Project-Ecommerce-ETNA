@@ -72,7 +72,7 @@ $results = $req->fetchALL();
     </form>
     <form action="partials/manga.php" method="POST">
       <div class="achat2">
-        <input type="submit" value="  Manga   " name="1">
+        <input type="submit" value="  Manga   " name="1" style="position: fixed; top: 25px; left: 250px;>
       </div>
     </form>
     <form action="partials/blu-ray.php">
