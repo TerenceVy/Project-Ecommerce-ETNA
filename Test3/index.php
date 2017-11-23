@@ -25,7 +25,7 @@ $results = $req->fetchALL();
   <meta charset="utf-8">
 </head>
 <body>
-<div class="wrapper" >
+<div class="wrapper">
     <header>
     <form action="index.php">
       <input class="image" type="image" src="assets/images/accueilbutton.png">
@@ -82,9 +82,8 @@ $results = $req->fetchALL();
   <form name="frmSearch" method="post" action="index.php">
   <table width="599" border="1">
     <tr>
-      <th>Keyword 
       <input name="var1" type="text" id="var1">
-      <input type="submit" value="Search"></th>
+      <input type="submit" value="Search">
     </tr>
   </table>
 </form>
@@ -131,7 +130,7 @@ echo 'There is nothing to show';
 }
     ?>
   </div>
-</main><
+</main>
   <footer>
   <p>Test2</p>
   </footer>
