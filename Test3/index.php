@@ -25,7 +25,7 @@ $results = $req->fetchALL();
   <meta charset="utf-8">
 </head>
 <body>
-<div class="wrapper" '>
+<div class="wrapper" >
     <header>
     <form action="index.php">
       <input class="image" type="image" src="assets/images/accueilbutton.png">
@@ -95,11 +95,11 @@ if ($count != 0)
 	?>
 <table align="center" border="1" style="text-align: center; margin-top: 10%">
     <tr>
-        <td><p> style="font-size: 20px"> Produit </p></td>
-        <td><p> style="font-size: 20px"> Libelle </p></td>
-        <td><p> style="font-size: 20px"> Description </p></td>
-        <td><p> style="font-size: 20px"> Prix de vente </p></td>
-        <td><p> style="font-size: 20px"> Nombre de produit</p></td>
+        <td><p style="font-size: 20px"> Produit </p></td>
+        <td><p style="font-size: 20px"> Libelle </p></td>
+        <td><p style="font-size: 20px"> Description </p></td>
+        <td><p style="font-size: 20px"> Prix de vente </p></td>
+        <td><p style="font-size: 20px"> Nombre de produit</p></td>
     </tr>
     <?php
     foreach ($results as $key) {
