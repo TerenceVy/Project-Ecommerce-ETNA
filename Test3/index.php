@@ -30,7 +30,7 @@ $results = $req->fetchALL();
     <form action="index.php">
       <input class="image" type="image" src="assets/images/accueilbutton.png" style="width: 7%; height: auto">
     </form>
-    <div class="etna" style="margin-left: 35%; margin-top:0%;"> ETNA MANGA </div>
+    <div class="etna" style="margin-left: 35%; margin-top:-10%;"> ETNA MANGA </div>
     <input type="search" name="search" style="position: fixed; top: 25px; right: 50px">
     <?php
     if (isset($_SESSION['ID']))
@@ -72,7 +72,7 @@ $results = $req->fetchALL();
     </form>
     <form action="partials/manga.php" method="POST">
       <div class="achat2">
-        <input type="submit" value="  Manga   " name="1" style="position: fixed; top: 25px; left: 280px;>
+        <input type="submit" value="  Manga   " name="1" style="position: fixed; top: 25px; left: 280px;">
       </div>
     </form>
     <form action="partials/blu-ray.php">
