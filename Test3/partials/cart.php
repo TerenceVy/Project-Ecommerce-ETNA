@@ -128,7 +128,6 @@ else{
 </center>
 <?php } ?>
 </main>
-    <footer>Test</footer>
-  </div>
+  </div><footer>Test</footer>
   </body>
 </html>
