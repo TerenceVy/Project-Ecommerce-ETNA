@@ -45,6 +45,7 @@
       <input name="var1" type="text" id="var1" placeholder="Keyword">
       <input type="submit" value="Search">
       </form>
+      </div>
 
         <form action="categorie.php" method="POST">
       <div class="pop1">
