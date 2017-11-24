@@ -124,9 +124,9 @@ else{
     ?></table>
 }
 <center>
-<div class="empty"><?php echo "Votre panier est vide"; }?></div>
+<div class="empty"><?php echo "Votre panier est vide"; ?></div>
 </center>
-
+<?php } ?>
 </main>
     <footer><br><br></footer>
   </div>
