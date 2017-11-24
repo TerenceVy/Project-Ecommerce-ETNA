@@ -10,8 +10,6 @@ if (isset($_SESSION['ID']))
 {
     $buy = $db->prepare('INSERT INTO Produit_Utilisateur VALUES (?,?)');
     $buy->execute(array($add, $_SESSION['ID']));
-    $_POST['submit'] = 0;
-    $add = 0;
 
 }
 
@@ -22,6 +20,7 @@ if (isset($_POST['delete'])) {
 
 if (isset($_POST['validate'])) {
     $val = $db->prepare('UPDATE Produits INNER JOIN Produit_Utilisateur ON Produit_Utilisateur.ID_produit = Produits.ID SET Nombres_produit = Nombres_produit - 1 WHERE Produit_Utilisateur.ID_utilisateur = ? AND Nombres_produit >= 0 ');
+    }
     $val->execute(array($_SESSION['ID']));
     $del = $db->prepare('DELETE FROM Produit_Utilisateur WHERE ID_utilisateur = ?');
     $del->execute(array($_SESSION['ID']));

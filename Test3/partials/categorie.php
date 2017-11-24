@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="../assets/styles/style.css" type="text/css">
     <meta charset="utf-8">
     <title>Categorie</title>
   </head>
   <body>
+    <div class="wrapper">
+    <header>
+      <main>
+    <form action="test.php">
+      <input class="image" type="image" src="../assets/images/accueilbutton.png">
+    </form>
+    <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
+    <form action="partials/pop.php">
+      <div class="pop1">
+        <input type="submit" value="  Figurine Pop   " style="position: initial; top: 50px; left: 150px;">
+      </div>
+    </form>
+    <form action="partials/manga.php" method="POST">
+      <div class="achat2">
+        <input type="submit" value="  Manga   " name="1" style="position: fixed; top: 50px; left: 280px;">
+      </div>
+    </form>
+    <form action="partials/blu-ray.php">
+      <div class="achat3">
+        <input type="submit" value="  Blu-ray   " style="position: fixed; top: 50px; left: 380px;">
+      </div>
+    </form>
+  </header>
+
+
 <table align="center" border="1" style="text-align: center; margin-top: 10%">
     <tr>
         <td><p style="font-size: 20px"> Produit </p></td>
@@ -50,5 +76,7 @@ $req = $db->prepare('SELECT Produits.ID, Produits.Libelle, Produits.Description,
 }
 ?>
 </table>
+</div>
+</main>
   </body>
 </html>
