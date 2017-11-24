@@ -121,8 +121,9 @@ $req = $db->prepare('SELECT Produits.ID, Libelle, Description, Prix_vente, Nombr
 	<?php
 }
 else{
-    ?></table>
+    ?>
 }
+</table>
 <center>
 <div class="empty"><?php echo "Votre panier est vide"; ?></div>
 </center>
