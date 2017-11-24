@@ -64,6 +64,7 @@ $price = $sum->fetch();
       </div>
     </header>
 <main>
+   <div class="signin1"><?php echo $_SESSION['Mail']; ?></div>
   <?php
   if (isset($_POST['validate'])) {
     $val = $db->prepare('UPDATE Produits INNER JOIN Produit_Utilisateur ON Produit_Utilisateur.ID_produit = Produits.ID SET Nombres_produit = Nombres_produit - 1 WHERE Produit_Utilisateur.ID_utilisateur = ? AND Nombres_produit >= 0 ');
