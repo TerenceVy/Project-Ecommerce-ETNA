@@ -83,6 +83,8 @@ if(isset($_POST['formregister']))
       </header>
       
       <main>
+         </div>
+    </main>
       <form action="" method="POST">
         <table style="align-content: center;">
           <tr>
@@ -131,8 +133,6 @@ if(isset($_POST['formregister']))
             echo "$msg";
           }
       ?>
-    </div>
-    </main>
-    <footer>I'm a 30px tall footer</footer>
+    <footer><br><br></footer>
   </body>  
 </html>
