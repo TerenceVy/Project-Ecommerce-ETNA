@@ -74,6 +74,12 @@ $results = $req->fetchALL();
         <button>Blu-ray<input type="hidden" value="3" name="cat"></button>
       </div>
     </form>
+    <div class="search">
+  <form name="frmSearch" method="post" action="search.php">
+      <input name="var1" type="text" id="var1" placeholder="Keyword">
+      <input type="submit" value="Search">
+      </form>
+      </div>
     </header>
   <main>
     <center>
