@@ -85,7 +85,6 @@ $req = $db->prepare('SELECT Produits.ID, Libelle, Description, Prix_vente, Nombr
         <td><p style="font-size: 20px"> Libelle </p></td>
         <td><p style="font-size: 20px"> Description </p></td>
         <td><p style="font-size: 20px"> Prix de vente </p></td>
-        <td><p style="font-size: 20px"> Nombre de produit </p></td>
     </tr>
     <?php
     foreach ($results as $key) {
@@ -104,8 +103,7 @@ $req = $db->prepare('SELECT Produits.ID, Libelle, Description, Prix_vente, Nombr
     echo $key['Description'];?></td>
     <td><?php
     echo $key['Prix_vente'] . " $";?></td>
-    <td><?php
-    echo $key['Nombres_produit'];?></td>
+    <td>
     </tr>
     <?php
 }
