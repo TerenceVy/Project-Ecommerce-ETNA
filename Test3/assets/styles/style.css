@@ -44,7 +44,7 @@ main {
     height: auto;
     border-radius: 50px;
     box-shadow: 0 -5px 10px -2px #333;
-    background: url("../images/Myhero.png");
+    content: url("../images/Myhero.png");
 }
 
 .cart
