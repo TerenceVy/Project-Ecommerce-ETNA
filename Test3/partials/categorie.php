@@ -36,6 +36,7 @@
       <div class="signin">
         <input type="submit" value="   Login   " style=" top:70px; left:50%; ">
       </div>
+      </form>
     <?php
     }
     ?>
