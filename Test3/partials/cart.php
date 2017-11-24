@@ -23,6 +23,9 @@ if (isset($_POST['delete'])) {
 $sum = $db->prepare('SELECT SUM(Prix_vente) FROM Produits INNER JOIN Produit_Utilisateur ON Produit_Utilisateur.ID_produit = Produits.ID WHERE Produit_Utilisateur.ID_utilisateur = ?');
 $sum->execute(array($_SESSION['ID']));
 $price = $sum->fetch();
+foreach ($price as $k) {
+    $price = $k->(0);
+}
 var_dump($price);
 ?>
 
