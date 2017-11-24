@@ -102,7 +102,7 @@ $req = $db->prepare('SELECT Produits.ID, Libelle, Description, Prix_vente, Nombr
     <td><?php
     echo $key['Description'];?></td>
     <td><?php
-    echo $key['Prix_vente'] . $price . " $";?></td>
+    echo $key['Prix_vente'] .  " $";?></td>
     </tr>
     <?php
 }
