@@ -110,10 +110,7 @@ echo "Votre panier est vide";
 echo $_POST['submit'];
 ?>
 </table>
-<?php if (isset($count)) {
-    echo $count;
-}
-?>
+
 </main>
     <footer><br><br></footer>
   </div>
