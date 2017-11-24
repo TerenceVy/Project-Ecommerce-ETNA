@@ -11,6 +11,7 @@ if (isset($_SESSION['ID']))
     $buy = $db->prepare('INSERT INTO Produit_Utilisateur VALUES (?,?)');
     $buy->execute(array($add, $_SESSION['ID']));
     $_POST['submit'] = 0;
+    $add = 0;
 
 }
 
