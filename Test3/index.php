@@ -21,7 +21,7 @@ session_start();
       <input type="submit" value="Search">
 </form>
 </div>
-    <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
+    <div class="etna"> ETNA MANGA </div>
     <?php
     if (isset($_SESSION['ID']))
     {
