@@ -81,7 +81,7 @@ $results = $req->fetchALL();
       <input name="var1" type="text" id="var1">
       <input type="submit" value="Search">
 </form>
-<?php echo $search; ?>
+<?php echo $search . ":"; ?>
 	<?php
 if ($count != 0)
 {
