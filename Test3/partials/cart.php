@@ -53,9 +53,7 @@ $results = $sum->fetch();
 </form>
 </div>
  <div class="etna"> ETNA MANGA </div>
-
-
-
+<main>
   <?php
 $req = $db->prepare('SELECT Produits.ID, Libelle, Description, Prix_vente, Nombres_produit FROM Produits INNER JOIN Produit_Utilisateur ON Produits.ID = Produit_Utilisateur.ID_produit INNER JOIN Utilisateurs ON Produit_Utilisateur.ID_utilisateur = Utilisateurs.ID WHERE Utilisateurs.ID = ?');
     $req->execute(array($_SESSION['ID']));
@@ -116,6 +114,7 @@ echo $_POST['submit'];
 }
 ?>
     <footer><br><br></footer>
+</main>
   </div>
   </body>
 </html>
