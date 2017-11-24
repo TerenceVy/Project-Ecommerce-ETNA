@@ -97,3 +97,8 @@ main {
   top: 3%;
   right: 2%;
 }
+.empty
+{
+  color: grey;
+  font-size: 10px;
+}
