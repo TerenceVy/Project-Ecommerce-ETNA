@@ -33,7 +33,15 @@ if (isset($_POST['Connection']))
   </head>
   
   <body>
-       <table>
+
+    <div class="wrapper">
+    <header>
+    <form action="../index.php">
+      <input class="image" type="image" src="../assets/images/accueilbutton.png">
+    </form>
+    <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
+    </header>
+   <table>
   <div align="center">
     <form method="POST">
       <input type="email" name="email" placeholder="Your email" required><br>
@@ -47,14 +55,6 @@ if (isset($_POST['Connection']))
     </form>
   </div>
     </table>
-    <div class="wrapper">
-    <header>
-    <form action="../index.php">
-      <input class="image" type="image" src="../assets/images/accueilbutton.png">
-    </form>
-    <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
-    </header>
-
     <main>
   </div>
     </main>
