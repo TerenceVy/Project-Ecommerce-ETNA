@@ -93,6 +93,7 @@ main {
 
 .search
 {
+  position: absolute;
   margin-top: 2%;
   margin-right: 2%;
 }
