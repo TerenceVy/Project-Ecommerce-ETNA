@@ -69,7 +69,7 @@ $results = $sum->fetch();
     $val->execute(array($_SESSION['ID']));
     $del = $db->prepare('DELETE FROM Produit_Utilisateur WHERE ID_utilisateur = ?');
     $del->execute(array($_SESSION['ID']));
-    echo "Achat effecue";
+    <div class="empty"><?php echo "Achat effecue"; ?></div>
 }
 $req = $db->prepare('SELECT Produits.ID, Libelle, Description, Prix_vente, Nombres_produit FROM Produits INNER JOIN Produit_Utilisateur ON Produits.ID = Produit_Utilisateur.ID_produit INNER JOIN Utilisateurs ON Produit_Utilisateur.ID_utilisateur = Utilisateurs.ID WHERE Utilisateurs.ID = ?');
     $req->execute(array($_SESSION['ID']));
