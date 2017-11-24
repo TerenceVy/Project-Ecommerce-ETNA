@@ -75,7 +75,7 @@ session_start();
   <br>
   <img src="assets/images/cb.png" style="width: 150px; height: auto; margin-left: 35px">
   <img src="assets/images/secured.png" style="width: 100px; height: auto; margin-left: 35px">
-    <a href="partials/contact.php" target="_blank" style="color: grey; position: absolute; bottom: 2%; left: 40%">Contact us</a>
+    <a href="partials/contact.php" target="_blank" style="color: grey; position: absolute; bottom: 5%; left: 25%">Contact us</a>
   <br><br>
   </footer>
   </div>
