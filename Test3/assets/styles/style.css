@@ -78,10 +78,9 @@ main {
 .manga
 {
   position: absolute;
-    top: 25px;
-    left: 35px;
-    width:4%;
-}
+    top: 52%;
+  left: 35%;
+  width:6%
 
 .blu-ray
 {
