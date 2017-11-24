@@ -30,7 +30,7 @@ $results = $req->fetchALL();
       <form action="../index.php">
       <input class="image" type="image" src="../assets/images/accueilbutton.png">
     </form>
-    <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
+    <div class="etna"> ETNA MANGA </div>
       <form action="cart.php">
       <div class="cart">
         <input type="submit" value= "   Cart   ">
