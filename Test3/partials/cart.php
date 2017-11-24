@@ -2,8 +2,6 @@
 session_start();
 
 $db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
-
-echo $_SESSION['ID'];
 $add = $_POST['submit'];
 
 if (isset($_SESSION['ID']))
@@ -38,10 +36,25 @@ $results = $sum->fetch();
 <!DOCTYPE html>
 <html>
   <head>
+      <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
     <meta charset="utf-8">
     <title>Cart</title>
   </head>
   <body>
+<div class="wrapper">
+    <header>
+    <form action="index.php">
+      <input class="image" type="image" src="assets/images/accueilbutton.png">
+    </form>
+        <div class="search">
+  <form name="frmSearch" method="post" action="partials/search.php">
+      <input name="var1" type="text" id="var1" placeholder="Keyword">
+      <input type="submit" value="Search">
+</form>
+</div>
+
+
+    
   <?php
 $req = $db->prepare('SELECT Produits.ID, Libelle, Description, Prix_vente, Nombres_produit FROM Produits INNER JOIN Produit_Utilisateur ON Produits.ID = Produit_Utilisateur.ID_produit INNER JOIN Utilisateurs ON Produit_Utilisateur.ID_utilisateur = Utilisateurs.ID WHERE Utilisateurs.ID = ?');
     $req->execute(array($_SESSION['ID']));
