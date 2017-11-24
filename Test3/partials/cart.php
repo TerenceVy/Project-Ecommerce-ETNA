@@ -36,18 +36,18 @@ $results = $sum->fetch();
 <!DOCTYPE html>
 <html>
   <head>
-      <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+      <link rel="stylesheet" type="text/css" href="../assets/styles/style.css">
     <meta charset="utf-8">
     <title>Cart</title>
   </head>
   <body>
 <div class="wrapper">
     <header>
-    <form action="index.php">
-      <input class="image" type="image" src="assets/images/accueilbutton.png">
+    <form action="../index.php">
+      <input class="image" type="image" src="../assets/images/accueilbutton.png">
     </form>
         <div class="search">
-  <form name="frmSearch" method="post" action="partials/search.php">
+  <form name="frmSearch" method="post" action="../partials/search.php">
       <input name="var1" type="text" id="var1" placeholder="Keyword">
       <input type="submit" value="Search">
 </form>
