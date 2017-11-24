@@ -44,7 +44,7 @@ if (isset($_POST['Connection']))
     <br><br><br>
    <table>
         <center>
-        <img src="assets/images/vs.png" class="myhero" style="margin-top: 10%;">
+        <img src="../assets/images/vs.png" class="myhero" style="margin-top: 10%;">
     </center>
   <div align="center">
     <form method="POST">
