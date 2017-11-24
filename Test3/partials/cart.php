@@ -115,5 +115,7 @@ echo $_POST['submit'];
     echo $count;
 }
 ?>
+    <footer><br><br></footer>
+  </div>
   </body>
 </html>
