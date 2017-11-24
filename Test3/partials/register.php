@@ -76,7 +76,7 @@ if(isset($_POST['formregister']))
   <body>
     <div class="wrapper">
     <header>
-      <form action="test.php">
+      <form action="../index.php">
       <input class="image" type="image" src="../assets/images/accueilbutton.png">
       </form>
       <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
