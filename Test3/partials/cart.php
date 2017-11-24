@@ -24,7 +24,6 @@ $sum = $db->prepare('SELECT SUM(Prix_vente) FROM Produits INNER JOIN Produit_Uti
 $sum->execute(array($_SESSION['ID']));
 $price = $sum->fetch();
     $price = $price[0];
-var_dump($price);
 ?>
 
 
@@ -116,7 +115,7 @@ $req = $db->prepare('SELECT Produits.ID, Libelle, Description, Prix_vente, Nombr
     <td><form name="Confirm" method="post" action="cart.php">
             <button>Validate<input type="hidden" name="validate" value="validate"></button>
         </form></td>
-        <td><?php echo "Prix total" . $price . " $"?></td>
+        <td><?php echo "Prix total : " . $price . " $"?></td>
     </tr>
 	<?php
 }
