@@ -20,13 +20,6 @@ if (isset($_POST['delete'])) {
     $del->execute(array($_SESSION['ID']));
 }
 
-if (isset($_POST['validate'])) {
-    $val = $db->prepare('UPDATE Produits INNER JOIN Produit_Utilisateur ON Produit_Utilisateur.ID_produit = Produits.ID SET Nombres_produit = Nombres_produit - 1 WHERE Produit_Utilisateur.ID_utilisateur = ? AND Nombres_produit >= 0 ');
-    $val->execute(array($_SESSION['ID']));
-    $del = $db->prepare('DELETE FROM Produit_Utilisateur WHERE ID_utilisateur = ?');
-    $del->execute(array($_SESSION['ID']));
-    echo "Achat effecue";
-}
 $sum = $db->prepare('SELECT SUM(Prix_vente) FROM Produits INNER JOIN Produit_Utilisateur ON Produit_Utilisateur.ID_produit = Produits.ID WHERE Produit_Utilisateur.ID_utilisateur = ?');
 $sum->execute(array($_SESSION['ID']));
 $results = $sum->fetch();
@@ -71,6 +64,13 @@ $results = $sum->fetch();
     </header>
 <main>
   <?php
+  if (isset($_POST['validate'])) {
+    $val = $db->prepare('UPDATE Produits INNER JOIN Produit_Utilisateur ON Produit_Utilisateur.ID_produit = Produits.ID SET Nombres_produit = Nombres_produit - 1 WHERE Produit_Utilisateur.ID_utilisateur = ? AND Nombres_produit >= 0 ');
+    $val->execute(array($_SESSION['ID']));
+    $del = $db->prepare('DELETE FROM Produit_Utilisateur WHERE ID_utilisateur = ?');
+    $del->execute(array($_SESSION['ID']));
+    echo "Achat effecue";
+}
 $req = $db->prepare('SELECT Produits.ID, Libelle, Description, Prix_vente, Nombres_produit FROM Produits INNER JOIN Produit_Utilisateur ON Produits.ID = Produit_Utilisateur.ID_produit INNER JOIN Utilisateurs ON Produit_Utilisateur.ID_utilisateur = Utilisateurs.ID WHERE Utilisateurs.ID = ?');
     $req->execute(array($_SESSION['ID']));
     $count = $req->rowCount();
