@@ -72,7 +72,7 @@ session_start();
     </center>
 </main>
   <footer>
-  <img src="assets/images/cb.png" style="width: 50px; height: auto;">
+  <img src="assets/images/cb.png" style="width: 150px; height: auto;">
   </footer>
   </div>
 </body>
