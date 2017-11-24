@@ -61,11 +61,18 @@ main {
 }
 
 
+.signin1
+{
+  color: white;
+  position: absolute;
+    top: 90px;
+    right: 45%;
+}
 .signin
 {
   position: absolute;
     top: 70px;
-    right: 500px;
+    right: 25px;
 }
 
 .manga
