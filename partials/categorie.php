@@ -108,7 +108,6 @@ $req = $db->prepare('SELECT Produits.ID, Produits.Libelle, Produits.Description,
         </button>
         </form>
         </td>
-        <?php echo $_POST['submit'];?>
     </tr>
 <?php   
 }
