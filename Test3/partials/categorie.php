@@ -36,10 +36,14 @@
       <div class="signin">
         <input type="submit" value="   Login   " style=" top:70px; left:50%; ">
       </div>
-    </form>
     <?php
     }
     ?>
+    <div class="search">
+  <form name="frmSearch" method="post" action="search.php">
+      <input name="var1" type="text" id="var1" placeholder="Keyword">
+      <input type="submit" value="Search">
+
         <form action="categorie.php" method="POST">
       <div class="pop1">
         <button>Figurine POP<input type="hidden" value="2" name="cat"></button>
