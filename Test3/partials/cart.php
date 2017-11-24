@@ -43,17 +43,37 @@ $results = $sum->fetch();
   <body>
 <div class="wrapper">
     <header>
-    <form action="../index.php">
+      <form action="../index.php">
       <input class="image" type="image" src="../assets/images/accueilbutton.png">
     </form>
-        <div class="search">
-  <form name="frmSearch" method="post" action="../partials/search.php">
+    <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
+      <form action="cart.php">
+      <div class="cart">
+        <input type="submit" value= "   Cart   ">
+      </div>
+      </form>
+    <form action="categorie.php" method="POST">
+      <div class="pop1">
+        <button>Figurine POP<input type="hidden" value="2" name="cat"></button>
+      </div>
+    </form>
+    <form action="categorie.php" method="POST">
+      <div class="achat2">
+        <button>Manga<input type="hidden" value="1" name="cat"></button>
+      </div>
+    </form>
+    <form action="categorie.php" method="POST">
+      <div class="achat3">
+        <button>Blu-ray<input type="hidden" value="3" name="cat"></button>
+      </div>
+    </form>
+    <div class="search">
+  <form name="frmSearch" method="post" action="search.php">
       <input name="var1" type="text" id="var1" placeholder="Keyword">
       <input type="submit" value="Search">
-</form>
-</div>
- <div class="etna"> ETNA MANGA </div>
- </header>
+      </form>
+      </div>
+    </header>
 <main>
   <?php
 $req = $db->prepare('SELECT Produits.ID, Libelle, Description, Prix_vente, Nombres_produit FROM Produits INNER JOIN Produit_Utilisateur ON Produits.ID = Produit_Utilisateur.ID_produit INNER JOIN Utilisateurs ON Produit_Utilisateur.ID_utilisateur = Utilisateurs.ID WHERE Utilisateurs.ID = ?');
