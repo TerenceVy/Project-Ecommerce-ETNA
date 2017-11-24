@@ -42,25 +42,24 @@ if (isset($_POST['Connection']))
     </header>
 
     <main>
-    <p>Ceci est un autre test</p>
   </div>
-    <table>
-	<div align="center">
-	  <form method="POST">
-	    <input type="email" name="email" placeholder="Your email" required><br>
-	    <br>
-	    <input type="Password" name="passwd" placeholder="Password" required><br>
-	    <br>
-	    <input type="Submit" value="Sign in" name="Connection">
-	  </form>
-	  <form action="register.php">
-	    <input type="Submit" value="Register">
-	  </form>
-	</div>
-    </table>
     </main>
+       <table>
+  <div align="center">
+    <form method="POST">
+      <input type="email" name="email" placeholder="Your email" required><br>
+      <br>
+      <input type="Password" name="passwd" placeholder="Password" required><br>
+      <br>
+      <input type="Submit" value="Sign in" name="Connection">
+    </form>
+    <form action="register.php">
+      <input type="Submit" value="Register">
+    </form>
+  </div>
+    </table>
     <footer>
-  <p>Test2</p>
+  <br>
   </footer>
   </div>
   </body>
