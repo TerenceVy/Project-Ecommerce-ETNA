@@ -82,12 +82,6 @@ $results = $req->fetchALL();
       </div>
     </header>
   <main>
-    <center>
-    	<form name="frmSearch" method="post" action="search.php">
-      <input name="var1" type="text" id="var1">
-      <input type="submit" value="Search">
-</form>
-<?php echo $search; ?>
 	<?php
 if ($count != 0)
 {
