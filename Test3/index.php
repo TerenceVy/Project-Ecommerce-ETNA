@@ -68,7 +68,7 @@ session_start();
     </header>
   <main>
     <center>
-        <img class="myhero" style="margin-top: 10%;">
+        <div class="myhero" style="margin-top: 10%;"> CECI EST UN TEST</div>
     </center>
 </main>
   <footer>
