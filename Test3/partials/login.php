@@ -33,17 +33,6 @@ if (isset($_POST['Connection']))
   </head>
   
   <body>
-    <div class="wrapper">
-    <header>
-    <form action="../index.php">
-      <input class="image" type="image" src="../assets/images/accueilbutton.png">
-    </form>
-    <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
-    </header>
-
-    <main>
-  </div>
-    </main>
        <table>
   <div align="center">
     <form method="POST">
@@ -58,8 +47,20 @@ if (isset($_POST['Connection']))
     </form>
   </div>
     </table>
+    <div class="wrapper">
+    <header>
+    <form action="../index.php">
+      <input class="image" type="image" src="../assets/images/accueilbutton.png">
+    </form>
+    <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
+    </header>
+
+    <main>
+  </div>
+    </main>
+
     <footer>
-  <br>
+  <br><br>
   </footer>
   </div>
   </body>
