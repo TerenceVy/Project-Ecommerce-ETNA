@@ -9,7 +9,7 @@
     <div class="wrapper">
     <header>
       <main>
-    <form action="test.php">
+    <form action="../index.php">
       <input class="image" type="image" src="../assets/images/accueilbutton.png">
     </form>
     <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
