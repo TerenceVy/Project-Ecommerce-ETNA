@@ -41,6 +41,7 @@ if (isset($_POST['Connection']))
     </form>
     <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
     </header>
+    <br><br><br>
    <table>
   <div align="center">
     <form method="POST">
