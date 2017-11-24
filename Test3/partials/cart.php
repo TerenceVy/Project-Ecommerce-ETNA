@@ -128,7 +128,7 @@ else{
 ?>
 </table>
 </main>
-  <footer>Test</footer>
+  <footer><br><br></footer>
   </div>
   </body>
 </html>
