@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 21, 2017 at 04:30 PM
+-- Generation Time: Nov 24, 2017 at 02:48 PM
 -- Server version: 5.5.58-0+deb8u1
 -- PHP Version: 5.6.30-0+deb8u1
 
@@ -30,43 +30,20 @@ DROP DATABASE IF EXISTS etnamanga_vy_t;
 
 CREATE DATABASE etnamanga_vy_t CHARACTER SET utf8;
 
-USE etnamanga_vy_t;
-
 CREATE TABLE IF NOT EXISTS `Categories` (
 `ID` int(10) unsigned NOT NULL,
   `Libelle` varchar(40) NOT NULL,
-  `Description` varchar(40) NOT NULL,
-  `Date_creation` datetime NOT NULL,
-  `Date_modification` datetime NOT NULL
+  `Description` varchar(40) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `Categories`
 --
 
-INSERT INTO `Categories` (`ID`, `Libelle`, `Description`, `Date_creation`, `Date_modification`) VALUES
-(1, 'Manga', 'Un manga est un manga.', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(2, 'POP', 'Figurine d''un personnage de serie ou aut', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(3, 'Blu-ray', 'Edition collector d''un anime', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `Produit_Utilisateur`
---
-
-CREATE TABLE IF NOT EXISTS `Produit_Utilisateur` (
-  `ID_produit` int(10) unsigned NOT NULL,
-  `ID_utilisateur` int(10) unsigned NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `Produit_Utilisateur`
---
-
-INSERT INTO `Produit_Utilisateur` (`ID_produit`, `ID_utilisateur`) VALUES
-(1, 1),
-(16, 1);
+INSERT INTO `Categories` (`ID`, `Libelle`, `Description`) VALUES
+(1, 'Manga', 'Un manga est un manga.'),
+(2, 'POP', 'Figurine d''un personnage de serie ou aut'),
+(3, 'Blu-ray', 'Edition collector d''un anime');
 
 -- --------------------------------------------------------
 
@@ -79,35 +56,43 @@ CREATE TABLE IF NOT EXISTS `Produits` (
   `Categorie` int(10) unsigned DEFAULT NULL,
   `Libelle` varchar(40) NOT NULL,
   `Description` text NOT NULL,
-  `Prix_achat` varchar(10) NOT NULL,
-  `Prix_vente` varchar(10) NOT NULL,
-  `Nombres_produit` int(11) NOT NULL,
-  `Date_creation` datetime NOT NULL,
-  `Date_modification` datetime NOT NULL
+  `Prix_vente` float(5,2) NOT NULL,
+  `Nombres_produit` int(11) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `Produits`
 --
 
-INSERT INTO `Produits` (`ID`, `Categorie`, `Libelle`, `Description`, `Prix_achat`, `Prix_vente`, `Nombres_produit`, `Date_creation`, `Date_modification`) VALUES
-(1, 1, 'My Hero Academia Vol 1', '1er Volume de la serie My Hero Academia', '1', '2', 5, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(2, 2, 'POP All Might', 'Pop d''un personnage My Hero Academia', '0.5', '2', 5, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(3, 3, 'Blu-ray My Hero Academia', 'Coffret Blu-ray de la saison 1', '0.45', '2', 7, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(4, 2, 'POP Shinoa', 'POP d''un personnage OWari no Seraph', '0.35', '1.95', 3, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(5, 2, 'POP L', 'POP du celebre detective de Death Note', '0.25', '1.80', 15, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(6, 1, 'Kuroko no Basket Vol1', 'Premier volume des matchs de Kuroko', '0.45', '1.75', 8, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(7, 1, 'Your lie in April Vol1', 'Suivez les aventures de Kousei Arima', '0.35', '1.80', 2, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(8, 2, 'POP Tony Tony Chopper', 'POP de la mascotte de l''equipage au chapeau de paille', '0.25', '2', 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(9, 2, 'POP Asuna', 'POP du personnage feminin de SAO', '0.5', '1.99', 6, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(10, 3, 'Blu-ray Your lie in April', 'Vivez les musiques de l''anime Shigatsu Wa Kimi no Uso', '1.25', '2', 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(11, 1, 'My Hero Academia Vol2', 'Suite des aventures de Midoriya Izuku', '0.9', '2', 7, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(12, 1, 'My Hero Academia Vol3', 'Suite des aventures de Midoriya Izuku', '0.9', '2', 7, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(13, 1, 'My Hero Academia Vol4', 'Suite des aventures de Midoriya Izuku', '0.9', '2', 7, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(14, 1, 'My Hero Academia Vol5', 'Suite des aventures de Midoriya Izuku', '0.9', '2', 7, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(15, 1, 'My Hero Academia Vol6', 'Suite des aventures de Midoriya Izuku', '0.9', '2', 7, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(16, 1, 'My Hero Academia Vol7', 'Suite des aventures de Midoriya Izuku', '0.9', '2', 7, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(17, 1, 'My Hero Academia Vol8', 'Suite des aventures de Midoriya Izuku', '0.9', '2', 7, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+INSERT INTO `Produits` (`ID`, `Categorie`, `Libelle`, `Description`, `Prix_vente`, `Nombres_produit`) VALUES
+(1, 1, 'My Hero Academia Vol 1', '1er Volume de la serie My Hero Academia', 4.85, 99),
+(2, 2, 'POP All Might', 'Pop d''un personnage My Hero Academia', 12.98, 99),
+(3, 3, 'Blu-ray My Hero Academia', 'Coffret Blu-ray de la saison 1', 2.00, 99),
+(4, 2, 'POP Shinoa', 'POP d''un personnage OWari no Seraph', 1.95, 99),
+(5, 2, 'POP L', 'POP du celebre detective de Death Note', 2.63, 99),
+(6, 1, 'Kuroko no Basket Vol1', 'Premier volume des matchs de Kuroko', 2.00, 99),
+(7, 1, 'Your lie in April Vol1', 'Suivez les aventures de Kousei Arima', 2.09, 99),
+(8, 2, 'POP Tony Tony Chopper', 'POP de la mascotte de l''equipage au chapeau de paille', 2.00, 99),
+(9, 2, 'POP Asuna', 'POP du personnage feminin de SAO', 2.00, 99),
+(10, 3, 'Blu-ray Your lie in April', 'Vivez les musiques de l''anime Shigatsu Wa Kimi no Uso', 2.00, 99),
+(11, 1, 'My Hero Academia Vol2', 'Suite des aventures de Midoriya Izuku', 6.80, 99),
+(12, 1, 'My Hero Academia Vol3', 'Suite des aventures de Midoriya Izuku', 2.00, 99),
+(13, 1, 'My Hero Academia Vol4', 'Suite des aventures de Midoriya Izuku', 12.25, 99),
+(14, 1, 'My Hero Academia Vol5', 'Suite des aventures de Midoriya Izuku', 2.00, 99),
+(15, 1, 'My Hero Academia Vol6', 'Suite des aventures de Midoriya Izuku', 2.00, 99),
+(16, 1, 'My Hero Academia Vol7', 'Suite des aventures de Midoriya Izuku', 2.00, 99),
+(17, 1, 'My Hero Academia Vol8', 'Suite des aventures de Midoriya Izuku', 2.00, 99);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Produit_Utilisateur`
+--
+
+CREATE TABLE IF NOT EXISTS `Produit_Utilisateur` (
+  `ID_produit` int(10) unsigned NOT NULL,
+  `ID_utilisateur` int(10) unsigned NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -118,18 +103,16 @@ INSERT INTO `Produits` (`ID`, `Categorie`, `Libelle`, `Description`, `Prix_achat
 CREATE TABLE IF NOT EXISTS `Role` (
 `ID` tinyint(3) unsigned NOT NULL,
   `Libelle` varchar(40) NOT NULL,
-  `Description` varchar(40) NOT NULL,
-  `Date_creation` date NOT NULL,
-  `Date_modification` date NOT NULL
+  `Description` varchar(40) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `Role`
 --
 
-INSERT INTO `Role` (`ID`, `Libelle`, `Description`, `Date_creation`, `Date_modification`) VALUES
-(1, '0', 'Simple User', '0000-00-00', '0000-00-00'),
-(2, '1', 'You are GROOT', '0000-00-00', '0000-00-00');
+INSERT INTO `Role` (`ID`, `Libelle`, `Description`) VALUES
+(1, '0', 'Simple User'),
+(2, '1', 'You are GROOT');
 
 -- --------------------------------------------------------
 
@@ -170,16 +153,16 @@ ALTER TABLE `Categories`
  ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `Produit_Utilisateur`
---
-ALTER TABLE `Produit_Utilisateur`
- ADD KEY `ID_produit` (`ID_produit`), ADD KEY `ID_utilisateur` (`ID_utilisateur`);
-
---
 -- Indexes for table `Produits`
 --
 ALTER TABLE `Produits`
  ADD PRIMARY KEY (`ID`), ADD KEY `Categorie` (`Categorie`);
+
+--
+-- Indexes for table `Produit_Utilisateur`
+--
+ALTER TABLE `Produit_Utilisateur`
+ ADD KEY `ID_produit` (`ID_produit`), ADD KEY `ID_utilisateur` (`ID_utilisateur`);
 
 --
 -- Indexes for table `Role`
@@ -222,17 +205,17 @@ MODIFY `ID` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 
 --
+-- Constraints for table `Produits`
+--
+ALTER TABLE `Produits`
+ADD CONSTRAINT `Produits_ibfk_1` FOREIGN KEY (`Categorie`) REFERENCES `Categories` (`ID`);
+
+--
 -- Constraints for table `Produit_Utilisateur`
 --
 ALTER TABLE `Produit_Utilisateur`
 ADD CONSTRAINT `Produit_Utilisateur_ibfk_1` FOREIGN KEY (`ID_produit`) REFERENCES `Produits` (`ID`),
 ADD CONSTRAINT `Produit_Utilisateur_ibfk_2` FOREIGN KEY (`ID_utilisateur`) REFERENCES `Utilisateurs` (`ID`);
-
---
--- Constraints for table `Produits`
---
-ALTER TABLE `Produits`
-ADD CONSTRAINT `Produits_ibfk_1` FOREIGN KEY (`Categorie`) REFERENCES `Categories` (`ID`);
 
 --
 -- Constraints for table `Utilisateurs`
