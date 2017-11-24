@@ -52,17 +52,17 @@ session_start()
       </div>
 
         <form action="categorie.php" method="POST">
-      <div class="pop1">
+      <div class="pop">
         <button>Figurine POP<input type="hidden" value="2" name="cat"></button>
       </div>
     </form>
     <form action="categorie.php" method="POST">
-      <div class="achat2">
+      <div class="manga">
         <button>Manga<input type="hidden" value="1" name="cat"></button>
       </div>
     </form>
     <form action="categorie.php" method="POST">
-      <div class="achat3">
+      <div class="blu-ray">
         <button>Blu-ray<input type="hidden" value="3" name="cat"></button>
       </div>
     </form>
