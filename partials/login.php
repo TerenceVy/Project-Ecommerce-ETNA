@@ -64,7 +64,9 @@ if (isset($_POST['Connection']))
     </main>
 
     <footer>
-  <br><br>
+  <img src="../assets/images/cb.png" style="width: 150px; height: auto; margin-left: 35px">
+  <img src="../assets/images/secured.png" style="width: 100px; height: auto; margin-left: 35px">
+    <a href="contact.php" target="_blank" style="color: grey; position: initial; bottom: 25px; left: 28%">Contact us</a>
   </footer>
   </div>
   </body>
