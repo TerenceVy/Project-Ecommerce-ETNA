@@ -12,17 +12,17 @@
       <input class="image" type="image" src="../assets/images/accueilbutton.png">
     </form>
     <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
-    <form action="partials/pop.php">
+    <form action="categorie.php">
       <div class="pop1">
         <input type="submit" value="  Figurine Pop   " style="position: initial; top: 50px; left: 150px;">
       </div>
     </form>
-    <form action="partials/manga.php" method="POST">
+    <form action="categorie.php" method="POST">
       <div class="achat2">
         <input type="submit" value="  Manga   " name="1" style="position: fixed; top: 50px; left: 280px;">
       </div>
     </form>
-    <form action="partials/blu-ray.php">
+    <form action="categorie.php">
       <div class="achat3">
         <input type="submit" value="  Blu-ray   " style="position: fixed; top: 50px; left: 380px;">
       </div>
