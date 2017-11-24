@@ -27,7 +27,7 @@
 	<input type="submit" src="assets/images/Cart.png" value="Ajouter au panier">
       </div>
       <div class="articles">
-
+ <div class="signin1"><?php echo $_SESSION['Mail']; ?></div>
 
 
 

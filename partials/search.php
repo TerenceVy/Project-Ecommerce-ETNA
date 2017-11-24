@@ -40,7 +40,7 @@ $results = $req->fetchALL();
         <input type="submit" value= "   Cart   ">
       </div>
       </form>
-      <div class="signin"><?php echo $_SESSION['Mail']; ?></div>
+      <div class="signin1"><?php echo $_SESSION['Mail']; ?></div>
       <form action="logout.php">
       <div class="signin">
         <input type="submit" value="   Log out   ">
