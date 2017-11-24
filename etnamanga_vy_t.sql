@@ -30,6 +30,8 @@ DROP DATABASE IF EXISTS etnamanga_vy_t;
 
 CREATE DATABASE etnamanga_vy_t CHARACTER SET utf8;
 
+USE etnamanga_vy_t;
+
 CREATE TABLE IF NOT EXISTS `Categories` (
 `ID` int(10) unsigned NOT NULL,
   `Libelle` varchar(40) NOT NULL,
