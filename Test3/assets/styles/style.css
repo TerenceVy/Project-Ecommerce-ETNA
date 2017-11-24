@@ -48,7 +48,7 @@ main {
 
 .cart
 {
-  position: initial;
+  position: absolute;
     top: 5px;
     right: 10px;
 }
@@ -78,7 +78,7 @@ main {
 .manga
 {
   position: absolute;
-    top: 35%;
+    top: 15%;
     left: 35%;
     width:4%;
 }
