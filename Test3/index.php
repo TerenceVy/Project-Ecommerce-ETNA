@@ -15,6 +15,12 @@ session_start();
     <form action="index.php">
       <input class="image" type="image" src="assets/images/accueilbutton.png">
     </form>
+        <div class="search">
+  <form name="frmSearch" method="post" action="partials/search.php">
+      <input name="var1" type="text" id="var1" placeholder="Keyword">
+      <input type="submit" value="Search">
+</form>
+</div>
     <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
     <?php
     if (isset($_SESSION['ID']))
@@ -69,11 +75,5 @@ session_start();
   <p><br></p>
   </footer>
   </div>
-      <div class="search">
-  <form name="frmSearch" method="post" action="partials/search.php">
-      <input name="var1" type="text" id="var1" placeholder="Keyword">
-      <input type="submit" value="Search">
-</form>
-</div>
 </body>
 </html>
