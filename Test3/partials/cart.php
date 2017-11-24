@@ -121,9 +121,9 @@ $req = $db->prepare('SELECT Produits.ID, Libelle, Description, Prix_vente, Nombr
 	<?php
 }
 else
-echo "Votre panier est vide";
-echo $_POST['submit'];
-?>
+    ?>
+
+<div class="empty"><?php echo "Votre panier est vide"; ?></div>
 </table>
 
 </main>
