@@ -22,7 +22,7 @@ if (isset($_POST['delete'])) {
 
 $sum = $db->prepare('SELECT SUM(Prix_vente) FROM Produits INNER JOIN Produit_Utilisateur ON Produit_Utilisateur.ID_produit = Produits.ID WHERE Produit_Utilisateur.ID_utilisateur = ?');
 $sum->execute(array($_SESSION['ID']));
-$results = $sum->fetch();
+$price = $sum->fetch();
 ?>
 
 
@@ -114,7 +114,7 @@ $req = $db->prepare('SELECT Produits.ID, Libelle, Description, Prix_vente, Nombr
     <td><form name="Confirm" method="post" action="cart.php">
             <button>Validate<input type="hidden" name="validate" value="validate"></button>
         </form></td>
-        <td><?php echo "Prix total" . $results . "$"?></td>
+        <td><?php echo "Prix total" . $price . "$"?></td>
     </tr>
 	<?php
 }
