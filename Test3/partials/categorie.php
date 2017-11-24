@@ -110,7 +110,7 @@ $req = $db->prepare('SELECT Produits.ID, Produits.Libelle, Produits.Description,
 }
 ?>
 </table>
-
+<br><br>
 </main>
 <footer>
     TEST
