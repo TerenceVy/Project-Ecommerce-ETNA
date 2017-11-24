@@ -100,5 +100,6 @@ main {
 .empty
 {
   color: grey;
-  font-size: 10px;
+  font-size: 70px;
+  box-shadow: 10px 5px 5px black;
 }
