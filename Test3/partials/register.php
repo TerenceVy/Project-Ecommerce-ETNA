@@ -146,7 +146,9 @@ if(isset($_POST['formregister']))
           </tr>
           <tr>
           <td>
-      <input type="Submit" name="formregister" value="S'inscrire" align="center">
+          <center>
+      <input type="Submit" name="formregister" value="S'inscrire">
+      </center>
       </td>
       </tr>
       </table>
