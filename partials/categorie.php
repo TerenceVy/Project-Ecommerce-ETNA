@@ -78,8 +78,7 @@ session_start()
         <td><p style="font-size: 20px"> Nombre de produit </p></td>
         <td><p style="font-size: 20px"> ID </p></td>
     </tr>
-    <?php
-    echo $_POST['cat']; 
+    <?php 
 $db = new PDO ('mysql:host=localhost;dbname=etnamanga_vy_t', 'root', 'salutlesbro');
 $req = $db->prepare('SELECT Produits.ID, Produits.Libelle, Produits.Description, Prix_vente, Nombres_produit FROM Produits INNER JOIN Categories ON Categories.ID = Produits.Categorie WHERE Categories.ID = ?');
     $req->execute(array($_POST['cat']));
