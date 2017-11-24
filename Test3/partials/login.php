@@ -39,7 +39,7 @@ if (isset($_POST['Connection']))
     <form action="../index.php">
       <input class="image" type="image" src="../assets/images/accueilbutton.png">
     </form>
-    <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
+    <div class="etna"> ETNA MANGA </div>
     </header>
     <br><br><br>
    <table>
