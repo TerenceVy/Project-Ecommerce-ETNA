@@ -24,7 +24,7 @@ $sum = $db->prepare('SELECT SUM(Prix_vente) FROM Produits INNER JOIN Produit_Uti
 $sum->execute(array($_SESSION['ID']));
 $price = $sum->fetch();
 foreach ($price as $k) {
-    $price = $k->(0);
+    $price = $k[0];
 }
 var_dump($price);
 ?>
