@@ -27,38 +27,15 @@ $results = $req->fetchALL();
 <body>
 <div class="wrapper">
     <header>
-    <form action="../index.php">
+      <form action="../index.php">
       <input class="image" type="image" src="../assets/images/accueilbutton.png">
     </form>
     <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
-    <?php
-    if (isset($_SESSION['ID']))
-    {
-      ?>
       <form action="cart.php">
       <div class="cart">
         <input type="submit" value= "   Cart   ">
       </div>
       </form>
-      <div class="signin"><?php echo $_SESSION['Mail']; ?></div>
-      <form action="logout.php">
-      <div class="signin">
-        <input type="submit" value="   Log out   ">
-      </div>
-      </form>
-      <?php
-    }
-    else
-    {
-      ?>
-      <form action="login.php">
-      <div class="signin">
-        <input type="submit" value="   Login   " style=" top:70px; left:50%; ">
-      </div>
-    </form>
-    <?php
-    }
-    ?>
     <form action="categorie.php" method="POST">
       <div class="pop1">
         <button>Figurine POP<input type="hidden" value="2" name="cat"></button>
