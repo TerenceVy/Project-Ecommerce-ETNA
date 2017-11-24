@@ -68,7 +68,7 @@ session_start();
     </header>
   <main>
     <center>
-        <img src="assets/images/Myhero.png" class="myhero" style="margin-top: 10%;">
+        <div class="myhero" style="margin-top: 10%;"> </div>
     </center>
 </main>
   <footer>
