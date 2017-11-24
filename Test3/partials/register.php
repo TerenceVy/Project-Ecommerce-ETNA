@@ -82,7 +82,7 @@ if(isset($_POST['formregister']))
       <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
       </header>
       
-      <main>
+      <main><center>
       <form action="" method="POST">
         <table style="align-content: center;">
           <tr>
@@ -125,6 +125,7 @@ if(isset($_POST['formregister']))
       </tr>
       </table>
       </form>
+    </center>
       <?php
         if(isset($msg))
           {
