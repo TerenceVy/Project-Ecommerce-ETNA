@@ -47,11 +47,6 @@ $results = $sum->fetch();
       <input class="image" type="image" src="../assets/images/accueilbutton.png">
     </form>
     <div class="etna" style="margin-left: 35%"> ETNA MANGA </div>
-      <form action="cart.php">
-      <div class="cart">
-        <input type="submit" value= "   Cart   ">
-      </div>
-      </form>
     <form action="categorie.php" method="POST">
       <div class="pop1">
         <button>Figurine POP<input type="hidden" value="2" name="cat"></button>
