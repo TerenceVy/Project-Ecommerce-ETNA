@@ -133,7 +133,7 @@ echo ' : There is nothing to show';
 </center>
 </main>
 <footer>
-  <p>Test2</p>
+  <br>
   </footer>
 </div>
 </body>
