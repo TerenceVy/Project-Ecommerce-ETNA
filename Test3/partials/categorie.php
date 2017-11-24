@@ -8,7 +8,6 @@
   <body>
     <div class="wrapper">
     <header>
-      <main>
     <form action="../index.php">
       <input class="image" type="image" src="../assets/images/accueilbutton.png">
     </form>
@@ -78,9 +77,9 @@ $req = $db->prepare('SELECT Produits.ID, Produits.Libelle, Produits.Description,
 </table>
 
 </main>
-</div>
 <footer>
     TEST
 </footer>
+</div>
   </body>
 </html>
