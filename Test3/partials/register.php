@@ -132,9 +132,11 @@ if(isset($_POST['formregister']))
             echo "$msg";
           }
       ?>
+      <br>
       <center>
         <img src="../assets/images/steins.png" class="myhero" style="margin-top: 0%;">
     </center>
+    <br>
     </main>
     <footer><br><br></footer>
   </div>
