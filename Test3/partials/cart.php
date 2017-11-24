@@ -13,6 +13,10 @@ if (isset($_SESSION['ID']))
 
 }
 
+if (empty($_SESSION['ID'])) {
+    header("Location: login.php");
+}
+
 if (isset($_POST['delete'])) {
     $del = $db->prepare('DELETE FROM Produit_Utilisateur WHERE ID_utilisateur = ?');
     $del->execute(array($_SESSION['ID']));
