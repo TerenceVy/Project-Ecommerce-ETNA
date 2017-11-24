@@ -43,6 +43,7 @@
   <form name="frmSearch" method="post" action="search.php">
       <input name="var1" type="text" id="var1" placeholder="Keyword">
       <input type="submit" value="Search">
+      </form>
 
         <form action="categorie.php" method="POST">
       <div class="pop1">
