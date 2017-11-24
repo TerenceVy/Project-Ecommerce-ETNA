@@ -53,18 +53,11 @@ main {
     right: 25px;
 }
 
-.pop1
+.pop
 {
   position: absolute;
   top: 25px;
   left: 150px;
-}
-.pop
-{
-  position: absolute;
-  top: 52%;
-  left: 35%;
-  width:6%
 }
 
 
@@ -78,16 +71,15 @@ main {
 .manga
 {
   position: absolute;
-    top: 52%;
-  left: 35%;
-  width:6%
+  top: 50px;
+  left: 150px;
+}
 
 .blu-ray
 {
   position: absolute;
-    top: 65%;
-    left: 35%;
-    width: 4%;
+    top: 75px;
+  left: 150px;
 }
 
 .search
