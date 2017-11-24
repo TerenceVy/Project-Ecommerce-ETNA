@@ -135,8 +135,8 @@ if(isset($_POST['formregister']))
       <center>
         <img src="../assets/images/steins.png" class="myhero" style="margin-top: 5%;">
     </center>
-       </div>
     </main>
     <footer><br><br></footer>
+  </div>
   </body>  
 </html>
