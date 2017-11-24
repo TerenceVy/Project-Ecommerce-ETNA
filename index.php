@@ -74,6 +74,7 @@ session_start();
   <footer>
   <br>
   <img src="assets/images/cb.png" style="width: 150px; height: auto; margin-left: 35px">
+  <img src="assets/images/secured.png" style="width: 150px; height: auto; margin-left: 35px">
   <br><br>
   </footer>
   </div>
