@@ -80,7 +80,7 @@ $req = $db->prepare('SELECT Produits.ID, Produits.Libelle, Produits.Description,
 </main>
 </div>
 <footer>
-    <br>
+    TEST
 </footer>
   </body>
 </html>
