@@ -31,7 +31,7 @@ session_start();
         <input type="submit" value= "   Cart   ">
       </div>
       </form>
-      <div class="signin1"><?php echo "Bienvenu : " . $_SESSION['Mail']; ?></div>
+      <div class="signin1"><?php echo "Bienvenue : " . $_SESSION['Mail']; ?></div>
       <form action="partials/logout.php">
       <div class="signin">
         <input type="submit" value="   Log out   ">
