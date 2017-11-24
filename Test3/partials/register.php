@@ -109,6 +109,7 @@ if(isset($_POST['formregister']))
     </header>
       
       <main><center>
+      <br><br><br>
       <form action="" method="POST">
         <table style="align-content: center;">
           <tr>
