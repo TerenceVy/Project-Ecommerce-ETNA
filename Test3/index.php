@@ -64,10 +64,12 @@ session_start();
     <center>
         <img src="assets/images/Myhero.png" class="myhero" style="margin-top: 10%;">
     </center>
+    <div class="search">
   <form name="frmSearch" method="post" action="partials/search.php">
-      <input name="var1" type="text" id="var1" placeholder="bite">
+      <input name="var1" type="text" id="var1" placeholder="Keyword">
       <input type="submit" value="Search">
 </form>
+</div>
 </main>
   <footer>
   <p><br></p>
