@@ -16,7 +16,7 @@ session_start();
       <input class="image" type="image" src="assets/images/accueilbutton.png">
     </form>
         <div class="search">
-  <form name="frmSearch" method="post" action="partials/search.php">
+<form name="frmSearch" method="post" action="partials/search.php">
       <input name="var1" type="text" id="var1" placeholder="Keyword">
       <input type="submit" value="Search">
 </form>
